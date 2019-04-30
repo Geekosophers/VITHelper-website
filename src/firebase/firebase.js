@@ -1,17 +1,62 @@
 import * as firebase from 'firebase';
 
 const config = {
-  apiKey: "AIzaSyD-YCSsdHnRFuMtkNx_GuVUIMb-hyxe5vc",
-  authDomain: "test-app-f6863.firebaseapp.com",
-  databaseURL: "https://test-app-f6863.firebaseio.com",
-  projectId: "test-app-f6863",
-  storageBucket: "test-app-f6863.appspot.com",
-  messagingSenderId: "149760926890"
+  apiKey: "AIzaSyCBfxTq-enEyDNaT1mDDx_dffeaxPPtWVA",
+  authDomain: "vithelper-32e0b.firebaseapp.com",
+  databaseURL: "https://vithelper-32e0b.firebaseio.com",
+  projectId: "vithelper-32e0b",
+  storageBucket: "vithelper-32e0b.appspot.com",
+  messagingSenderId: "571499579120"
 };
-
 firebase.initializeApp(config);
 
 const database = firebase.database();
+
+// database.ref().set({
+//   teacher1:{
+//     commen1:"c1",
+//     comment2:"c2",
+//     comment3:"c3"
+//   },
+//   teacher2:{
+//     coment1:"c4",
+//     comment2:"c5",
+//     comment3:"c6"
+//   },
+// }).then(() => {
+//   console.log('Data is saved.');
+// }).catch((e) => {
+//   console.log('This filed.',e);
+// });
+
+// database.ref('details/name')
+//   .once('value')
+//   .then((snapshot) => {
+//     const val = snapshot.val();
+//     console.log(val);
+//   })
+//   .catch((e) => {
+//     console.log('Error fetching data', e);
+//   });
+
+//database.ref()
+//  .on('value', (snapshot) => {
+//    console.log(snapshot.val());
+//  });
+
+//setTimeout(() => {
+//  database.ref('details/name').set('Anshul');
+//},3500);
+
+//database.ref('details/name')
+//  .once('value')
+//  .then((snapshot) => {
+//    const val = snapshot.val();
+//    console.log(val);
+//  })
+//  .catch((e) => {
+//    console.log('Error fetching data', e);
+//  });
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 export { firebase, googleAuthProvider, database as default };
