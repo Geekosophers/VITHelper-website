@@ -25,7 +25,7 @@ store.subscribe(() => {
 //store.dispatch(startAddTeacher({ name: 'Rahul',comments:['c1','c2']}))
 //store.dispatch(startAddTeacher({ name: 'Raman',comments:['c2','c3']}))
 
-store.dispatch(setTextFilter('ans'));
+//store.dispatch(setTextFilter('ans'));
 
 const jsx = (
   <Provider store={store}>
