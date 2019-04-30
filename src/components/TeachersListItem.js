@@ -1,9 +1,9 @@
 import React from 'react';
 
 const TeachersListItem = ({ name,comments }) => (
-    <div>
-        <h3>{name}</h3>
-        <p>{comments}</p>
+    <div className="list-item">
+        <h3 className="list-item__title">{name}</h3>
+        <p className="list-item__title">{comments}</p>
     </div>
 );
 

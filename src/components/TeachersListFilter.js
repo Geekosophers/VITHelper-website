@@ -3,11 +3,20 @@ import { connect } from 'react-redux';
 import { setTextFilter } from '../actions/filter';
 
 const TeachersListFilter = (props) => (
-    <div>
-        <input type="text" value={props.filter.text} onChange={(e) => {
-            props.dispatch(setTextFilter(e.target.value));
-        }}/>
-    </div>
+    <div className="content-container">
+        <h3>Search for Faculty:</h3>
+        <div className="input-group">
+        <div className="input-group__item">
+            <input 
+                type="text" 
+                className="text-input" 
+                placeholder="Search Faculty by Name"
+                value={props.filter.text} onChange={(e) => {
+                props.dispatch(setTextFilter(e.target.value));
+            }}/>
+            </div>
+        </div>
+    </div>    
 );
 
 const stateMapToProps = (state) => {

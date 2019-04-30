@@ -15,11 +15,11 @@ import getVisibleTeachers from './selectors/teachers';
  
 const store = configureStore();
 
-store.subscribe(() => {
-  const state = store.getState();
-  const visibleTeachers = getVisibleTeachers(state.teachers,state.filter);
-  console.log(visibleTeachers);
-});
+// store.subscribe(() => {
+//   const state = store.getState();
+//   const visibleTeachers = getVisibleTeachers(state.teachers,state.filter);
+//   console.log(visibleTeachers);
+// });
 
 //store.dispatch(startAddTeacher({ name: 'Anshul',comments:['c1','c2']}))
 //store.dispatch(startAddTeacher({ name: 'Rahul',comments:['c1','c2']}))
@@ -32,6 +32,8 @@ const jsx = (
     <AppRouter />
   </Provider>
 );
+
+
 let hasRendered = false;
 const renderApp = () => {
   if (!hasRendered) {
@@ -43,6 +45,10 @@ const renderApp = () => {
 };
 
 ReactDOM.render(<LoadingPage />, document.getElementById('app'));
+
+// store.dispatch(startSetTeachers()).then(() => {
+//   ReactDOM.render(jsx, document.getElementById('app'));
+// });
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {

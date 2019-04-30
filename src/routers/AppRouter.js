@@ -23,4 +23,16 @@ const AppRouter = () => (
   </Router>
 );
 
+// const AppRouter = () => (
+//   <Router history={history}>
+//     <div>
+//       <Switch>
+//         <Route path="/" component={LoginPage} exact={true} />
+//         <Route path="/dashboard" component={DashboardPage} />
+//         <Route component={NotFoundPage} />
+//       </Switch>
+//     </div>
+//   </Router>
+// );
+
 export default AppRouter;

@@ -4,8 +4,10 @@ import TeachersListItem from './TeachersListItem';
 import selectTeachers from '../selectors/teachers';
 
 const TeachersList = (props) => (
-    <div>
-        <h1>Teachers List</h1>
+    <div className="content-container">
+        <div className="list-header">
+            <div>Teachers</div>
+        </div>
         {props.teachers.map((teacher) => {
             return <TeachersListItem key={teacher.id} {...teacher} />; 
         })}
