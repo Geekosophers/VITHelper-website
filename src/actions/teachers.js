@@ -11,9 +11,10 @@ export const startAddTeacher = (teacherData = {}) => {
   return (dispatch) => {
     const {
       name = '',
-      comments = []
+      comments = [],
+      like = 0,
     } = teacherData;
-    const teacher = {name,comments};
+    const teacher = {name,comments,like};
 
     database.ref('teachers').push(teacher).then((ref) => {
       dispatch(addTeacher({

@@ -9,6 +9,7 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage';
+import LoginPage from './components/LoginPage';
 import { startAddTeacher, startSetTeachers } from './actions/teachers';
 import { setTextFilter} from './actions/filter';
 import getVisibleTeachers from './selectors/teachers';
@@ -21,9 +22,9 @@ const store = configureStore();
 //   console.log(visibleTeachers);
 // });
 
-//store.dispatch(startAddTeacher({ name: 'Anshul',comments:['c1','c2']}))
-//store.dispatch(startAddTeacher({ name: 'Rahul',comments:['c1','c2']}))
-//store.dispatch(startAddTeacher({ name: 'Raman',comments:['c2','c3']}))
+// store.dispatch(startAddTeacher({ name: 'Anshul',comments:['c1','c2']}))
+// store.dispatch(startAddTeacher({ name: 'Rahul',comments:['c1','c2']}))
+// store.dispatch(startAddTeacher({ name: 'Raman',comments:['c2','c3'],like:1}))
 
 //store.dispatch(setTextFilter('ans'));
 
