@@ -21,7 +21,7 @@ export default class Disclaimer extends React.Component{
                 className="modal"
             >
                 <h3 className="modal__title">Disclaimer</h3>
-                <p className="modal__body">VITHelper is not affliated to VIT University. We created this website to assist students in preparing time tables before course registration. PLease note that VITHelper is not the most reliable source for any content in the course regitration process. We are glad you find this tool but we strongly advice to refer to refer other resources.</p>
+                <p className="modal__body">VITHelper is not related to any official proceedings by VIT. It is an initiative by us to help the students with routine life at VIT. The information on the website consists of reviews collected from other students and is tried to keep as transparent as possible. Any content on this page is not aimed to directly or indirectly attack or defame any person but just to find the right solutions for the students. We try to keep the website updated with all the details. The website is in no way officially related to VIT and is not to be relied on for any official information.</p>
                 <p className="modal__body">-The VITHelper Team</p>
                 <button className="button" onClick={this.closeModal}>I understand</button>
             </Modal>
