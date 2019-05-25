@@ -3,7 +3,7 @@ import React from 'react';
 const WhatsApp = () => (
   <div className="content-container">
     <div className="list-item">
-        <p>In case you couldn't find reviews for your faculty in our database. Ask your fellow by joining our WhatsApp group from one of the following links- </p>
+        <p>If you weren't able to find reviews for your faculty, ask your fellow mates by joining these WhatsApp groups-</p>
         <a className="button button--link whatsapp" href="https://chat.whatsapp.com/EtxzwoNyFG62fyaDjr4rRo" target="_blank">SCOPE</a>
         <a className="button button--link whatsapp" href="https://chat.whatsapp.com/FPOwVIPIXzlJPC0llxqypi" target="_blank">SBST</a>
         <a className="button button--link whatsapp" href="https://chat.whatsapp.com/JphQ8x59oSuAHfrlcm0z26" target="_blank">SCE</a>
