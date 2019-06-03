@@ -18,7 +18,7 @@ export const LoginPage = ({ startLogin }) => (
       <h1>Faculty Review</h1>
       <img src="/images/logo.png" alt="VIT Helper Logo" />
       <p>VIT Helper is aimed to provide you with all the information 
-              you need to keep you all going...</p>
+              you need to keep you going...</p>
       <button className="button" onClick={startLogin}>Login with Google</button>
     </div>
   </div>
