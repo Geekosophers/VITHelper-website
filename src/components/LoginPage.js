@@ -17,8 +17,8 @@ export const LoginPage = ({ startLogin }) => (
     <div className="box-layout__box">
       <h1>Faculty Review</h1>
       <img src="/images/logo.png" alt="VIT Helper Logo" />
-      <p>VIT Helper is aimed to provide you with all the information 
-              you need to keep going...</p>
+      <p>VIT Helper is aimed to provide you with all the information you need to keep going...</p>
+      {/* <p><b><i>Find the right faculty for you!</i></b></p> */}
       <button className="button" onClick={startLogin}>Login with Google</button>
     </div>
   </div>

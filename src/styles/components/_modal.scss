@@ -19,7 +19,12 @@
 
 .modal {
     background: #3b3b3b;
-    max-width: 35rem;
+    @media (min-width: $desktop-breakpoint) {
+        max-width: 50%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        max-width: 35rem;
+      }
     outline: none;
     padding: $s-size;
     text-align: center; 
