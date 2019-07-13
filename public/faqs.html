@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            .header {
+                background: #364051;
+                margin:0;
+            }
+
+            .header__content {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.2rem 0;
+            }
+
+            .header__title {
+            color: white;
+            text-decoration: none;
+            /* h1 {
+                margin: 0;
+            } */
+            }
+
+            * {
+            box-sizing: border-box;
+            }
+
+            html {
+            font-size: 62.5%;
+            }
+
+            body {
+            color: #333;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            }
+
+            button {
+            cursor: pointer;
+            }
+
+            button:disabled {
+            cursor: default;
+            }
+
+            .is-active {
+            font-weight: bold;
+            }
+
+        
+            .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            font-family: Helvetica, Arial, sans-serif;
+            /* padding: 18px; */
+            width: 100%;
+            /* border: none; */
+            text-align: left;
+            outline: none;
+            /* font-size: 15px; */
+            transition: 0.4s;
+
+            border: 1px solid #cacccd;
+            /* height: 50px; */
+            font-size: 1.8rem;
+            font-weight: 300;
+            padding: 1.2rem;
+            }
+
+            .content-container {
+                margin: 0 auto;
+                padding: 0 1.6rem;
+                max-width: 80rem;
+            }
+
+            .active, .accordion:hover {
+            background-color: #f7f7f7; 
+            }
+
+            .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+
+            border: 1px solid darken(#f7f7f7, 7%);
+            color: #333;
+            
+            flex-direction: column;
+            padding: 1.2rem;
+            text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="content-container">
+                <div class="header__content">
+                <a class="header__title" href="http://www.vithelper.in/">
+                    <h1 style="margin:0%;font-family: Helvetica, Arial, sans-serif;">VITHelper</h1>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 30%;" class="content-container">
+            <h2 style="font-family: Helvetica, Arial, sans-serif;">Frequently Asked Questions </h2>
+        <button class="accordion">How does relative grading work?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">In VIT we have grades as S,A,B,C etc .We get it based on the standard derivative which is calculated of the whole class .Depending on how you have performed with respect to other students grades are awarded. S is 10gpa ,A is 9 ,B is 8 and so on.</p>
+        </div>
+
+        <button class="accordion">What is FFCS?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">FFCS is where you can choose your own teachers . A list of teachers come out and the subjects they would be taking in the respective semester .You can make your timetable based on you choice of teachers and make your timetable based on morning or afternoon slots. There is different time slots of the ffcs day provided of the students of yearwise in which they can register for the course.It is based on first come first book basis.</p>
+        </div>
+
+        <button class="accordion">Where to study from?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">In VIT forget the old typical way of studying from thousands of books .Students usually study from the slides uploaded by the teacher and get  the pdf of the book prescribed to them by the faculty </p>
+        </div>
+        
+
+        <button class="accordion">How does CAT 1, CAT 2 and other exams work?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">We have 3 question paper based exams per semester
+            CAT 1 - it is of total 50 marks but is converted into 15.It is a closed book exam 
+            CAT 2 - it is of total 50 marks but is converted into 15.It is an open  notebook 
+    exam.Students can take their notes prepared by them to the exam .Only handwritten notes are allowed in exam.No photocopies, no books are allowed.
+      FAT - it is of total 100 marks but is converted into 40.It is a closed book exam.It is the final exam of each sem
+    </p>
+        </div>
+
+        <button class="accordion">Hostel rules and time restrictions</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Girls:-
+            Weekdays - main gate intime- 7pm
+                                Hostel intime -8:30 pm
+             Weekends -main gate intime- 6pm
+                                Hostel intime -8:00 pm
+      Boys :-
+     
+        </div>
+
+        <button class="accordion">How does the night library work?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">For girls- Buses come near the girls’ hostel with the 1st bus at 8:30pm ,9 pmand the last bus at 9:30pm to take them to the library and regular buses are available to take the girls from library to the hostel till 12 midnight(which is the last bus for girls). Girls cannot goto library by anything bus bus.</p>
+        </div>
+
+        <button class="accordion">How many times a month can we apply for a 6 hour leave?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Girls can apply for 6 hour leave for maximum 4 times a month on weekends</p>
+        </div>
+
+        <button class="accordion">What  will happen if  we are late to main gate or hostel gate?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Girls:- If you enter the main gate or hostel gate after in-time you will have to pay a fine of Rs 100.
+
+            Boys:-
+            </p>
+        </div>
+
+        <button class="accordion"> What if we lose our ID card?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">You cannot survive in VIT without your ID card . You will be fined Rs 500 and can get a new ID card.</p>
+        </div>
+
+        <button class="accordion">What if the tag of my ID is torn?
+        </button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">You can get it in Main Building  in a room on the ground floor by paying rs 70 max.
+        </p>
+        </div>
+
+        <button class="accordion">What is the deadline of DAs for?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">If you upload your DA after 11:59 pm of the due date .Then it cannot be uploaded on Vtop and it is entirely on the teacher if he/she wants to consider the DA and award marks. Mostly full marks cannot be given if you miss your DA deadlines.</p>
+        </div>
+
+        <button class="accordion">Where do we have to go for submitting the official papers?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">It is submitted in the Main Building.</p>
+        </div>
+
+        <button class="accordion">How to grow in VIT personally?
+        </button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Apart from academics you need to develop yourself more , so you can join any of the various clubs and chapters in VIT of your interest  which will help you grow and contact with seniors thus help you making a great network in VIT.</p>
+        </div>
+
+        <button class="accordion">What are the outing rules for girls?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Girls are not allowed to go out of the campus for the 1st 3 months .After that they can go out for  maximum 2 hours per day and they can go out on weekends for maximum 6 hours but only 4 weekends out of 8 per month.</p>
+        </div>
+
+        <button class="accordion">Ragging issues in VIT?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Being a student of VIT I can guarantee there is no ragging issue .It is a friendly environment for the freshers to start with their engineering life.</p>
+        </div>
+
+        <button class="accordion">Any idea of the total number of students in VIT campus (Vellore) ?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Around 30k students are there in VIT campus</p>
+        </div>
+
+        <button class="accordion">What is the fee we have to pay for the books?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Study in VIT can be done free of cost  by online materials</p>
+        </div>
+
+        <button class="accordion">why they are calling the freshers one week before?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Students are being called to vit  one week before for orientation, freshers’ can meet and make friends and be comfortable in VIT before the classes start .</p>
+        </div>
+
+        <button class="accordion">How many companies come to VIT?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">By the time this batch  reach it will be 700 companies.</p>
+        </div>
+
+        <button class="accordion">When should we have to submit certificates?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">It will be informed to you by VIT with the list of certifcates to be submitted and the time it has to be submitted.</p>
+        </div>
+
+        <button class="accordion"> When is add/drop?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">10th ,11th ,12th July</p>
+        </div>
+
+        <button class="accordion"> Is there waiting list option in Add/Drop?  Can our waiting get clearer in Add drop?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Waiting list is removed before and there is no concept of waiting list in add/drop!
+
+            Waiting list will get clear before add/drop someone who hasn't paid the payment for re-registration/additional course
+            </p>
+        </div>
+
+        <button class="accordion"> Even I am confused what is exactly audit course ?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">It is just a course where you don’t get a grade or credits but you take it cuz you just wanna learn!!</p>
+        </div>
+
+        <button class="accordion">But payments for re registration  can be done after add and drop also right?</button>
+        <div class="panel">
+        <p style="font-family: Helvetica, Arial, sans-serif;">Payments are open till the 13th</p>
+        </div>
+    </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+        </script>
+
+    </body>
+</html>
