@@ -1,15 +1,18 @@
 .box-layout {
-  align-items: center;
-  background: white;
+  // align-items: center;
+  // background: white;
+  background: #c5b6a6;
   background-size: cover;
   display: flex;
-  //height: 100vh;
-  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
   width: 100vw;
 }
 
 .box-layout__box {
-  background: white;
+  // background: white;
+  background: #c5b6a6;
   text-align: center;
   width: 50rem;
 }
@@ -17,4 +20,13 @@
 .box-layout__title {
   margin: 0 0 $m-size 0;
   line-height: 1;
+}
+
+.box-layout__maxwidth{
+  padding: 10px;
+}
+
+.box-layout__justifycontent{
+  display: flex;
+  justify-content: center;
 }

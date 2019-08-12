@@ -22,8 +22,8 @@ const store = configureStore();
 //   console.log(visibleTeachers);
 // });
 
-// store.dispatch(startAddTeacher({ name: 'Anshul',comments:['c1','c2']}))
-// store.dispatch(startAddTeacher({ name: 'Rahul',comments:['c1','c2']}))
+// store.dispatch(startAddTeacher({ name: 'Paper1',comments:[<a>Hello</a>]}))
+// store.dispatch(startAddTeacher({ name: 'Paper2',comments:['link2']}))
 
 // store.dispatch(startAddTeacher({ name: 'AJU D', comments:['He is very good','4 out of 5. strict for project component especially for the documentation part otherwise he is very good']}))
 // store.dispatch(startAddTeacher({ name: 'AKILA VICTOR', comments:['Akila victor is strict','Padhata kaisa h no idea But strict hai','4/5 (1 review)']}))

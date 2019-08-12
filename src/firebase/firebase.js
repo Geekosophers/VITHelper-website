@@ -11,6 +11,7 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
+const storage = firebase.storage();
 
 // database.ref().set({
 //   teacher1:{
@@ -59,4 +60,4 @@ const database = firebase.database();
 //  });
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, googleAuthProvider, database as default };
+export { storage, firebase, googleAuthProvider, database as default };
