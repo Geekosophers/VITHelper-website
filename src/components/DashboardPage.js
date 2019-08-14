@@ -5,12 +5,12 @@ import Disclaimer from './Disclaimer';
 import ImageUpload from './ImageUpload';
 import WhatsApp from './WhatsApp';
 import ShareButton from './ShareButton';
-import Ad from './Ad';
+// import Ad from './Ad';
 
 
 const DashboardPage = () => (
   <div>
-    <Ad />
+    {/* <Ad /> */}
     {/* <ImageUpload /> */}
     {/* <Disclaimer /> */}
     <TeachersListFilter />
