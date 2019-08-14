@@ -4,13 +4,13 @@ import { setTextFilter } from '../actions/filter';
 
 const TeachersListFilter = (props) => (
     <div className="content-container">
-        <h3>Search for Faculty:</h3>
+        <h3>Search for Paper:</h3>
         <div className="input-group">
         <div className="input-group__item">
             <input 
                 type="text" 
                 className="text-input" 
-                placeholder="Search Faculty by Name"
+                placeholder="Course Name/Code"
                 value={props.filter.text} onChange={(e) => {
                 props.dispatch(setTextFilter(e.target.value));
             }}/>

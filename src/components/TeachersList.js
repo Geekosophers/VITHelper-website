@@ -6,7 +6,7 @@ const TeachersList = (props) => {
     return(
         <div className="content-container">
             <div className="list-header">
-                <div>Teachers</div>
+                <div>Papers</div>
             </div>
             {props.teachers.map((teacher) => {
                 return <TeachersListItem key={teacher.id} teacher={teacher} />; 

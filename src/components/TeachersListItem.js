@@ -17,14 +17,14 @@ export class TeachersListItem extends React.Component{
         var gsReference = storage.refFromURL(`gs://vithelper-32e0b.appspot.com/images/${this.props.teacher.name}.pdf`);
         gsReference.getDownloadURL().then(function(url) {
             image.url=url;
-            console.log("url"+image.url);
+            // console.log("url"+image.url);
           });
     }
 
     handleComments(e) {
         this.setState((prevState) => {
             return{
-                count:true
+                count:!this.state.count
             };            
         });
     }
@@ -59,7 +59,7 @@ class TeacherComment extends React.Component {
         var gsReference = storage.refFromURL(`gs://vithelper-32e0b.appspot.com/images/${this.props.commentText}.pdf`);
         gsReference.getDownloadURL().then(function(url) {
             image.url=url;
-            console.log("url"+image.url);
+            // console.log("url"+image.url);
           });
     }
 
@@ -68,6 +68,7 @@ class TeacherComment extends React.Component {
             <div>
                 {/* <embed src={} className="doc-view" /> */}
                 <a href={this.props.commentText} target="_blank">View the paper</a>
+                <button className="show-for-mobile content-container"><a href="whatsapp://send?text=http://www.vithelper.in/">Share Paper</a></button>
             </div>
         );
     }
