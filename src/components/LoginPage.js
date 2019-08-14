@@ -17,7 +17,7 @@ export const LoginPage = ({ startLogin }) => (
     <div className="box-layout__box box-layout__maxwidth">
       <h1>Question Papers</h1>
       <img src="/images/logo.png" alt="VIT Helper Logo" />
-      <p>VIT Helper is aimed to provide you with all the information you need to keep going...</p>
+      <p>VITHelper is aimed to provide you with all the information you need to keep going...</p>
       <button className="button" onClick={startLogin}>Login with Google</button>
       <p></p>
       <div>Powered By- <a href="https://www.instagram.com/renati_official/" target="_blank"><span className="login-font">RENATI</span></a> <sup><i style={{fontSize:"12px"}} className="fa">&#xf08e;</i></sup></div>
