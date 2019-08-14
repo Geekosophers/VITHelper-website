@@ -2,3 +2,10 @@
     height: 800px;
     width: 800px;
 }
+
+.doc-view__links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}

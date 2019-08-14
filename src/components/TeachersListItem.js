@@ -65,10 +65,10 @@ class TeacherComment extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="doc-view__links">
                 {/* <embed src={} className="doc-view" /> */}
-                <a href={this.props.commentText} target="_blank">View the paper</a>
-                <button className="show-for-mobile content-container"><a href="whatsapp://send?text=http://www.vithelper.in/">Share Paper</a></button>
+                <a href={this.props.commentText} target="_blank"><button className="button">View the paper</button></a>
+                <a href="whatsapp://send?text=http://www.vithelper.in/"><button className="show-for-mobile button button__share">Share Paper</button></a>
             </div>
         );
     }
