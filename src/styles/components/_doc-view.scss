@@ -7,5 +7,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    @media (min-width: $desktop-breakpoint) {
+        justify-content: left;
+        margin: 10px;    
+    }
+    justify-content: space-evenly;
 }

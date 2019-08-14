@@ -15,7 +15,7 @@ const DashboardPage = () => (
     {/* <Disclaimer /> */}
     <TeachersListFilter />
     <TeachersList />
-    {/* <WhatsApp /> */}
+    <WhatsApp />
     <ShareButton />
   </div>
 );

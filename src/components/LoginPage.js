@@ -20,7 +20,7 @@ export const LoginPage = ({ startLogin }) => (
       <p>VIT Helper is aimed to provide you with all the information you need to keep going...</p>
       <button className="button" onClick={startLogin}>Login with Google</button>
       <p></p>
-      <div>Powered By- <span className="login-font">RENATI</span></div>
+      <div>Powered By- <a href="https://www.instagram.com/renati_official/" target="_blank"><span className="login-font">RENATI</span></a> <sup><i style={{fontSize:"12px"}} className="fa">&#xf08e;</i></sup></div>
     </div>
   </div>
 </div>
