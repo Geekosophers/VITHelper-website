@@ -34,7 +34,7 @@ export class TeachersListItem extends React.Component{
             <div>
                 <div>{this.handleUrl()}</div>
                 <div className="list-item"  onClick={this.handleComments}>
-                    <button className="button2 button--link">{this.props.teacher.name}</button>
+                    <div className="button2 button--link">{this.props.teacher.name}</div>
                     {
                         this.state.count && <TeacherComment key={this.props.teacher.name} commentText={this.state.url}/>
                     }
@@ -68,7 +68,7 @@ class TeacherComment extends React.Component {
             <div className="doc-view__links">
                 {/* <embed src={} className="doc-view" /> */}
                 <a href={this.props.commentText} target="_blank"><button className="button">View Paper</button></a>
-                <a href="whatsapp://send?text=http://www.vithelper.in/"><button className="show-for-mobile button button__share">Share Paper</button></a>
+                {/* <a href="whatsapp://send?text=http://www.vithelper.in/"><button className="show-for-mobile button button__share">Share</button></a> */}
                 {/* <button className="show-for-desktop button button__share">Share Paper</button> */}
             </div>
         );
