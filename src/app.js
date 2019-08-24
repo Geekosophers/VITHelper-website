@@ -22,12 +22,26 @@ const store = configureStore();
 //   console.log(visibleTeachers);
 // });
 
-// store.dispatch(startAddTeacher({ name: 'ADVANCED CONTROL THEORY EEE4018',comments:['ADVANCED CONTROL THEORY EEE4018']}))
-// store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 D1',comments:['AODD MAT2002 D1']}))
-// store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 D1 WS',comments:['AODD MAT2002  D1 WS']}))
-// store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 E2',comments:['AODD MAT2002 E2']}))
-// store.dispatch(startAddTeacher({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A2',comments:['APPLIED LINEAR ALGEBRA MAT3004 A2']}))
-// store.dispatch(startAddTeacher({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C1',comments:['APPLIED LINEAR ALGEBRA MAT3004 C1']}))
+// store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 B1 2019',comments:['AOD MAT2002 B1 2019']}))
+// store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 FS 2019 B2',comments:['AOD MAT2002 FS 2019 B2']}))
+// store.dispatch(startAddTeacher({ name: 'APPLIED LINEAR ALGEBRA A1 FS 2019',comments:['APPLIED LINEAR ALGEBRA A1 FS 2019']}))
+// store.dispatch(startAddTeacher({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C1-2019',comments:['APPLIED LINEAR ALGEBRA MAT3004 C1-2019']}))
+// store.dispatch(startAddTeacher({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D1-NEW',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 D1-NEW']}))
+// store.dispatch(startAddTeacher({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D2-NEW',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 D2-NEW']}))
+// store.dispatch(startAddTeacher({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 FS D1',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 FS D1']}))
+// store.dispatch(startAddTeacher({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 FS D2',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 FS D2']}))
+// store.dispatch(startAddTeacher({ name: 'GRUNDSTUFE DEUTSCH GER1001 B1',comments:['GRUNDSTUFE DEUTSCH GER1001 B1']}))
+// store.dispatch(startAddTeacher({ name: 'MOBILE APPLICATION DEVELOPMENT ITE1016 B1',comments:['MOBILE APPLICATION DEVELOPMENT ITE1016 B1']}))
+// store.dispatch(startAddTeacher({ name: 'NATURAL DISASTER MITIGATION AND MANAGEMENT CLE1010 B1',comments:['NATURAL DISASTER MITIGATION AND MANAGEMENT CLE1010 B1']}))
+// store.dispatch(startAddTeacher({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 B2',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 B2']}))
+// store.dispatch(startAddTeacher({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 C1',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 C1']}))
+// store.dispatch(startAddTeacher({ name: 'SIGNALS AND SYSTEMS ECE1004',comments:['SIGNALS AND SYSTEMS ECE1004']}))
+
+
+// store.dispatch(startAddTeacher({ name: 'FRANCAIS QUOTIDIEN FRE1001 A2',comments:['FRANCAIS QUOTIDIEN FRE1001 A2']}))
+// store.dispatch(startAddTeacher({ name: 'JAVA PROGRAMMING CSE1007 G2',comments:['JAVA PROGRAMMING CSE1007 G2']}))
+// store.dispatch(startAddTeacher({ name: 'VIRTUALIZATION CSE4011 E2',comments:['VIRTUALIZATION CSE4011 E2']}))
+// store.dispatch(startAddTeacher({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001']}))
 // store.dispatch(startAddTeacher({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C1 WS',comments:['APPLIED LINEAR ALGEBRA MAT3004 C1 WS']}))
 // store.dispatch(startAddTeacher({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1',comments:['ARTIFICIAL INTELLIGENCE CSE3013 B1']}))
 // store.dispatch(startAddTeacher({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1-2',comments:['ARTIFICIAL INTELLIGENCE CSE3013 B1-2']}))
