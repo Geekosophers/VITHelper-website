@@ -1,0 +1,376 @@
+.project-desktop {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/dodge-it.png');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-desktop-skills {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/skills.png');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-desktop-pho {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/projects/perspective-homography-opencv.jpg');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-desktop-eye-helper {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/projects/eye-helper.jpg');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-desktop-cnn-calc {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/projects/cnn-calc.jpg');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-desktop-afbw {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/projects/auto-facebook-birthday-wish.png');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-desktop-breakout-dcqn {
+    @media (min-width: $desktop-breakpoint) {
+        background: url('/images/projects/breakout-dcqn.jpg');
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;    
+    }
+}
+
+.project-mobile {
+    @media (min-width: $desktop-breakpoint) {
+        display: none;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        width: 100vw;
+    }
+}
+
+.project-text {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 6rem;
+        position: absolute;
+        top: 5rem;
+        right: 35rem;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        position: relative;
+        top: 1rem;
+        text-align: center;
+    }
+}
+
+.project-text-afbw {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 6rem;
+        position: absolute;
+        top: 5rem;
+        right: -10rem;
+        max-width: 50%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        position: relative;
+        top: 1rem;
+        text-align: center;
+    }
+}
+
+.project-text-pho {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        position: absolute;
+        top: 5rem;
+        right: -10rem;
+        max-width: 50%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        position: relative;
+        top: 1rem;
+        text-align: center;
+    }
+}
+
+
+.project-text-eye-helper {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 6rem;
+        position: absolute;
+        top: 5rem;
+        right: 25rem;
+        max-width: 50%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        position: relative;
+        top: 1rem;
+        text-align: center;
+    }
+}
+
+.project-text-breakout-dcqn {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 6rem;
+        position: absolute;
+        top: 5rem;
+        right: 7rem;
+        max-width: 50%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        position: relative;
+        top: 1rem;
+        text-align: center;
+    }
+}
+
+.project-content {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 20rem;
+        right: 10rem;
+        align-content: flex-end;
+        max-width: 30%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        nt-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+        position: relative;
+        top: 0.8rem;
+        padding: 0 5%;
+    }
+}
+
+.project-content-afbw {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 32rem;
+        right: 10rem;
+        align-content: flex-end;
+        max-width: 30%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        nt-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+        position: relative;
+        top: 0.8rem;
+        padding: 0 5%;
+    }
+}
+
+.project-content-breakout-dcqn {
+    @media (min-width: $desktop-breakpoint) {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 32rem;
+        right: 10rem;
+        align-content: flex-end;
+        max-width: 30%;
+    }
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        nt-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+        position: relative;
+        top: 0.8rem;
+        padding: 0 5%;
+    }
+}
+
+
+
+.project-align-view {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: $m-size;
+    align-items: center;
+}
+
+.project-align-view-more {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: $m-size;
+    align-items: center;
+    display: none;
+}
+
+.auto-facebook-birthday-wish {
+    background: url('/images/projects/auto-facebook-birthday-wish.png');
+    @media (min-width: $desktop-breakpoint) {
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+      @media (max-width: $desktop-breakpoint - .01rem) {
+        background-size: cover;
+        width: 25rem;
+        height: 25rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+}
+
+.two-cars {
+    background: url('/images/projects/two-cars.png');
+    @media (min-width: $desktop-breakpoint) {
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+      @media (max-width: $desktop-breakpoint - .01rem) {
+        background-size: cover;
+        width: 25rem;
+        height: 25rem;
+        margin: 10px;
+        margin-top: 0;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+}
+
+.cnn-calc {
+    background: url('/images/projects/cnn-calc.jpg');
+    @media (min-width: $desktop-breakpoint) {
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+      @media (max-width: $desktop-breakpoint - .01rem) {
+        background-size: cover;
+        width: 25rem;
+        height: 25rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+}
+
+.eye-helper {
+    background: url('/images/projects/eye-helper.jpg');
+    @media (min-width: $desktop-breakpoint) {
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+      @media (max-width: $desktop-breakpoint - .01rem) {
+        background-size: cover;
+        width: 25rem;
+        height: 25rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+}
+
+.breakout-dcqn {
+    background: url('/images/projects/breakout-dcqn.jpg');
+    @media (min-width: $desktop-breakpoint) {
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+      @media (max-width: $desktop-breakpoint - .01rem) {
+        background-size: cover;
+        width: 25rem;
+        height: 25rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+}
+
+.perspective-homography-opencv {
+    background: url('/images/projects/perspective-homography-opencv.jpg');
+    @media (min-width: $desktop-breakpoint) {
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+      @media (max-width: $desktop-breakpoint - .01rem) {
+        background-size: cover;
+        width: 25rem;
+        height: 25rem;
+        margin: 10px;
+        box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+      }
+}
+
+.project-onButtonClick {
+    display: block;
+}
