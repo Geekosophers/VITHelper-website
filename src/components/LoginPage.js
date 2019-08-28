@@ -18,6 +18,7 @@ export const LoginPage = ({ startLogin }) => (
       {/* <h1>Question Papers</h1> */}
       <img src="/images/logo.png" height="200px" width="200px" alt="VIT Helper Logo" />
       {/* <p>VITHelper is aimed to provide you with all the information you need to keep going...</p> */}
+      <p></p>
       {/* <button className="button" onClick={startLogin}>Login with Google</button> */}
       <p></p>
       <p><i>Hello Human! We hope that your CATs went well. Wish you luck for the semester.
