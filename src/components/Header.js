@@ -14,8 +14,8 @@ export const Header = ({ startLogout }) => (
         <div>
           {/* {console.log(window.location.pathname=="/dashboard"? "yes": "no")} */}
           <span className="show-for-desktop">
-            <Link to="/dashboard"><button className="button button--link" >{window.location.pathname=="/dashboard"? <u>Papers</u>:<span>Papers</span>}</button></Link> | 
-            <Link to="/materials"><button className="button button--link" >{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</button></Link> | 
+            {/* <Link to="/dashboard"><button className="button button--link" >{window.location.pathname=="/dashboard"? <u>Papers</u>:<span>Papers</span>}</button></Link> |  */}
+            {/* <Link to="/materials"><button className="button button--link" >{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</button></Link> |  */}
           </span>
           {/* {startLogout()} */}
           <button className="button button--link" onClick={startLogout}>Logout</button>
