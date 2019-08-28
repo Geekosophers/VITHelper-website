@@ -5,7 +5,8 @@ import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
-  <div><header className="header">
+  <div>
+    <header className="header">
     <div className="content-container">
       <div className="header__content">
         <Link className="header__title" to="/dashboard">
@@ -17,12 +18,13 @@ export const Header = ({ startLogout }) => (
             {/* <Link to="/dashboard"><button className="button button--link" >{window.location.pathname=="/dashboard"? <u>Papers</u>:<span>Papers</span>}</button></Link> |  */}
             {/* <Link to="/materials"><button className="button button--link" >{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</button></Link> |  */}
           </span>
-          {/* {startLogout()} */}
           <button className="button button--link" onClick={startLogout}>Logout</button>
         </div>
       </div>
     </div>
-  </header><MatPaperButton /></div>
+    </header>
+  {/* <MatPaperButton /> */}
+  </div>
 );
 
 const mapDispatchToProps = (dispatch) => ({

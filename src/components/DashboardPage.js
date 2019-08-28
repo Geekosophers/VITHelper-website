@@ -17,10 +17,10 @@ const DashboardPage = () => (
     {/* <ImageUpload /> */}
     {/* <Disclaimer /> */}
     {/* <MatPaperButton /> */}
-    <TeachersListFilter />
+    {/* <TeachersListFilter />
     <TeachersList />
     <WhatsApp />
-    <ShareButton />
+    <ShareButton /> */}
   </div>
 );
 
