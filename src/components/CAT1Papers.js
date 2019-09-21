@@ -1,30 +1,19 @@
 import React from 'react';
-import TeachersList from './TeachersList';
-import TeachersListFilter from './TeachersListFilter';
-import Disclaimer from './Disclaimer';
-import ImageUpload from './ImageUpload';
+import Cat1papersList from './Cat1papersList';
+import Cat1papersListFilter from './Cat1papersListFilter';
 import WhatsApp from './WhatsApp';
 import ShareButton from './ShareButton';
-// import MatPaperButton from './MatPaperButton';
-import Project from './Project';
-import Materials from './Materials';
-import Header from './Header';
-// import Ad from './Ad';
 
-const DashboardPage = () => (
+const CAT1Papers = () => (
   <div>
-    {/* <Ad /> */}
-    {/* <ImageUpload /> */}
-    {/* <Disclaimer /> */}
-    {/* <MatPaperButton /> */}
-    {/* <TeachersListFilter />
-    <TeachersList />
+    <Cat1papersListFilter />
+    <Cat1papersList />
     <WhatsApp />
-    <ShareButton /> */}
+    <ShareButton />
   </div>
 );
 
-export default DashboardPage;
+export default CAT1Papers;
 
 
 

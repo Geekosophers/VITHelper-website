@@ -1,0 +1,202 @@
+.ham {
+    padding: 5px 18px 5px 5px;
+}
+
+.ham__div {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+}
+
+.ham__div1 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    // -webkit-animation-name: ham; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: ham;
+    -webkit-animation: ham1 0.5s linear;
+    // animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ham1 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(45deg) translate(5px, 5px);}
+}
+
+@keyframes ham1 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(45deg) translate(5px, 5px);}
+}
+
+.ham__div2 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    // -webkit-animation-name: ham; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: ham;
+    -webkit-animation: ham2 0.5s linear;
+    // animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ham2 {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+@keyframes ham2 {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+.ham__div3 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    // -webkit-animation-name: ham; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: ham;
+    -webkit-animation: ham3 0.5s linear;
+    // animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ham3 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-45deg) translate(8px, -8px);}
+}
+
+@keyframes ham3 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-45deg) translate(8px, -8px);}
+}
+
+.ham__div11 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    // -webkit-animation-name: ham; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: ham;
+    -webkit-animation: ham11 0.5s linear;
+    // animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ham11 {
+    from {-webkit-transform: rotate(45deg) translate(5px, 5px);}
+    to {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+}
+
+@keyframes ham11 {
+    from {-webkit-transform: rotate(45deg) translate(5px, 5px);}
+    to {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+}
+
+.ham__div22 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    // -webkit-animation-name: ham; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: ham;
+    -webkit-animation: ham22 0.5s linear;
+    // animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ham22 {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes ham22 {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.ham__div33 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    // -webkit-animation-name: ham; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: ham;
+    -webkit-animation: ham33 0.5s linear;
+    // animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes ham33 {
+    from {-webkit-transform: rotate(-45deg) translate(8px, -8px);}
+    to {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+}
+
+@keyframes ham33 {
+    from {-webkit-transform: rotate(-45deg) translate(8px, -8px);;}
+    to {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+}
+
+// .change .ham__div1 {
+//     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+//     transform: rotate(-45deg) translate(-9px, 6px);
+// }
+
+// .change .ham__div2 {opacity: 0;}
+
+// .change .ham__div3 {
+//     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+//     transform: rotate(45deg) translate(-8px, -8px);
+// }
+
+.ham__nav {
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: navigation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: navigation;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes navigation {
+    from {height:0;}
+    to {height: 168px;}
+}
+
+@keyframes navigation {
+    from {height:0;}
+    to {height: 168px;}
+}
+
+.ham__nav1 {
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: navigation1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: navigation1;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes navigation1 {
+    from {height:168px;}
+    to {height: 0;}
+}
+
+@keyframes navigation1 {
+    from {height:168px;}
+    to {height: 0;}
+}

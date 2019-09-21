@@ -68,8 +68,10 @@
 
 .button-matpap__disp {
   display: flex;
-  padding: 5px 10px 5px 10px;
+  // padding: 5px 10px 5px 10px;
   // align-content: center;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $dark-blue;
   border: 2px solid $dark-blue;
 }

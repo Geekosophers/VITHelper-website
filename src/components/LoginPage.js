@@ -15,14 +15,15 @@ export const LoginPage = ({ startLogin }) => (
   </header>
   <div className="box-layout__justifycontent">
     <div className="box-layout__box box-layout__maxwidth">
-      {/* <h1>Question Papers</h1> */}
-      <img src="/images/logo.png" height="200px" width="200px" alt="VIT Helper Logo" />
-      {/* <p>VITHelper is aimed to provide you with all the information you need to keep going...</p> */}
+      <h1>Question Papers</h1>
+      <img src="/images/logo.png" alt="VIT Helper" className="w3-container w3-center w3-animate-opacity" />
+      {/* <iframe src="/images/loader.html" height="90%" width="90%" style={{border:'none'}}></iframe> */}
+      <p>VITHelper is aimed to provide you with all the information you need to keep going...</p>
       <p></p>
-      {/* <button className="button" onClick={startLogin}>Login with Google</button> */}
+      <button className="button" onClick={startLogin}>Login with Google</button>
       <p></p>
-      <div><i>Hello Human! We hope that your CATs went well. Wish you luck for the semester.
-<div>It's time for a break. We will be back with more features soon...</div></i></div>
+      {/* <div><i>Hello Human! We hope that your CATs went well. Wish you luck for the semester.
+<div>It's time for a break. We will be back with more features soon...</div></i></div> */}
       <div>Powered By- <a href="https://www.instagram.com/renati_official/" target="_blank"><span className="login-font">RENATI</span></a> <sup><i style={{fontSize:"12px"}} className="fa">&#xf08e;</i></sup></div>
     </div>
   </div>

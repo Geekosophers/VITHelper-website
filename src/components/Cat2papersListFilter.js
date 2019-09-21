@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setTextFilter } from '../actions/filter';
 
-const TeachersListFilter = (props) => (
+const Cat2papersListFilter = (props) => (
     <div className="content-container">
-        <h3>Search for Paper:</h3>
+        <h3>Search for Cat-2 Paper:</h3>
         <div className="input-group">
         <div className="input-group__item">
             <input 
@@ -25,4 +25,4 @@ const stateMapToProps = (state) => {
     };
 };
 
-export default connect(stateMapToProps)(TeachersListFilter);
+export default connect(stateMapToProps)(Cat2papersListFilter);

@@ -10,9 +10,11 @@ import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage';
 import LoginPage from './components/LoginPage';
-import { startAddTeacher, startSetTeachers } from './actions/teachers';
+import { startAddCat1paper, startSetCat1papers } from './actions/cat1papers';
+import { startAddCat2paper, startSetCat2papers } from './actions/cat2papers';
+import { startAddFatpaper, startSetFatpapers } from './actions/fatpapers';
 import { setTextFilter} from './actions/filter';
-import getVisibleTeachers from './selectors/teachers';
+// import getVisibleTeachers from './selectors/teachers';
  
 const store = configureStore();
 
@@ -21,6 +23,256 @@ const store = configureStore();
 //   const visibleTeachers = getVisibleTeachers(state.teachers,state.filter);
 //   console.log(visibleTeachers);
 // });
+
+
+//////////////////CAT-1 Papers//////////////////////////////
+// store.dispatch(startAddCat1paper({ name: 'ADVANCED CONTROL THEORY EEE4018',comments:['ADVANCED CONTROL THEORY EEE4018']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 B1 2019',comments:['AODD MAT2002 B1 2019']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 D1',comments:['AODD MAT2002 D1']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 D1 WS',comments:['AODD MAT2002  D1 WS']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 E2',comments:['AODD MAT2002 E2']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 FS 2019 B2',comments:['AODD MAT2002 FS 2019 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A1 FS 2019',comments:['APPLIED LINEAR ALGEBRA MAT3004 A1 FS 2019']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A2',comments:['APPLIED LINEAR ALGEBRA MAT3004 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C1',comments:['APPLIED LINEAR ALGEBRA MAT3004 C1']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C1-2019',comments:['APPLIED LINEAR ALGEBRA MAT3004 C1-2019']}))
+// store.dispatch(startAddCat1paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C1 WS',comments:['APPLIED LINEAR ALGEBRA MAT3004 C1 WS']}))
+// store.dispatch(startAddCat1paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1',comments:['ARTIFICIAL INTELLIGENCE CSE3013 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1-2',comments:['ARTIFICIAL INTELLIGENCE CSE3013 B1-2']}))
+// store.dispatch(startAddCat1paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B2',comments:['ARTIFICIAL INTELLIGENCE CSE3013 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'BASIC ELECTRICAL AND ELECTRONICS ENGINEERING EEE1001 B1',comments:['EEE1001 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'BASIC ELECTRICAL AND ELECTRONICS ENGINEERING EEE1001 B2',comments:['EEE1001 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'BASIC ELECTRICAL AND ELECTRONICS ENGINEERING EEE1001 B2-FS',comments:['EEE1001 B2-FS']}))
+// store.dispatch(startAddCat1paper({ name: 'BIO BUSINESS BIT1009',comments:['BIO BUSINESS BIT1009']}))
+// store.dispatch(startAddCat1paper({ name: 'BIOBUSINESS BIT1009 A1',comments:['BIOBUSINESS BIT1009 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'BUSINESS ANALYTICS FOR ENGINEERS MGT1051 C1',comments:['BUSINESS ANALYTICS FOR ENGINEERS MGT1051 C1']}))
+// store.dispatch(startAddCat1paper({ name: 'BUSINESS ANALYTICS FOR ENGINEERS MGT1051 C2',comments:['BUSINESS ANALYTICS FOR ENGINEERS MGT1051 C2']}))
+// store.dispatch(startAddCat1paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 B1',comments:['CALCULUS FOR ENGINEERS MAT1011 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 B2',comments:['CALCULUS FOR ENGINEERS MAT1011 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 C1',comments:['CALCULUS FOR ENGINEERS MAT1011 C1']}))
+// store.dispatch(startAddCat1paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 C2',comments:['CALCULUS FOR ENGINEERS MAT1011 C2']}))
+// store.dispatch(startAddCat1paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 D1',comments:['CALCULUS FOR ENGINEERS MAT1011 D1']}))
+// store.dispatch(startAddCat1paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 D1-WS',comments:['CALCULUS FOR ENGINEERS MAT1011 D1-WS']}))
+// store.dispatch(startAddCat1paper({ name: 'COMPUTER ARCHITECTURE AND ORGANIZATION CSE2001',comments:['COMPUTER ARCHITECTURE AND ORGANIZATION CSE2001']}))
+// store.dispatch(startAddCat1paper({ name: 'COMPUTER ARCHITECTURE CSC2004',comments:['COMPUTER ARCHITECTURE CSC2004']}))
+// store.dispatch(startAddCat1paper({ name: 'CYBER SECURITY CSE4003 A2',comments:['CYBER SECURITY CSE4003 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D1',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 D1']}))
+// store.dispatch(startAddCat1paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D1-NEW',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 D1-NEW']}))
+// store.dispatch(startAddCat1paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D2',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 D2']}))
+// store.dispatch(startAddCat1paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D2-NEW',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 D2-NEW']}))
+// store.dispatch(startAddCat1paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 FS D1',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 FS D1']}))
+// store.dispatch(startAddCat1paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 FS D2',comments:['DATABASE MANAGEMENT SYSTEMS CSE2004 FS D2']}))
+// store.dispatch(startAddCat1paper({ name: 'DATA MINING TECHNIQUES ITE2006',comments:['DATA MINING TECHNIQUES ITE2006']}))
+// store.dispatch(startAddCat1paper({ name: 'DATA VISUALIZATION CSE3020 C1',comments:['DATA VISUALIZATION CSE3020 C1']}))
+// store.dispatch(startAddCat1paper({ name: 'DEVELOPMENTAL BIOLOGY AND REGENERATIVE MEDICINE BIT2011',comments:['BIT2011']}))
+// store.dispatch(startAddCat1paper({ name: 'DEVELOPMENTAL BIOLOGY AND REGENERATIVE MEDICINE BIT2011-2',comments:['BIT2011-2']}))
+// store.dispatch(startAddCat1paper({ name: 'DIGITAL FORENSICS CSE4004',comments:['DIGITAL FORENSICS CSE4004']}))
+// store.dispatch(startAddCat1paper({ name: 'DIGITAL LOGIC AND DESIGN CSE1003 (CAT1 OR CAT2)',comments:['DIGITAL LOGIC AND DESIGN CSE1003 (CAT1 OR CAT2)']}))
+// store.dispatch(startAddCat1paper({ name: 'DOWN STREAM PROCESSING BIT2007',comments:['DOWN STREAM PROCESSING BIT2007']}))
+// store.dispatch(startAddCat1paper({ name: 'EMBEDDED SYSTEM DESIGN CSE3006',comments:['EMBEDDED SYSTEM DESIGN CSE3006']}))
+// store.dispatch(startAddCat1paper({ name: 'ENGINEERING PHYSICS PHY1001 B1',comments:['ENGINEERING PHYSICS PHY1001 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'ENGINEERING PHYSICS PHY1001 B2',comments:['ENGINEERING PHYSICS PHY1001 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'ENGINEERING PHYSICS PHY1001 E2',comments:['ENGINEERING PHYSICS PHY1001 E2']}))
+// store.dispatch(startAddCat1paper({ name: 'ENGINEERING THERMODYNAMICS MEE1003 A1',comments:['ENGINEERING THERMODYNAMICS MEE1003 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 A1',comments:['ENVIRONMENTAL SCIENCES CHY1002 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 A2',comments:['ENVIRONMENTAL SCIENCES CHY1002 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 F2',comments:['ENVIRONMENTAL SCIENCES CHY1002 F2']}))
+// store.dispatch(startAddCat1paper({ name: 'ESPANOL FUNDAMENTAL ESP1001 B1',comments:['ESPANOL FUNDAMENTAL ESP1001 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'FLUID MECHANICS MEE1004 D2',comments:['FLUID MECHANICS MEE1004 D2']}))
+// store.dispatch(startAddCat1paper({ name: 'FOOD, NUTRITION AND HEALTH BIT1026',comments:['FOOD, NUTRITION AND HEALTH BIT1026']}))
+// store.dispatch(startAddCat1paper({ name: 'FORENSIC SCIENCE AND TECHNOLOGY BIT3009',comments:['FORENSIC SCIENCE AND TECHNOLOGY BIT3009']}))
+// store.dispatch(startAddCat1paper({ name: 'FORENSIC SCIENCE AND TECHNOLOGY BST6004',comments:['FORENSIC SCIENCE AND TECHNOLOGY BST6004']}))
+// store.dispatch(startAddCat1paper({ name: 'FRANCAIS QUOTIDIEN FRE1001 A1',comments:['FRANCAIS QUOTIDIEN FRE1001 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'FRANCAIS QUOTIDIEN FRE1001 A2',comments:['FRANCAIS QUOTIDIEN FRE1001 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'GRUNDSTUFE DEUTSCH GER1001',comments:['GRUNDSTUFE DEUTSCH GER1001']}))
+// store.dispatch(startAddCat1paper({ name: 'GRUNDSTUFE DEUTSCH GER1001 B1',comments:['GRUNDSTUFE DEUTSCH GER1001 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'HEAT TRANSFER MEE2005',comments:['HEAT TRANSFER MEE2005']}))
+// store.dispatch(startAddCat1paper({ name: 'HEAT TRANSFER MEE2005 A2',comments:['HEAT TRANSFER MEE2005 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'HEAT TRANSFER MEE2005 C2',comments:['HEAT TRANSFER MEE2005 C2']}))
+// store.dispatch(startAddCat1paper({ name: 'HIGH PERFORMANCE COMPUTING CSE4014 B1',comments:['HIGH PERFORMANCE COMPUTING CSE4014 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'HUMAN COMPUTER INTERACTION CSE4015',comments:['HUMAN COMPUTER INTERACTION CSE4015']}))
+// store.dispatch(startAddCat1paper({ name: 'IMAGE PROCESSING CSE4019 C2',comments:['IMAGE PROCESSING CSE4019 C2']}))
+// store.dispatch(startAddCat1paper({ name: 'IMAGE PROCESSING CSE4019 E1',comments:['IMAGE PROCESSING CSE4019 E1']}))
+// store.dispatch(startAddCat1paper({ name: 'IMAGE PROCESSING CSE4019 G1',comments:['IMAGE PROCESSING CSE4019 G1']}))
+// store.dispatch(startAddCat1paper({ name: 'IMAGE PROCESSING CSE4019 G2',comments:['IMAGE PROCESSING CSE4019 G2']}))
+// store.dispatch(startAddCat1paper({ name: 'INTERNET AND WEB PROGRAMING CSE3002 E1',comments:['INTERNET AND WEB PROGRAMING CSE3002 E1']}))
+// store.dispatch(startAddCat1paper({ name: 'INTERNET AND WEB PROGRAMING CSE3002 E2',comments:['INTERNET AND WEB PROGRAMING CSE3002 E2']}))
+// store.dispatch(startAddCat1paper({ name: 'INTERNET OF THINGS CSE3009 F1',comments:['INTERNET OF THINGS CSE3009 F1']}))
+// store.dispatch(startAddCat1paper({ name: 'JAVA PROGRAMMING CSE1007 D1',comments:['JAVA PROGRAMMING CSE1007 D1']}))
+// store.dispatch(startAddCat1paper({ name: 'JAVA PROGRAMMING CSE1007 D2',comments:['JAVA PROGRAMMING CSE1007 D2']}))
+// store.dispatch(startAddCat1paper({ name: 'JAVA PROGRAMMING CSE1007 G1',comments:['JAVA PROGRAMMING CSE1007 G1']}))
+// store.dispatch(startAddCat1paper({ name: 'JAVA PROGRAMMING CSE1007 G2',comments:['JAVA PROGRAMMING CSE1007 G2']}))
+// store.dispatch(startAddCat1paper({ name: 'MACHINE LEARNING CSE4020 F1',comments:['MACHINE LEARNING CSE4020 F1']}))
+// store.dispatch(startAddCat1paper({ name: 'MACHINE LEARNING CSE4020 F2',comments:['MACHINE LEARNING CSE4020 F2']}))
+// store.dispatch(startAddCat1paper({ name: 'MACHINING PROCESSES AND METROLOGY MEE2006',comments:['MACHINING PROCESSES AND METROLOGY MEE2006']}))
+// store.dispatch(startAddCat1paper({ name: 'MATERIALS ENGINEERING AND TECHNOLOGY MEE1005',comments:['MATERIALS ENGINEERING AND TECHNOLOGY MEE1005']}))
+// store.dispatch(startAddCat1paper({ name: 'MECHANICS OF MACHINES MEE2004 B2',comments:['MECHANICS OF MACHINES MEE2004 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'MEMS MEE1008',comments:['MEMS MEE1008']}))
+// store.dispatch(startAddCat1paper({ name: 'MEMS MEE1008 F1',comments:['MEMS MEE1008 F1']}))
+// store.dispatch(startAddCat1paper({ name: 'MEMS MEE1008 F1-2',comments:['MEMS MEE1008 F1-2']}))
+// store.dispatch(startAddCat1paper({ name: 'MICROPROCESSOR AND INTERFACING CSE2006 A1',comments:['MICROPROCESSOR AND INTERFACING CSE2006 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'MICROPROCESSOR AND INTERFACING CSE2006 B1',comments:['MICROPROCESSOR AND INTERFACING CSE2006 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'MOBILE APPLICATION DEVELOPMENT ITE1016 B1',comments:['MOBILE APPLICATION DEVELOPMENT ITE1016 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL DISASTER MITIGATION AND MANAGEMENT CLE1010 B1',comments:['NATURAL DISASTER MITIGATION AND MANAGEMENT CLE1010 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 E1',comments:['NATURAL LANGUAGE PROCESSING CSE4022 E1']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 E2',comments:['NATURAL LANGUAGE PROCESSING CSE4022 E2']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 G1',comments:['NATURAL LANGUAGE PROCESSING CSE4022 G1']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 G1-OLD',comments:['NATURAL LANGUAGE PROCESSING CSE4022 G1-OLD']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 G2',comments:['NATURAL LANGUAGE PROCESSING CSE4022 G2']}))
+// store.dispatch(startAddCat1paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 G2-OLD',comments:['NATURAL LANGUAGE PROCESSING CSE4022 G2-OLD']}))
+// store.dispatch(startAddCat1paper({ name: 'NETWORK AND COMMUNICATION CSE1004 D1',comments:['NETWORK AND COMMUNICATION CSE1004 D1']}))
+// store.dispatch(startAddCat1paper({ name: 'NETWORK AND COMMUNICATION CSE1004 FS',comments:['NETWORK AND COMMUNICATION CSE1004 FS']}))
+// store.dispatch(startAddCat1paper({ name: 'NETWORK AND COMMUNICATION CSE1004 G1',comments:['NETWORK AND COMMUNICATION CSE1004 G1']}))
+// store.dispatch(startAddCat1paper({ name: 'NETWORK SECURITY CSE2008',comments:['NETWORK SECURITY CSE2008']}))
+// store.dispatch(startAddCat1paper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 B1',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 B2',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 B2']}))
+// store.dispatch(startAddCat1paper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 C1',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 C1']}))
+// store.dispatch(startAddCat1paper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1']}))
+// store.dispatch(startAddCat1paper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1-KEY',comments:['PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1-KEY']}))
+// store.dispatch(startAddCat1paper({ name: 'PRINCIPLES OF MARKETING MGT1036 B1',comments:['PRINCIPLES OF MARKETING MGT1036 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'ROBOTICS AND CONTROL EEE4027',comments:['ROBOTICS AND CONTROL EEE4027']}))
+// store.dispatch(startAddCat1paper({ name: 'SIGNALS AND SYSTEMS ECE1004',comments:['SIGNALS AND SYSTEMS ECE1004']}))
+// store.dispatch(startAddCat1paper({ name: 'SOCIAL AND INFORMATION NETWORKS CSE3021 A1',comments:['SOCIAL AND INFORMATION NETWORKS CSE3021 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'SOCIAL AND INFORMATION NETWORKS CSE3021 A2',comments:['SOCIAL AND INFORMATION NETWORKS CSE3021 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'SOCIAL ENTREPRENEURSHIP BIT1011 E1',comments:['SOCIAL ENTREPRENEURSHIP BIT1011 E1']}))
+// store.dispatch(startAddCat1paper({ name: 'SOCIAL ENTREPRENEURSHIP BIT1011 E2',comments:['SOCIAL ENTREPRENEURSHIP BIT1011 E2']}))
+// store.dispatch(startAddCat1paper({ name: 'SOFTWARE ENGINEERING CSE3001 F1',comments:['SOFTWARE ENGINEERING CSE3001 F1']}))
+// store.dispatch(startAddCat1paper({ name: 'SOFTWARE ENGINEERING CSE3001 F1-WS',comments:['SOFTWARE ENGINEERING CSE3001 F1-WS']}))
+// store.dispatch(startAddCat1paper({ name: 'SOFTWARE ENGINEERING CSE3001 F2',comments:['SOFTWARE ENGINEERING CSE3001 F2']}))
+// store.dispatch(startAddCat1paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 B1',comments:['STATISTICS FOR ENGINEERS MAT2001 B1']}))
+// store.dispatch(startAddCat1paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 C2',comments:['STATISTICS FOR ENGINEERS MAT2001 C2']}))
+// store.dispatch(startAddCat1paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 E1',comments:['STATISTICS FOR ENGINEERS MAT2001 E1']}))
+// store.dispatch(startAddCat1paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 G1',comments:['STATISTICS FOR ENGINEERS MAT2001 G1']}))
+// store.dispatch(startAddCat1paper({ name: 'STRENGTH OF MATERIALS MEE2002 A2',comments:['STRENGTH OF MATERIALS MEE2002 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'SYSTEM BIOLOGY BIT1031',comments:['SYSTEM BIOLOGY BIT1031']}))
+// store.dispatch(startAddCat1paper({ name: 'SYSTEMS BIOLOGY BIT1031',comments:['SYSTEMS BIOLOGY BIT1031']}))
+// store.dispatch(startAddCat1paper({ name: 'THEORY OF COMPUTATION AND COMPILER DESIGN CSE2002 A1',comments:['THEORY OF COMPUTATION AND COMPILERDESIGN CSE2002 A1']}))
+// store.dispatch(startAddCat1paper({ name: 'THEORY OF COMPUTATION AND COMPILER DESIGN CSE2002 A2',comments:['THEORY OF COMPUTATION AND COMPILERDESIGN CSE2002 A2']}))
+// store.dispatch(startAddCat1paper({ name: 'THERMAL ENGINEERING SYSTEMS MEE2003',comments:['THERMAL ENGINEERING SYSTEMS MEE2003']}))
+// store.dispatch(startAddCat1paper({ name: 'THERMAL ENGINEERING SYSTEMS MEE2003 C1',comments:['THERMAL ENGINEERING SYSTEMS MEE2003 C1']}))
+// store.dispatch(startAddCat1paper({ name: 'WEB MINING CSE3024 F1',comments:['WEB MINING CSE3024 F1']}))
+// store.dispatch(startAddCat1paper({ name: 'WEB MINING CSE3024 F2',comments:['WEB MINING CSE3024 F2']}))
+// store.dispatch(startAddCat1paper({ name: 'WEB SECURITY BCI3001',comments:['WEB SECURITY BCI3001']}))
+// store.dispatch(startAddCat1paper({ name: 'VIRTUALIZATION CSE4011 E2',comments:['VIRTUALIZATION CSE4011 E2']}))
+
+//////////////////CAT-2 Papers//////////////////////////////
+// store.dispatch(startAddCat2paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 B1',comments:['2 AODD MAT2002 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 B2',comments:['2 AODD MAT2002 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 G1',comments:['2 AODD MAT2002 G1']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 G2',comments:['2 AODD MAT2002 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A1',comments:['2 APPLIED LINEAR ALGEBRA MAT3004 A1']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A2',comments:['2 APPLIED LINEAR ALGEBRA MAT3004 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 B2',comments:['2 APPLIED LINEAR ALGEBRA MAT3004 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 C2',comments:['2 APPLIED LINEAR ALGEBRA MAT3004 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'APPLIED NUMERICAL METHODS MAT3005 A2',comments:['2 APPLIED NUMERICAL METHODS MAT3005 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1-Key',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B1-Key']}))
+// store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B2',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B2-2',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B2-2']}))
+// store.dispatch(startAddCat2paper({ name: 'BASIC ELECTRICAL AND ELECTRONICS ENGINEERING EEE1001 F2',comments:['2 EEE1001 F2']}))
+// store.dispatch(startAddCat2paper({ name: 'BUSINESS ANALYTICS FOR ENGINEERS MGT1051 C2',comments:['2 BUSINESS ANALYTICS FOR ENGINEERS MGT1051 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'CALCULUS FOR ENGINEERS MAT1011 C2',comments:['2 CALCULUS FOR ENGINEERS MAT1011 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'CALCULUS FOR ENGINEERS MAT1011',comments:['2 CALCULUS FOR ENGINEERS MAT1011']}))
+// store.dispatch(startAddCat2paper({ name: 'CLOUD COMPUTING AND SECURITY CSE4033 A2',comments:['2 CLOUD COMPUTING AND SECURITY CSE4033 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'COMMUNICATION ENGINEERING EEE2006 B1',comments:['2 COMMUNICATION ENGINEERING EEE2006 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'COMPUTER ARCHITECTURE AND ORGANIZATION CSE2001',comments:['2 COMPUTER ARCHITECTURE AND ORGANIZATION CSE2001']}))
+// store.dispatch(startAddCat2paper({ name: 'CONTROL SYSTEMS ECE2010 G1',comments:['2 CONTROL SYSTEMS ECE2010 G1']}))
+// store.dispatch(startAddCat2paper({ name: 'DATA MINING CSE3019 G2',comments:['2 DATA MINING CSE3019 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'DATA STRUCTURE AND ALGORITHMS CSE2003 G2',comments:['2 DATA STRUCTURE AND ALGORITHMS CSE2003 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 CAT1 OR CAT2',comments:['2 DATABASE MANAGEMENT SYSTEMS CSE2004 CAT1 OR CAT2']}))
+// store.dispatch(startAddCat2paper({ name: 'DATABASE MANAGEMENT SYSTEMS CSE2004 D2',comments:['2 DATABASE MANAGEMENT SYSTEMS CSE2004 D2']}))
+// store.dispatch(startAddCat2paper({ name: 'DEVELOPMENTAL BIOLOGY AND REGENERATIVE MEDICINE BIT2011',comments:['2 DEVELOPMENTAL BIOLOGY AND REGENERATIVE MEDICINE BIT2011']}))
+// store.dispatch(startAddCat2paper({ name: 'DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT115',comments:['2 DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT115']}))
+// store.dispatch(startAddCat2paper({ name: 'DIGITAL CIRCUIT DESIGN ECE2026 D1',comments:['2 DIGITAL CIRCUIT DESIGN ECE2026 D1']}))
+// store.dispatch(startAddCat2paper({ name: 'DIGITAL LOGIC AND DESIGN CSE1003 B1',comments:['2 DIGITAL LOGIC AND DESIGN CSE1003 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'DIGITAL LOGIC AND DESIGN CSE1003 B2 CAT1 OR CAT2',comments:['2 DIGITAL LOGIC AND DESIGN CSE1003 B2 CAT1 OR CAT2']}))
+// store.dispatch(startAddCat2paper({ name: 'DIGITAL LOGIC AND DESIGN CSE1003 B2',comments:['2 DIGITAL LOGIC AND DESIGN CSE1003 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'DIGITAL LOGIC AND DESIGN CSE1003',comments:['2 DIGITAL LOGIC AND DESIGN CSE1003']}))
+// store.dispatch(startAddCat2paper({ name: 'DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014 B2',comments:['2 DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014',comments:['2 DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014']}))
+// store.dispatch(startAddCat2paper({ name: 'DOWN STREAM PROCESSING BIT2007',comments:['2 DOWN STREAM PROCESSING BIT2007']}))
+// store.dispatch(startAddCat2paper({ name: 'ELECTRIC VEHICLES EEE4016 A1',comments:['2 ELECTRIC VEHICLES EEE4016 A1']}))
+// store.dispatch(startAddCat2paper({ name: 'ELECTRO MECHANICAL ENERGY CONVERSION EEE2003 D2',comments:['2 ELECTRO MECHANICAL ENERGY CONVERSION EEE2003 D2']}))
+// store.dispatch(startAddCat2paper({ name: 'ELECTROMAGNETIC FIELD THEORY AND TRANSMISSION LINES ECE1017',comments:['2 EFT ECE1017']}))
+// store.dispatch(startAddCat2paper({ name: 'ELECTROMAGNETIC FIELD THEORY AND TRANSMISSION LINES ECE1017 C1',comments:['2 EFT ECE1017 C1']}))
+// store.dispatch(startAddCat2paper({ name: 'ELECTRONIC CIRCUITS ECE1013 B1',comments:['2 ELECTRONIC CIRCUITS ECE1013 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'ENGINEERING CHEMISTRY CHY1001',comments:['2 ENGINEERING CHEMISTRY CHY1001']}))
+// store.dispatch(startAddCat2paper({ name: 'ENGINEERING THERMODYNAMICS MEE1003 A1',comments:['2 ENGINEERING THERMODYNAMICS MEE1003 A1']}))
+// store.dispatch(startAddCat2paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 C2',comments:['2 ENVIRONMENTAL SCIENCES CHY1002 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 D2',comments:['2 ENVIRONMENTAL SCIENCES CHY1002 D2']}))
+// store.dispatch(startAddCat2paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 F2',comments:['2 ENVIRONMENTAL SCIENCES CHY1002 F2']}))
+// store.dispatch(startAddCat2paper({ name: 'ENVIRONMENTAL SCIENCES CHY1002 G2',comments:['2 ENVIRONMENTAL SCIENCES CHY1002 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'ESPANOL FUNDAMENTAL ESP1001 B2',comments:['2 ESPANOL FUNDAMENTAL ESP1001 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'FLUID MECHANICS MEE1004 C2',comments:['2 FLUID MECHANICS MEE1004 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'FLUID MECHANICS MEE1004 D2',comments:['2 FLUID MECHANICS MEE1004 D2']}))
+// store.dispatch(startAddCat2paper({ name: 'FOOD, NUTRITION AND HEALTH BIT1026 A2 CAT1 or CAT2',comments:['2 FOOD, NUTRITION AND HEALTH BIT1026 A2 CAT1 or CAT2']}))
+// store.dispatch(startAddCat2paper({ name: 'FOOD, NUTRITION AND HEALTH BIT1026 A2',comments:['2 FOOD, NUTRITION AND HEALTH BIT1026 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'FOOD, NUTRITION AND HEALTH BIT1026 C1',comments:['2 FOOD, NUTRITION AND HEALTH BIT1026 C1']}))
+// store.dispatch(startAddCat2paper({ name: 'FOOD, NUTRITION AND HEALTH BIT1026 C2',comments:['2 FOOD, NUTRITION AND HEALTH BIT1026 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'FRANCAIS QUOTIDIEN FRE1001 A2',comments:['2 FRANCAIS QUOTIDIEN FRE1001 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'FRANCAIS QUOTIDIEN FRE1001 C1',comments:['2 FRANCAIS QUOTIDIEN FRE1001 C1']}))
+// store.dispatch(startAddCat2paper({ name: 'GRUNDSTUFE DEUTSCH GER1001 C1',comments:['2 GRUNDSTUFE DEUTSCH GER1001 C1']}))
+// store.dispatch(startAddCat2paper({ name: 'HEAT TRANSFER MEE2005 A2',comments:['2 HEAT TRANSFER MEE2005 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'HEAT TRANSFER MEE2005 C2',comments:['2 HEAT TRANSFER MEE2005 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'HUMAN COMPUTER INTERACTION ITE1014 A2',comments:['2 HUMAN COMPUTER INTERACTION ITE1014 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'IMAGE PROCESSING CSE4019 G2',comments:['2 IMAGE PROCESSING CSE4019 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'IMAGE PROCESSING CSE4019 G2-2',comments:['2 IMAGE PROCESSING CSE4019 G2-2']}))
+// store.dispatch(startAddCat2paper({ name: 'INDUSTRIAL INSTRUMENTATION EEE4033 F1',comments:['2 INDUSTRIAL INSTRUMENTATION EEE4033 F1']}))
+// store.dispatch(startAddCat2paper({ name: 'INFORMATION THEORY AND CODING B2',comments:['2 INFORMATION THEORY AND CODING B2']}))
+// store.dispatch(startAddCat2paper({ name: 'INTERNATIONAL ECONOMICS HUM1038 E2',comments:['2 INTERNATIONAL ECONOMICS HUM1038 E2']}))
+// store.dispatch(startAddCat2paper({ name: 'INTERNET AND WEB PROGRAMMING CSE3002 E2',comments:['2 INTERNET AND WEB PROGRAMMING CSE3002 E2']}))
+// store.dispatch(startAddCat2paper({ name: 'INTERNET OF THINGS CSE3009 A2',comments:['2 INTERNET OF THINGS CSE3009 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'JAVA PROGRAMMING CSE1007 D1',comments:['2 JAVA PROGRAMMING CSE1007 D1']}))
+// store.dispatch(startAddCat2paper({ name: 'JAVA PROGRAMMING CSE1007 D2',comments:['2 JAVA PROGRAMMING CSE1007 D2']}))
+// store.dispatch(startAddCat2paper({ name: 'JAVA PROGRAMMING CSE1007 G2',comments:['2 JAVA PROGRAMMING CSE1007 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'M2M COMMUNICATION ECE4026 E2',comments:['2 M2M COMMUNICATION ECE4026 E2']}))
+// store.dispatch(startAddCat2paper({ name: 'MACHINE LEARNING CSE4020 E2',comments:['2 MACHINE LEARNING CSE4020 E2']}))
+// store.dispatch(startAddCat2paper({ name: 'MACHINE LEARNING CSE4020 F1',comments:['2 MACHINE LEARNING CSE4020 F1']}))
+// store.dispatch(startAddCat2paper({ name: 'MACHINE LEARNING CSE4020 F2',comments:['2 MACHINE LEARNING CSE4020 F2']}))
+// store.dispatch(startAddCat2paper({ name: 'MACHINING PROCESSES AND METROLOGY MEE2006 G2',comments:['2 MACHINING PROCESSES AND METROLOGY MEE2006 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'MASS TRANSFER CHE3003 D1',comments:['2 MASS TRANSFER CHE3003 D1']}))
+// store.dispatch(startAddCat2paper({ name: 'MASS TRANSFER CHE3003 D1-2',comments:['2 MASS TRANSFER CHE3003 D1-2']}))
+// store.dispatch(startAddCat2paper({ name: 'MATERIALS ENGINEERING AND TECHNOLOGY MEE1005 B1',comments:['2 MATERIALS ENGINEERING AND TECHNOLOGY MEE1005 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'MECHANICS OF MACHINES MEE2004 C2',comments:['2 MECHANICS OF MACHINES MEE2004 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'MEHCANICS OF MACHINES MEE2004 B2',comments:['2 MEHCANICS OF MACHINES MEE2004 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'MEMS MEE1008 F1 CAT1 OR CAT2',comments:['2 MEMS MEE1008 F1 CAT1 OR CAT2']}))
+// store.dispatch(startAddCat2paper({ name: 'MICROPROCESSOR AND INTERFACING CSE2006 A2',comments:['2 MICROPROCESSOR AND INTERFACING CSE2006 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'MICROPROCESSOR AND INTERFACING CSE2006 B1',comments:['2 MICROPROCESSOR AND INTERFACING CSE2006 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'MICROPROCESSOR AND INTERFACING CSE2006 B2',comments:['2 MICROPROCESSOR AND INTERFACING CSE2006 B2']}))
+// store.dispatch(startAddCat2paper({ name: 'MOBILE APP DEVELOPMENT CSE4035 C2',comments:['2 MOBILE APP DEVELOPMENT CSE4035 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 G1',comments:['2 NATURAL LANGUAGE PROCESSING CSE4022 G1']}))
+// store.dispatch(startAddCat2paper({ name: 'NATURAL LANGUAGE PROCESSING CSE4022 G2',comments:['2 NATURAL LANGUAGE PROCESSING CSE4022 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'NETWORK AND COMMUNICATION CSE1004 G2',comments:['2 NETWORK AND COMMUNICATION CSE1004 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'OPERATING SYSTEMS CSE2005 A2',comments:['2 OPERATING SYSTEMS CSE2005 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1',comments:['2 PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1']}))
+// store.dispatch(startAddCat2paper({ name: 'PRINCIPLES OF COMMUNICATION ENGINEERING ECE2024 F1',comments:['2 PRINCIPLES OF COMMUNICATION ENGINEERING ECE2024 F1']}))
+// store.dispatch(startAddCat2paper({ name: 'PRINCIPLES OF SENSORS AND DATA ACQUISITION ECE2023 C1',comments:['2 PRINCIPLES OF SENSORS AND DATA ACQUISITION ECE2023 C1']}))
+// store.dispatch(startAddCat2paper({ name: 'PROCESS EQUIPMENT DESIGN AND ECONOMICS CHE2002 A2',comments:['2 PROCESS EQUIPMENT DESIGN AND ECONOMICS CHE2002 A2']}))
+// store.dispatch(startAddCat2paper({ name: 'PROCESS INSTRUMENTATION AND CONTROL CHE3002 A1',comments:['2 PROCESS INSTRUMENTATION AND CONTROL CHE3002 A1']}))
+// store.dispatch(startAddCat2paper({ name: 'SENSORS AND INSTRUMENTATION ECE1005 TA1',comments:['2 SENSORS AND INSTRUMENTATION ECE1005 TA1']}))
+// store.dispatch(startAddCat2paper({ name: 'SIGNAL ANALYSIS AND PROCESSING ECE1018 A1',comments:['2 SIGNAL ANALYSIS AND PROCESSING ECE1018 A1']}))
+// store.dispatch(startAddCat2paper({ name: 'SOCIAL ENTREPRENEURSHIP BIT1011 E2',comments:['2 SOCIAL ENTREPRENEURSHIP BIT1011 E2']}))
+// store.dispatch(startAddCat2paper({ name: 'SOFTWARE ENGINEERING CSE3001 F2',comments:['2 SOFTWARE ENGINEERING CSE3001 F2']}))
+// store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 B1 CAT1 OR CAT2',comments:['2 STATISTICS FOR ENGINEERS MAT2001 B1 CAT1 OR CAT2']}))
+// store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 D2',comments:['2 STATISTICS FOR ENGINEERS MAT2001 D2']}))
+// store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 F1',comments:['2 STATISTICS FOR ENGINEERS MAT2001 F1']}))
+// store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 F1-2',comments:['2 STATISTICS FOR ENGINEERS MAT2001 F1-2']}))
+// store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 G1',comments:['2 STATISTICS FOR ENGINEERS MAT2001 G1']}))
+// store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 G2',comments:['2 STATISTICS FOR ENGINEERS MAT2001 G2']}))
+// store.dispatch(startAddCat2paper({ name: 'SYSTEMS BIOLOGY BIT1031',comments:['2 SYSTEMS BIOLOGY BIT1031']}))
+// store.dispatch(startAddCat2paper({ name: 'THERMAL ENGINEERING SYSTEMS MEE2003 C1',comments:['2 THERMAL ENGINEERING SYSTEMS MEE2003 C1']}))
+// store.dispatch(startAddCat2paper({ name: 'THERMAL ENGINEERING SYSTEMS MEE2003 C2',comments:['2 THERMAL ENGINEERING SYSTEMS MEE2003 C2']}))
+// store.dispatch(startAddCat2paper({ name: 'VIRTUALIZATION CSE4011 E1',comments:['2 VIRTUALIZATION CSE4011 E1']}))
+// store.dispatch(startAddCat2paper({ name: 'VIRTUALIZATION CSE4011 E2',comments:['2 VIRTUALIZATION CSE4011 E2']}))
+
+
+/////////FAT PAPERS////////////////////
+
+
+
+////////////pehele ka/////////////////
+// store.dispatch(startAddFatpaper({ name: 'c2 DA-1 (Answers)',comments:['c2 DA-1 (Answers)']}))
+// store.dispatch(startAddCat1paper({ name: 'c2 DA-1 (Answers)',comments:['c2 DA-1 (Answers)']}))
 
 // store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 B1 2019',comments:['AOD MAT2002 B1 2019']}))
 // store.dispatch(startAddTeacher({ name: 'APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS MAT2002 FS 2019 B2',comments:['AOD MAT2002 FS 2019 B2']}))
@@ -418,11 +670,14 @@ const jsx = (
 );
 
 
+
 let hasRendered = false;
 const renderApp = () => {
   if (!hasRendered) {
-    store.dispatch(startSetTeachers()).then(() => {
-      ReactDOM.render(jsx, document.getElementById('app'));
+    store.dispatch(startSetCat2papers());
+    store.dispatch(startSetFatpapers());
+    store.dispatch(startSetCat1papers()).then(() => {
+      ReactDOM.render(jsx, document.getElementById('app'));      
     });
     hasRendered = true;
   }
@@ -437,13 +692,20 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     store.dispatch(login(user.uid));
-    renderApp();
+    // renderApp();
+
+    setTimeout(() => {
+      renderApp();
+    }, 2300)
     if (history.location.pathname === '/') {
-      history.push('/dashboard');
+      history.push('/cat1papers');
     }
   } else {
     store.dispatch(logout());
-    renderApp();
+    // renderApp();
+    setTimeout(() => {
+      renderApp();
+    }, 2300)
     history.push('/');
   }
 });

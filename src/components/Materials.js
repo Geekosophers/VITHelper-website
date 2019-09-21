@@ -1,10 +1,15 @@
 import React from 'react';
-// import MatPaperButton from './MatPaperButton';
+import MaterialsList from './MaterialsList';
+import MaterialsListFilter from './MaterialsListFilter';
+import WhatsApp from './WhatsApp';
+import ShareButton from './ShareButton';
 
 const Materials = () => (
   <div>
-    {/* <MatPaperButton /> */}
-    Hello
+    <MaterialsListFilter />
+    <MaterialsList />
+    <WhatsApp />
+    <ShareButton />
   </div>
 );
 
