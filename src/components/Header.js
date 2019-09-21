@@ -11,6 +11,10 @@ export const Header = ({ startLogout }) => (
       <div className="header__content">
         <Link className="header__title" to="/cat2papers">
           <img src="./images/header-font.png" height="50px" width="150px"/>
+          {/* <div className="page-header-pic-font">
+            <img src="./images/favicon.png" height="40px"/>
+            <h1>VITHelper</h1> */}
+          {/* </div> */}
         </Link>
         <div>
           {/* {console.log(window.location.pathname=="/dashboard"? "yes": "no")} */}
