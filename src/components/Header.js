@@ -9,7 +9,7 @@ export const Header = ({ startLogout }) => (
     <header className="header">
     <div className="content-container">
       <div className="header__content">
-        <Link className="header__title" to="/cat1papers">
+        <Link className="header__title" to="/cat2papers">
           <img src="./images/header-font.png" height="50px" width="150px"/>
         </Link>
         <div>

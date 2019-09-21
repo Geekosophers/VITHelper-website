@@ -698,7 +698,7 @@ firebase.auth().onAuthStateChanged((user) => {
       renderApp();
     }, 2300)
     if (history.location.pathname === '/') {
-      history.push('/cat1papers');
+      history.push('/cat2papers');
     }
   } else {
     store.dispatch(logout());
