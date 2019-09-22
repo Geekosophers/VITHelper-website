@@ -13,6 +13,7 @@ import LoginPage from './components/LoginPage';
 import { startAddCat1paper, startSetCat1papers } from './actions/cat1papers';
 import { startAddCat2paper, startSetCat2papers } from './actions/cat2papers';
 import { startAddFatpaper, startSetFatpapers } from './actions/fatpapers';
+import { startAddMaterial, startSetMaterials } from './actions/materials';
 import { setTextFilter} from './actions/filter';
 // import getVisibleTeachers from './selectors/teachers';
  
@@ -266,9 +267,19 @@ const store = configureStore();
 // store.dispatch(startAddCat2paper({ name: 'VIRTUALIZATION CSE4011 E2',comments:['2 VIRTUALIZATION CSE4011 E2']}))
 
 
-/////////FAT PAPERS////////////////////
+//////////////////FAT Papers//////////////////////////////
+// store.dispatch(startAddFatpaper({ name: 'Will be added soon!',comments:['Will be added soon!']}))
 
-
+//////////////////Materials//////////////////////////////
+// store.dispatch(startAddMaterial({ name: 'Applications of Differential and Difference Equations - MAT2002',comments:['M Applications of Differential and Difference Equations - MAT2002','https://drive.google.com/drive/folders/1nciW4gXKL75sSEB7sf65jJXectylY9KU?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Artificial Intelligence - CSE3013',comments:['M Artificial Intelligence - CSE3013','https://drive.google.com/drive/folders/1lxGdmS0zkRu5k_R0lhaG-m1i3NtiYry_?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Image Processing - CSE4019',comments:['M Image Processing - CSE4019','https://drive.google.com/drive/folders/1R-6CwgIyn4A32hX38lpIWF6SQ7HEwRnV?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Java Programming - CSE1007',comments:['M Java Programming - CSE1007','https://drive.google.com/drive/folders/1Bzfae6ZLmhYBBi0XoET6v8HqThV4DQf2?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Machine Learning - CSE4020',comments:['M Machine Learning - CSE4020','https://drive.google.com/drive/folders/12sDbAJpt7bEnlT-hVWZhfX_iP-73AqRu?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Natural Language Processing - CSE4022  ',comments:['M Natural Language Processing - CSE4022','https://drive.google.com/drive/folders/1GIjkDCaqOrADnPcKuei2Lo7Oy7RbIG8E?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Social Entrepreneurship - BIT1011',comments:['M Social Entrepreneurship - BIT1011','https://drive.google.com/drive/folders/1_RxdwrhwNOlOooqJGI3MJNQYzo142Aqq?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Web Mining - CSE3024',comments:['M Web Mining - CSE3024','https://drive.google.com/drive/folders/1XSSGKcKX2qV3QPw4iRCjyKmzAgqHad5C?usp=sharing']}))
+// store.dispatch(startAddMaterial({ name: 'Data Structures and Algorithms - STS3004',comments:['404','https://drive.google.com/drive/folders/1tmoW3T6N3SkLJ1B_gAjfFvkUv0ox9-Xi?usp=sharing']}))
 
 ////////////pehele ka/////////////////
 // store.dispatch(startAddFatpaper({ name: 'c2 DA-1 (Answers)',comments:['c2 DA-1 (Answers)']}))
@@ -676,6 +687,7 @@ const renderApp = () => {
   if (!hasRendered) {
     store.dispatch(startSetCat2papers());
     store.dispatch(startSetFatpapers());
+    store.dispatch(startSetMaterials());
     store.dispatch(startSetCat1papers()).then(() => {
       ReactDOM.render(jsx, document.getElementById('app'));      
     });

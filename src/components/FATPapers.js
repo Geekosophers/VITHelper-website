@@ -8,7 +8,7 @@ const FATPapers = () => (
   <div>
     <FatpapersListFilter />
     <FatpapersList />
-    <WhatsApp />
+    {/* <WhatsApp /> */}
     <ShareButton />
   </div>
 );

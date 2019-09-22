@@ -1,25 +1,25 @@
 import uuid from 'uuid';
 import database from '../firebase/firebase';
 
-//ADD_CAT1PAPER
-export const addCat1paper = (cat1paper) => ({
-      type: 'ADD_CAT1PAPER',
-      cat1paper
+//ADD_MATERIAL
+export const addMaterial = (material) => ({
+      type: 'ADD_MATERIAL',
+      material
     });
 
-export const startAddCat1paper = (cat1paperData = {}) => {
+export const startAddMaterial = (materialData = {}) => {
   return (dispatch) => {
     const {
       name = '',
       comments = [],
       like = 0,
-    } = cat1paperData;
-    const cat1paper = {name,comments,like};
+    } = materialData;
+    const material = {name,comments,like};
 
-    database.ref('cat1papers').push(cat1paper).then((ref) => {
-      dispatch(addCat1paper({
+    database.ref('materials').push(material).then((ref) => {
+      dispatch(addMaterial({
         id: ref.key,
-        ...cat1paper
+        ...material
       }));
     });
   };

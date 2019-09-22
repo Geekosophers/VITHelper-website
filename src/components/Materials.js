@@ -8,7 +8,7 @@ const Materials = () => (
   <div>
     <MaterialsListFilter />
     <MaterialsList />
-    <WhatsApp />
+    {/* <WhatsApp /> */}
     <ShareButton />
   </div>
 );

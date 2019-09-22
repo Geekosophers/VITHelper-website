@@ -10,6 +10,19 @@
   text-decoration: none;
 }
 
+.button_material {
+  background: $blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 .button__share {
   background: #25d366;
 }
@@ -61,9 +74,6 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  @media (min-width: $desktop-breakpoint) {
-    
-  }
 }
 
 .button-matpap__disp {

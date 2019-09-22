@@ -7,11 +7,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    // @media (min-width: $desktop-breakpoint) {
     justify-content: left;
     margin: 0%;
-    margin-left: 10px;    
-    // }
-    // justify-content: left;
-    // mar
+    margin-left: 10px;
+    // @media (max-width: $desktop-breakpoint) {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }    
 }
