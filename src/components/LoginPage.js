@@ -15,7 +15,7 @@ export const LoginPage = ({ startLogin }) => (
   </header>
   <div className="box-layout__justifycontent">
     <div className="box-layout__box box-layout__maxwidth">
-      <h1>Question Papers</h1>
+      <h2>CAT-2 is coming!</h2>
       <img src="/images/logo.png" alt="VIT Helper" className="w3-container w3-center w3-animate-opacity" />
       {/* <iframe src="/images/loader.html" height="90%" width="90%" style={{border:'none'}}></iframe> */}
       <p>VITHelper is aimed to provide you with all the information you need to keep going...</p>
