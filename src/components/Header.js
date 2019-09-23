@@ -9,7 +9,7 @@ export const Header = ({ startLogout }) => (
     <header className="header">
     <div className="content-container">
       <div className="header__content">
-        <Link className="header__title" to="/cat2papers">
+        <Link className="header__title" to="/">
           <img src="./images/header-font.png" height="50px" width="150px"/>
           {/* <div className="page-header-pic-font"> */}
             {/* <img src="./images/favicon.png" height="40px"/> */}
@@ -30,7 +30,7 @@ export const Header = ({ startLogout }) => (
             {/* <Link to="/cat1papers" className="button button--link">{window.location.pathname=="/cat1papers"? <u>CAT-1 Papers</u>:<span>CAT-1 Papers</span>}</Link> |  */}
             <Link to="/materials" className="button button--link">{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</Link> | 
           </span>
-          <button className="button button--link" onClick={startLogout}>Logout</button>
+          {/* <button className="button button--link" onClick={startLogout}>Logout</button> */}
         </div>
       </div>
     </div>

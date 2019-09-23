@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
+import { Link } from 'react-router-dom';
 
 export const LoginPage = ({ startLogin }) => (
 <div className="box-layout"> 
@@ -20,7 +21,7 @@ export const LoginPage = ({ startLogin }) => (
       {/* <iframe src="/images/loader.html" height="90%" width="90%" style={{border:'none'}}></iframe> */}
       <p>VITHelper is aimed to provide you with all the information you need to keep going...</p>
       <p></p>
-      <button className="button" onClick={startLogin}>Login with Google</button>
+      <Link to="/cat2papers"><button className="button">Take me to the database</button></Link>
       <p></p>
       {/* <div><i>Hello Human! We hope that your CATs went well. Wish you luck for the semester.
 <div>It's time for a break. We will be back with more features soon...</div></i></div> */}
