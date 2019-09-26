@@ -34,11 +34,11 @@ export class FatpapersListItem extends React.Component{
             <div>
                 <div>{this.handleUrl()}</div>
                 <div className="list-item"  onClick={this.handleComments}>
-                    <div style={{display:'flex',justifyContent:'center'}}>{this.props.fatpaper.name}</div>
-                    {/* <div className="button2 button--link">{this.props.fatpaper.name}</div>
+                    {/* <div style={{display:'flex',justifyContent:'center'}}>{this.props.fatpaper.name}</div> */}
+                    <div className="button2 button--link">{this.props.fatpaper.name}</div>
                     {
                         this.state.count && <FatpaperComment key={this.props.fatpaper.name} commentText={this.state.url}/>
-                    } */}
+                    }
                 </div>
             </div>
         );

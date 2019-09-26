@@ -268,7 +268,17 @@ const store = configureStore();
 
 
 //////////////////FAT Papers//////////////////////////////
-// store.dispatch(startAddFatpaper({ name: 'Will be added soon!',comments:['Will be added soon!']}))
+// store.dispatch(startAddFatpaper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A1',comments:['F APPLIED LINEAR ALGEBRA MAT3004 A1']}))
+// store.dispatch(startAddFatpaper({ name: 'APPLIED LINEAR ALGEBRA MAT3004 A2',comments:['F APPLIED LINEAR ALGEBRA MAT3004 A2']}))
+// store.dispatch(startAddFatpaper({ name: 'CYBER SECURITY CSE4003 A2',comments:['F CYBER SECURITY CSE4003 A2']}))
+// store.dispatch(startAddFatpaper({ name: 'DIGITAL IMAGE PROCESSING EEE3009 E1',comments:['F DIGITAL IMAGE PROCESSING EEE3009 E1']}))
+// store.dispatch(startAddFatpaper({ name: 'DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014 A1',comments:['F DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014 A1']}))
+// store.dispatch(startAddFatpaper({ name: 'DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014',comments:['F DISCRETE MATHEMATICS AND GRAPH THEORY MAT1014']}))
+// store.dispatch(startAddFatpaper({ name: 'OPERATING SYSTEMS CSE2005 C1',comments:['F OPERATING SYSTEMS CSE2005 C1']}))
+// store.dispatch(startAddFatpaper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1',comments:['F PARALLEL AND DISTRIBUTED COMPUTING CSE4001 D1']}))
+// store.dispatch(startAddFatpaper({ name: 'PARALLEL AND DISTRIBUTED COMPUTING CSE4001 E1',comments:['F PARALLEL AND DISTRIBUTED COMPUTING CSE4001 E1']}))
+// store.dispatch(startAddFatpaper({ name: 'WEB MINING CSE3024 B1',comments:['F WEB MINING CSE3024 B1']}))
+// store.dispatch(startAddFatpaper({ name: 'WEB MINING CSE3024 B2',comments:['F WEB MINING CSE3024 B2']}))
 
 //////////////////Materials//////////////////////////////
 // store.dispatch(startAddMaterial({ name: 'Applications of Differential and Difference Equations - MAT2002',comments:['M Applications of Differential and Difference Equations - MAT2002','https://drive.google.com/drive/folders/1nciW4gXKL75sSEB7sf65jJXectylY9KU?usp=sharing']}))
