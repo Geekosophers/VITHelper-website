@@ -168,6 +168,7 @@ const store = configureStore();
 // store.dispatch(startAddCat2paper({ name: 'APPLIED NUMERICAL METHODS MAT3005 A2',comments:['2 APPLIED NUMERICAL METHODS MAT3005 A2']}))
 // store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B1']}))
 // store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1-Key',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B1-Key']}))
+// store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B1-Key-2',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B1-Key-2']}))
 // store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B2',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B2']}))
 // store.dispatch(startAddCat2paper({ name: 'ARTIFICIAL INTELLIGENCE CSE3013 B2-2',comments:['2 ARTIFICIAL INTELLIGENCE CSE3013 B2-2']}))
 // store.dispatch(startAddCat2paper({ name: 'BASIC ELECTRICAL AND ELECTRONICS ENGINEERING EEE1001 F2',comments:['2 EEE1001 F2']}))
@@ -261,10 +262,13 @@ const store = configureStore();
 // store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 G1',comments:['2 STATISTICS FOR ENGINEERS MAT2001 G1']}))
 // store.dispatch(startAddCat2paper({ name: 'STATISTICS FOR ENGINEERS MAT2001 G2',comments:['2 STATISTICS FOR ENGINEERS MAT2001 G2']}))
 // store.dispatch(startAddCat2paper({ name: 'SYSTEMS BIOLOGY BIT1031',comments:['2 SYSTEMS BIOLOGY BIT1031']}))
+// store.dispatch(startAddCat2paper({ name: 'THEORY OF COMPUTATION AND COMPILER DESIGN CSE2002',comments:['2 THEORY OF COMPUTATION AND COMPILER DESIGN CSE2002']}))
 // store.dispatch(startAddCat2paper({ name: 'THERMAL ENGINEERING SYSTEMS MEE2003 C1',comments:['2 THERMAL ENGINEERING SYSTEMS MEE2003 C1']}))
 // store.dispatch(startAddCat2paper({ name: 'THERMAL ENGINEERING SYSTEMS MEE2003 C2',comments:['2 THERMAL ENGINEERING SYSTEMS MEE2003 C2']}))
 // store.dispatch(startAddCat2paper({ name: 'VIRTUALIZATION CSE4011 E1',comments:['2 VIRTUALIZATION CSE4011 E1']}))
 // store.dispatch(startAddCat2paper({ name: 'VIRTUALIZATION CSE4011 E2',comments:['2 VIRTUALIZATION CSE4011 E2']}))
+// store.dispatch(startAddCat2paper({ name: 'WEB MINING CSE3024 B1',comments:['2 WEB MINING CSE3024 B1']}))
+// store.dispatch(startAddCat2paper({ name: 'WEB MINING CSE3024 B2',comments:['2 WEB MINING CSE3024 B2']}))
 
 
 //////////////////FAT Papers//////////////////////////////
