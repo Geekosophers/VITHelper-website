@@ -6,6 +6,7 @@ export class MatPaperButton extends React.Component{
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.handleState = this.handleState.bind(this);
         this.state = {
             count: 2,
         };
@@ -15,6 +16,14 @@ export class MatPaperButton extends React.Component{
         this.setState((prevState) => {
             return{
                 count:(this.state.count+1)%2
+            };            
+        });
+    }
+
+    handleState(e) {
+        this.setState((prevState) => {
+            return{
+                count: 2
             };            
         });
     }
@@ -65,7 +74,7 @@ export class MatPaperButton extends React.Component{
                 </span>
                 {/* <p>{this.state.count}</p> */}
                 {this.state.count==1 &&
-                    <div className="ham__nav">
+                    <div className="ham__nav" onClick={this.handleState}>
                         <Link to="/cat1papers" className="button button--link">CAT-1 Papers</Link>
                         <Link to="/cat2papers" className="button button--link">CAT-2 Papers</Link>
                         <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
@@ -108,4 +117,4 @@ export class MatPaperButton extends React.Component{
 //     </div>
 // );
 
-// export default MatPaperButton;
+export default MatPaperButton;

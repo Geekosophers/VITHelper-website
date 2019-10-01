@@ -9,6 +9,7 @@ import CAT2Papers from '../components/CAT2Papers';
 import Materials from '../components/Materials';
 import FATPapers from '../components/FATPapers';
 import LoginPage from '../components/LoginPage';
+import Header from '../components/Header';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
@@ -18,13 +19,14 @@ export const history = createHistory();
 const AppRouter = () => (
   <Router history={history}>
     <div>
+      {/* <Header /> */}
       <Switch>
-        <PublicRoute path="/" component={LoginPage} exact={true} />
-        <PublicRoute path="/blogs" component={Blogs} />
-        <PublicRoute path="/cat1papers" component={CAT1Papers} />
-        <PrivateRoute path="/cat2papers" component={CAT2Papers} />
-        <PublicRoute path="/fatpapers" component={FATPapers} />
-        <PublicRoute path="/materials" component={Materials} />
+        <Route path="/" component={LoginPage} exact={true} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/cat1papers" component={CAT1Papers} />
+        <Route path="/cat2papers" component={CAT2Papers} />
+        <Route path="/fatpapers" component={FATPapers} />
+        <Route path="/materials" component={Materials} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

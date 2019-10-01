@@ -11,15 +11,9 @@ export const Header = ({ startLogout }) => (
       <div className="header__content">
         <Link className="header__title" to="/">
           <img src="./images/header-font.png" height="50px" width="150px"/>
-          {/* <div className="page-header-pic-font"> */}
-            {/* <img src="./images/favicon.png" height="40px"/> */}
-            {/* <h1>VITHelper</h1> */}
-          {/* </div> */}
         </Link>
         <div>
-          {/* {console.log(window.location.pathname=="/dashboard"? "yes": "no")} */}
           <span className="show-for-desktop">
-            {/* <button className="button button--link">Papers</button> | */}
             <div className="dropdown button button--link">Papers  <i className="fa fa-caret-down" style={{fontSize:'2rem',color:'white'}}></i>
               <div className="dropdown-content">
                 <Link to="/cat1papers" className="button button--link">CAT-1</Link>
@@ -27,15 +21,13 @@ export const Header = ({ startLogout }) => (
                 <Link to="/fatpapers" className="button button--link">FAT</Link>
               </div>
             </div> |
-            {/* <Link to="/cat1papers" className="button button--link">{window.location.pathname=="/cat1papers"? <u>CAT-1 Papers</u>:<span>CAT-1 Papers</span>}</Link> |  */}
             <Link to="/materials" className="button button--link">{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</Link> | 
           </span>
-          {/* <button className="button button--link" onClick={startLogout}>Logout</button> */}
         </div>
       </div>
     </div>
     </header>
-  <MatPaperButton />
+  {/* <MatPaperButton /> */}
   </div>
 );
 
