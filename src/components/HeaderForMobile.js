@@ -6,7 +6,7 @@ import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
   <div>
-    <header className="show-for-desktop header">
+    <header className="show-for-mobile header">
     <div className="content-container">
       <div className="header__content">
         <Link className="header__title" to="/">

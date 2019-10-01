@@ -9,7 +9,7 @@ import CAT2Papers from '../components/CAT2Papers';
 import Materials from '../components/Materials';
 import FATPapers from '../components/FATPapers';
 import LoginPage from '../components/LoginPage';
-import Header from '../components/Header';
+import HeaderForMobile from '../components/HeaderForMobile';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
@@ -19,7 +19,7 @@ export const history = createHistory();
 const AppRouter = () => (
   <Router history={history}>
     <div>
-      {/* <Header /> */}
+      <HeaderForMobile />
       <Switch>
         <Route path="/" component={LoginPage} exact={true} />
         <Route path="/blogs" component={Blogs} />

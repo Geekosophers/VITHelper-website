@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const LoginPage = ({ startLogin }) => (
 <div className="box-layout"> 
-  <header className="header">
+  <header className="show-for-desktop header">
     <div className="content-container">
       <div className="header__content">
         <div className="header__title">
