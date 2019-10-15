@@ -5,9 +5,9 @@ import selectFatpapers from '../selectors/fatpapers';
 const FatpapersList = (props) => {
     return(
         <div className="content-container">
-            <div className="list-header">
+            {/* <div className="list-header">
                 <div>FAT Papers</div>
-            </div>
+            </div> */}
             {props.fatpapers.map((fatpaper) => {
                 return <FatpapersListItem key={fatpaper.id} fatpaper={fatpaper} />; 
             })}

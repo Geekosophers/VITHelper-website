@@ -1,0 +1,111 @@
+.placement-content-container {
+    // margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 80rem;
+  }
+
+.placement-container { 
+    margin: 0px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    // padding: $s-size;
+    // font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+.placement-container__name {
+    font-size: $l-size;
+}
+
+.placement-container__text {
+    padding-right: $m-size;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.placement-container__tips {
+    width: 26.6rem;
+    min-width: 25rem;
+    margin-top: 50px;
+    padding: 0 $m-size;
+    @media (max-width: $desktop-breakpoint) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+    }
+}
+
+.placement-container__tips-header {
+    margin: 0%;
+    background: #84d0d0;
+    background-size: auto;
+    // font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: $l-size $m-size;
+}
+
+.placement-container__tips-content {
+    padding: $m-size;
+    background: #f5f1f6;
+    // font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.placement-container__rowDisplay {
+    display: flex;
+    flex-direction: row;
+    // max-width: 90%;
+    justify-content: center;
+    @media (max-width: $desktop-breakpoint) {
+        // display: none;
+        flex-direction: column;
+    }
+}
+
+.placement-header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 3rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.placement-header-border {
+    border-bottom: black solid 2px;
+}
+
+.placement-header-content {
+    // border-bottom: black solid 2px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.placement-header-content::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.placement-header-content:hover::after {
+    width: 100%;
+    // transition: width .3s;
+}
+
+// .placement-container__1 {
+// } 
+
+// .placement-container__2 {
+
+// }
+
+// .placement-container__3 {
+// }

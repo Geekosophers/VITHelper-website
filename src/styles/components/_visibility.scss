@@ -9,3 +9,9 @@
     display: none;
   }
 }
+
+.show-for-tablet {
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}

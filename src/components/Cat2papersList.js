@@ -5,9 +5,9 @@ import selectCat2papers from '../selectors/cat2papers';
 const Cat2papersList = (props) => {
     return(
         <div className="content-container">
-            <div className="list-header">
+            {/* <div className="list-header">
                 <div>Cat-2 Papers</div>
-            </div>
+            </div> */}
             {props.cat2papers.map((cat2paper) => {
                 return <Cat2papersListItem key={cat2paper.id} cat2paper={cat2paper} />; 
             })}

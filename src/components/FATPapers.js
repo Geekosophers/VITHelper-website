@@ -10,7 +10,6 @@ const FATPapers = () => (
   <div>
     <Header />
     <MatPaperButton />
-    {/* <Header /> */}
     <FatpapersListFilter />
     <FatpapersList />
     <WhatsApp />

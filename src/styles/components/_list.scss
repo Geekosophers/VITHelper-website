@@ -16,15 +16,18 @@
 
 .list-item {
   border: 1px solid darken($off-white, 7%);
-  border-top: none;
+  // border-top: none;
   color: $dark-grey;
-  
+  font-family: 'Merriweather', serif;
   flex-direction: column;
   padding: $s-size;
   text-decoration: none;
+  margin: $m-size 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   transition: background .3s ease;
   &:hover {
     background: $off-white;
+    box-shadow: none;
   }
   @media (min-width: $desktop-breakpoint) {
     align-items: center;
@@ -32,6 +35,26 @@
     justify-content: space-between;
     padding: $m-size;
   }
+}
+
+.list_papers {
+  display: flex;
+  flex-direction: column;
+}
+
+.list_papers-code {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.list_papers-name {
+  margin-bottom:1.6rem;
+}
+
+.list_papers-slot {
+  color: #84d0d0;
 }
 
 .list-item--message {

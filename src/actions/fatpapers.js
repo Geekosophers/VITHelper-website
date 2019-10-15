@@ -10,7 +10,7 @@ export const addFatpaper = (fatpaper) => ({
 export const startAddFatpaper = (fatpaperData = {}) => {
   return (dispatch) => {
     const {
-      name = '',
+      name = [],
       comments = [],
       like = 0,
     } = fatpaperData;

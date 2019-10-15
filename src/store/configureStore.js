@@ -5,6 +5,7 @@ import cat1papersReducer from '../reducers/cat1papers';
 import cat2papersReducer from '../reducers/cat2papers';
 import fatpapersReducer from '../reducers/fatpapers';
 import materialsReducer from '../reducers/materials';
+import placementsReducer from '../reducers/placements';
 import filterReducer from '../reducers/filter';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -17,6 +18,7 @@ export default () => {
       cat2papers: cat2papersReducer,
       fatpapers: fatpapersReducer,
       materials: materialsReducer, 
+      placements: placementsReducer,
       filter: filterReducer
     }),
     composeEnhancers(applyMiddleware(thunk))

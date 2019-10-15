@@ -34,7 +34,13 @@ export class Cat1papersListItem extends React.Component{
             <div>
                 <div>{this.handleUrl()}</div>
                 <div className="list-item"  onClick={this.handleComments}>
-                    <div className="button2 button--link">{this.props.cat1paper.name}</div>
+                    <div className="button2 button--link list_papers">
+                        <div className="list_papers-name">{this.props.cat1paper.name[0]}</div>
+                        <div className="list_papers-code">
+                            <div className="list_papers-slot">{this.props.cat1paper.name[2] && <span>Slot -</span>} {this.props.cat1paper.name[2]}</div>
+                            <div>{this.props.cat1paper.name[1]}</div>
+                        </div>
+                    </div>
                     {
                         this.state.count && <Cat1paperComment key={this.props.cat1paper.name} commentText={this.state.url}/>
                     }

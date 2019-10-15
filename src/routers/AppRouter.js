@@ -11,7 +11,9 @@ import FATPapers from '../components/FATPapers';
 import LoginPage from '../components/LoginPage';
 import HeaderForMobile from '../components/HeaderForMobile';
 import PrivateRoute from './PrivateRoute';
+import Placements from '../components/Placements';
 import PublicRoute from './PublicRoute';
+import ShowPlacementArticle from '../components/ShowPlacementArticle';
 
 
 export const history = createHistory();
@@ -27,6 +29,15 @@ const AppRouter = () => (
         <Route path="/cat2papers" component={CAT2Papers} />
         <Route path="/fatpapers" component={FATPapers} />
         <Route path="/materials" component={Materials} />
+        <Route path="/placements" component={Placements} exact={true}/>
+        <Route path="/placements/pat" component={Placements} />
+        <Route path="/placements/resources" component={Placements} />
+        <Route path="/placements/advice" component={Placements} />
+        <Route path="/placements/topics" component={Placements} />
+        <Route path="/placements/news" component={Placements} />
+        <Route path="/placements/rules" component={Placements} />
+        <Route path="/placements/article" component={Placements} exact={true}/>
+        <Route path="/placements/article/:id" component={ShowPlacementArticle} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

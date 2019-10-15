@@ -6,14 +6,14 @@ const FatpapersListFilter = (props) => (
     <div className="content-container">
         <h3>Search for FAT Paper:</h3>
         <div className="input-group">
-        <div className="input-group__item">
-            <input 
-                type="text" 
-                className="text-input" 
-                placeholder="Course Name/Code"
-                value={props.filter.text} onChange={(e) => {
-                props.dispatch(setTextFilter(e.target.value));
-            }}/>
+            <div className="input-group__item">
+                <input 
+                    type="text" 
+                    className="text-input" 
+                    placeholder="Course Name/Code"
+                    value={props.filter.text} onChange={(e) => {
+                    props.dispatch(setTextFilter(e.target.value));
+                }}/>
             </div>
         </div>
     </div>    

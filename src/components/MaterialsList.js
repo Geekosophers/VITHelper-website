@@ -5,9 +5,9 @@ import selectMaterials from '../selectors/materials';
 const MaterialsList = (props) => {
     return(
         <div className="content-container">
-            <div className="list-header">
+            {/* <div className="list-header">
                 <div>Materials</div>
-            </div>
+            </div> */}
             {props.materials.map((material) => {
                 return <MaterialsListItem key={material.id} material={material} />; 
             })}

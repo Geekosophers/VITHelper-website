@@ -42,6 +42,7 @@ export class MatPaperButton extends React.Component{
                                 window.location.pathname=="/cat1papers"?<span>CAT-1 Papers</span> : null ||
                                 window.location.pathname=="/cat2papers"?<span>CAT-2 Papers</span> : null ||
                                 window.location.pathname=="/fatpapers"?<span>FAT Papers</span> : null
+                                // window.location.pathname=="/placements"?<span>Placements</span> : null
                             )
                             :
                             (<span>MENU:</span> )
@@ -79,6 +80,7 @@ export class MatPaperButton extends React.Component{
                         <Link to="/cat2papers" className="button button--link">CAT-2 Papers</Link>
                         <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
                         <Link to="/materials" className="button button--link">Materials</Link>
+                        {/* <Link to="/placements" className="button button--link">Placements</Link> */}
                     </div>
                 }
                 {this.state.count==0 &&
@@ -87,6 +89,7 @@ export class MatPaperButton extends React.Component{
                         <Link to="/cat2papers" className="button button--link">CAT-2 Papers</Link>
                         <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
                         <Link to="/materials" className="button button--link">Materials</Link>
+                        {/* <Link to="/placements" className="button button--link">Placements</Link> */}
                     </div>
                 }
             </div>

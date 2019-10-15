@@ -10,7 +10,7 @@ export const addCat1paper = (cat1paper) => ({
 export const startAddCat1paper = (cat1paperData = {}) => {
   return (dispatch) => {
     const {
-      name = '',
+      name = [],
       comments = [],
       like = 0,
     } = cat1paperData;
