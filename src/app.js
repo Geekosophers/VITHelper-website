@@ -723,7 +723,7 @@ const renderApp = () => {
     store.dispatch(startSetCat2papers());
     store.dispatch(startSetFatpapers());
     store.dispatch(startSetMaterials());
-    store.dispatch(startSetPlacements());
+    // store.dispatch(startSetPlacements());
     store.dispatch(startSetCat1papers()).then(() => {
       ReactDOM.render(jsx, document.getElementById('app'));      
     });
@@ -731,13 +731,13 @@ const renderApp = () => {
   }
 };
 
-// ReactDOM.render(<LoadingPage />, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
-renderApp();
+// renderApp();
 
-// setTimeout(() => {
-//   renderApp();
-// }, 2300)
+setTimeout(() => {
+  renderApp();
+}, 2300)
 
 // store.dispatch(startSetTeachers()).then(() => {
 //   ReactDOM.render(jsx, document.getElementById('app'));
