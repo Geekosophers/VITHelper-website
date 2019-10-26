@@ -1,6 +1,9 @@
 {
   "name": "boilerplate-react-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.9.0"
+  },
   "main": "index.js",
   "author": "Andrew Mead",
   "license": "MIT",
