@@ -43,6 +43,12 @@
   background: none;
 }
 
+.button--link-for-matheader {
+  background: none;
+  font-size: $s-size;
+  color: #84d0d0;
+}
+
 .button--link2 {
   background: none;
   padding: 5px;
@@ -100,4 +106,14 @@
   justify-content: space-between;
   background: $dark-blue;
   border: 2px solid $dark-blue;
+}
+
+.button_review-tags {
+  background-color: white;
+  color: #364051;
+  border: 2px solid #84d0d0;
+  border-radius: 25px;
+  padding: 0.6rem;
+  margin: 0.2rem;
+  outline: none;
 }

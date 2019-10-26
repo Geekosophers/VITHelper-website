@@ -41,8 +41,13 @@ export class MatPaperButton extends React.Component{
                                 window.location.pathname=="/materials"?<span>Materials</span> : null ||
                                 window.location.pathname=="/cat1papers"?<span>CAT-1 Papers</span> : null ||
                                 window.location.pathname=="/cat2papers"?<span>CAT-2 Papers</span> : null ||
-                                window.location.pathname=="/fatpapers"?<span>FAT Papers</span> : null
-                                // window.location.pathname=="/placements"?<span>Placements</span> : null
+                                window.location.pathname=="/fatpapers"?<span>FAT Papers</span> : null ||
+                                window.location.pathname=="/placements"?<span>Placements</span> : null ||
+                                window.location.pathname=="/placements/article"?<span>Reviews</span> : null ||
+                                window.location.pathname=="/placements/topics"?<span>Important Topics</span> : null ||
+                                window.location.pathname=="/placements/advice"?<span>Advice</span> : null ||
+                                window.location.pathname=="/placements/resources"?<span>Useful Resources</span> : null ||
+                                window.location.pathname=="/placements/pat"?<span>PAT-Rules and Regulations</span> : null
                             )
                             :
                             (<span>MENU:</span> )
@@ -76,20 +81,34 @@ export class MatPaperButton extends React.Component{
                 {/* <p>{this.state.count}</p> */}
                 {this.state.count==1 &&
                     <div className="ham__nav" onClick={this.handleState}>
-                        <Link to="/cat1papers" className="button button--link">CAT-1 Papers</Link>
-                        <Link to="/cat2papers" className="button button--link">CAT-2 Papers</Link>
-                        <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
-                        <Link to="/materials" className="button button--link">Materials</Link>
-                        {/* <Link to="/placements" className="button button--link">Placements</Link> */}
+                        <div className="button button--link"><u>Papers:</u></div>
+                        <Link to="/cat1papers" className="button button--link-for-matheader">&#x25BA; CAT-1 Papers</Link>
+                        <Link to="/cat2papers" className="button button--link-for-matheader">&#x25BA; CAT-2 Papers</Link>
+                        <Link to="/fatpapers" className="button button--link-for-matheader">&#x25BA; FAT Papers</Link>
+                        <Link to="/materials" className="button button--link-for-matheader">&#x25BA; Materials</Link>
+                        <div className="button button--link"><u>Placements:</u></div>
+                        <Link to="/placements" className="button button--link-for-matheader">&#x25BA; Home</Link>
+                        <Link to="/placements/article" className="button button--link-for-matheader">&#x25BA; Reviews</Link>
+                        <Link to="/placements/topics" className="button button--link-for-matheader">&#x25BA; Important Topics</Link>
+                        <Link to="/placements/advice" className="button button--link-for-matheader">&#x25BA; Advice</Link>
+                        <Link to="/placements/resources" className="button button--link-for-matheader">&#x25BA; Useful Resources</Link>
+                        <Link to="/placements/pat" className="button button--link-for-matheader">&#x25BA; PAT-Rules and Regulations</Link>
                     </div>
                 }
                 {this.state.count==0 &&
                     <div className="ham__nav1">
-                        <Link to="/cat1papers" className="button button--link">CAT-1 Papers</Link>
-                        <Link to="/cat2papers" className="button button--link">CAT-2 Papers</Link>
-                        <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
-                        <Link to="/materials" className="button button--link">Materials</Link>
-                        {/* <Link to="/placements" className="button button--link">Placements</Link> */}
+                        <div className="button button--link"><u>Papers:</u></div>
+                        <div className="button button--link-for-matheader">&#x25BA; CAT-1 Papers</div>
+                        <div className="button button--link-for-matheader">&#x25BA; CAT-2 Papers</div>
+                        <div className="button button--link-for-matheader">&#x25BA; FAT Papers</div>
+                        <div className="button button--link-for-matheader">&#x25BA; Materials</div>
+                        <div className="button button--link"><u>Placements:</u></div>
+                        <div className="button button--link-for-matheader">&#x25BA; Home</div>
+                        <div className="button button--link-for-matheader">&#x25BA; Reviews</div>
+                        <div className="button button--link-for-matheader">&#x25BA; Important Topics</div>
+                        <div className="button button--link-for-matheader">&#x25BA; Advice</div>
+                        <div className="button button--link-for-matheader">&#x25BA; Useful Resources</div>
+                        <div className="button button--link-for-matheader">&#x25BA; PAT-Rules and Regulations</div>
                     </div>
                 }
             </div>

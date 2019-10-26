@@ -9,11 +9,12 @@ import { connect } from 'react-redux';
 import selectPlacements from '../selectors/placements';
 import ShareButton from './ShareButton';
 import PlacementsHeader from './PlacementsHeader';
+import { Link } from 'react-router-dom';
 import { PlacementsListItem } from './PlacementsListItem';
 
 const Placements = (props) => (
   <div>
-    {/* <Header />
+    <Header />
     <MatPaperButton />
     <PlacementsHeader />
     <div className="placement-container__rowDisplay">
@@ -25,20 +26,40 @@ const Placements = (props) => (
       <div className="placement-container__tips">
         <div className="placement-container__tips-header">Frequently asked questions by companies</div>
         <div className="placement-container__tips-content">
-          <div>1. Many comanies ask for Dynamic Programming questions. So practice as many questions as possible.</div>
-          <div>2. DBMS is again a hot topic. So be thorough with the basic synatx. (for eg- JOIN) </div>
-          <div>1. Many comanies ask for Dynamic Programming questions. So practice as many questions as possible.</div>
+          <div>1. Many companies ask for Dynamic Programming questions. So practice as many questions as possible.</div>
+          <div>2. DBMS is again a hot topic. So be thorough with the basic SQL syntax. (JOIN is important) </div>
+          <div>3. To read more important topics click on this link - <Link to="/placements/topics" style={{color:'#84d0d0'}}><b>Topics</b></Link></div>
         </div>
       </div>
     </div>
-    <div className="content-container placement-container">
-      <div className="placement-container__text">
-        <div className="placement-container__name">Societe Generale</div>
-        <div><b>Description: </b>Round-1: Coding Round (Pretty easy, cakewalk. There were 2 questions of 'Very easy' difficulty level. For MCQs you must be good at the basics of DBMS, DSA, Coding an...</div>
+    <div className="placement-container__rowDisplay" style={{marginBottom:'50px'}}>
+      <div className="placement-content-container">
+        <PlacementsThreeLiner id={props.placements[3].id} placement={props.placements[3]}/>
+        <PlacementsThreeLiner id={props.placements[7].id} placement={props.placements[7]}/>
+        <PlacementsThreeLiner id={props.placements[5].id} placement={props.placements[5]}/>
+        <div className="show-for-desktop">
+          <div style={{display:'flex',justifyContent:'center'}}>
+            _________________
+            <Link to="/placements/article" className="button_review-tags">View All Reviews</Link>
+            _________________
+          </div>
+        </div>
+        <div className="show-for-mobile">
+          <div style={{display:'flex',justifyContent:'center'}}>
+            <Link to="/placements/article" className="button_review-tags">View All Reviews</Link>
+          </div>
+        </div>
       </div>
-      <div><img src="./images/placements/societe-generale.png" height="100px" width="100px" alt="logo" /></div>
-    </div> */}
-    
+      <div className="placement-container__tips">
+        <div className="placement-container__tips-header">Important Links</div>
+        <div className="placement-container__tips-content">
+          <div>&#x25BA;<b>Advice- </b>To read advice rom your seniors. <Link to="/placements/resources" style={{color:'#84d0d0'}}>Click here!</Link></div>
+          <div>&#x25BA;<b>Resources- </b>Get links to the resources by clicking <Link to="/placements/resources" style={{color:'#84d0d0'}}>here.</Link></div>
+          <div>&#x25BA;<b>Important Topics- </b>Read about the frequently questions asked by the companies and what all points to focus on. <Link to="/placements/topics" style={{color:'#84d0d0'}}>Click here!</Link></div>
+          <div>&#x25BA;<b>Rules and Regulations- </b>Know about the important rules imposed by Placement Cell. <Link to="/placements/pat" style={{color:'#84d0d0'}}>Click here!</Link></div>
+        </div>
+      </div>
+    </div>
     {/* <PlacementsListFilter /> */}
     {/* <PlacementsList /> */}
     {/* <WhatsApp /> */}

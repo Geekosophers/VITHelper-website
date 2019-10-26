@@ -16,12 +16,12 @@ export const LoginPage = ({ startLogin }) => (
   </header>
   <div className="box-layout__justifycontent">
     <div className="box-layout__box box-layout__maxwidth">
-      <h2>CAT-2 is here!</h2>
+      <h2 style={{fontFamily:'Merriweather, serif',fontSize:'2.4rem'}}>Keep Learning. Keep Growing.</h2>
       <img src="/images/logo.png" alt="VIT Helper" className="w3-container w3-center w3-animate-opacity" />
       {/* <iframe src="/images/loader.html" height="90%" width="90%" style={{border:'none'}}></iframe> */}
       <p>VITHelper is aimed to provide you with all the information you need to keep going...</p>
       <p></p>
-      <Link to="/cat2papers"><button className="button">Take me to the database</button></Link>
+      <Link to="/placements"><button className="button">Take me to the database</button></Link>
       <p></p>
       {/* <div><i>Hello Human! We hope that your CATs went well. Wish you luck for the semester.
 <div>It's time for a break. We will be back with more features soon...</div></i></div> */}

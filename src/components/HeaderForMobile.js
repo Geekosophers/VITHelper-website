@@ -14,8 +14,8 @@ export const Header = ({ startLogout }) => (
             window.location.pathname=="/cat1papers"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
             window.location.pathname=="/cat2papers"? <img src="./images/header-font.png" height="50px" width="150px"/> : null ||
             window.location.pathname=="/fatpapers"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
-            window.location.pathname=="/materials"? <img src="./images/header-font.png" height="50px" width="150px"/>: <img src="../../images/header-font.png" height="50px" width="150px"/> 
-            // window.location.pathname=="/placements"? <img src="./images/header-font.png" height="50px" width="150px"/>: <img src="../../images/header-font.png" height="50px" width="150px"/>
+            window.location.pathname=="/materials"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
+            window.location.pathname=="/placements"? <img src="./images/header-font.png" height="50px" width="150px"/>: <img src="../../images/header-font.png" height="50px" width="150px"/>
           }
         </Link>
         <div>
@@ -28,7 +28,7 @@ export const Header = ({ startLogout }) => (
               </div>
             </div> |
             <Link to="/materials" className="button button--link">{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</Link>
-            {/* <Link to="/placements" className="button button--link">{window.location.pathname=="/placements"? <u>Placements</u>:<span>Placements</span>}</Link>  */}
+            <Link to="/placements" className="button button--link">{window.location.pathname=="/placements"? <u>Placements</u>:<span>Placements</span>}</Link> 
           </span>
         </div>
       </div>

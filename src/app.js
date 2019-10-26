@@ -723,7 +723,7 @@ const renderApp = () => {
     store.dispatch(startSetCat2papers());
     store.dispatch(startSetFatpapers());
     store.dispatch(startSetMaterials());
-    // store.dispatch(startSetPlacements());
+    store.dispatch(startSetPlacements());
     store.dispatch(startSetCat1papers()).then(() => {
       ReactDOM.render(jsx, document.getElementById('app'));      
     });

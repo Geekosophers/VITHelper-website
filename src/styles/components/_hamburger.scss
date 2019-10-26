@@ -170,13 +170,13 @@
 }
 
 @-webkit-keyframes navigation {
-    from {height:0;}
-    to {height: 168px;}
+    from {width:0;height:0;opacity: 0;}
+    to {width: 100vw;height:444px;opacity: 1;}
 }
 
 @keyframes navigation {
-    from {height:0;}
-    to {height: 168px;}
+    from {width: 0;height:0;opacity: 0;}
+    to {width: 100vw;height:444px;opacity: 1;}
 }
 
 .ham__nav1 {
@@ -192,11 +192,11 @@
 }
 
 @-webkit-keyframes navigation1 {
-    from {height:168px;}
-    to {height: 0;}
+    from {width: 100vw;height:444px;opacity: 1;}
+    to {width: 0;height:0;opacity: 0;}
 }
 
 @keyframes navigation1 {
-    from {height:168px;}
-    to {height: 0;}
+    from {width: 100vw;height:444px;opacity: 1;}
+    to {width: 0;height:0;opacity: 0;}
 }

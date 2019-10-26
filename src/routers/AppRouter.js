@@ -4,16 +4,22 @@ import createHistory from 'history/createBrowserHistory';
 import Blogs from '../components/Blogs';
 import CAT1Papers from '../components/CAT1Papers';
 import MainPage from '../components/MainPage';
+import Rules from '../components/Rules';
 import NotFoundPage from '../components/NotFoundPage';
 import CAT2Papers from '../components/CAT2Papers';
 import Materials from '../components/Materials';
 import FATPapers from '../components/FATPapers';
 import LoginPage from '../components/LoginPage';
+import Reviews from '../components/Reviews';
+import Advice from '../components/Advice';
+import PAT from '../components/PAT';
 import HeaderForMobile from '../components/HeaderForMobile';
 import PrivateRoute from './PrivateRoute';
 import Placements from '../components/Placements';
 import PublicRoute from './PublicRoute';
 import ShowPlacementArticle from '../components/ShowPlacementArticle';
+import Resources from '../components/Resources';
+import Topics from '../components/Topics';
 
 
 export const history = createHistory();
@@ -30,13 +36,13 @@ const AppRouter = () => (
         <Route path="/fatpapers" component={FATPapers} />
         <Route path="/materials" component={Materials} />
         <Route path="/placements" component={Placements} exact={true}/>
-        <Route path="/placements/pat" component={Placements} />
-        <Route path="/placements/resources" component={Placements} />
-        <Route path="/placements/advice" component={Placements} />
-        <Route path="/placements/topics" component={Placements} />
+        <Route path="/placements/pat" component={PAT} />
+        <Route path="/placements/resources" component={Resources} />
+        <Route path="/placements/advice" component={Advice} />
+        <Route path="/placements/topics" component={Topics} />
         <Route path="/placements/news" component={Placements} />
-        <Route path="/placements/rules" component={Placements} />
-        <Route path="/placements/article" component={Placements} exact={true}/>
+        <Route path="/placements/rules" component={Rules} />
+        <Route path="/placements/article" component={Reviews} exact={true}/>
         <Route path="/placements/article/:id" component={ShowPlacementArticle} />
         <Route component={NotFoundPage} />
       </Switch>
