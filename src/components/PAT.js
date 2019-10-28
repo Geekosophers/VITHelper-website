@@ -19,10 +19,10 @@ const PAT = () => (
             <div className="placement-container__text">
                 <div className="placement-container__name show-for-desktop" >Placement and Training Cell</div>
                 <div className="placement-container__name show-for-mobile" style={{marginTop:'30px'}}>Placement and Training Cell</div>
-                <Link to="https://vit.ac.in/placements-overview/placement">
+                <a href="https://vit.ac.in/placements-overview/placement" target="_blank">
                     <div>The PAT centre plays an integral role in creating the illustrious placement record of VIT. It ensures smooth functioning of the placement activities in the campus. The centre further facilitates training activities of the students and makes sure they get placed in the best of both national and international companies. In 2018-19 alone, PAT has...</div>
                     <div style={{color:'#84d0d0'}}>Click here to know more...</div>
-                </Link>
+                </a>
             </div>
             <div className="show-for-desktop"><img src="../images/placements/pat.jpg" height="300px" width="300px" alt="PAT" /></div>
             {/* <div className="show-for-mobile"><img src="../images/placements/pat.jpg" height="100px" width="100px" alt="PAT" /></div> */}
@@ -68,12 +68,12 @@ const PAT = () => (
             <div style={{textAlign:'right',color:'blue'}}>Download the table</div>
         </a>
         <div className="placement-container__text" style={{lineHeight:'2.0',marginBottom:'50px'}}>
-            <div className="placement-container__name">News</div>
-            <div>&#x25BA;THE HINDU - <a href="https://www.thehindu.com/news/national/tamil-nadu/vit-placement-drive-over-2000-students-land-jobs/article29395890.ece" style={{color:'#84d0d0'}}>VIT placement drive: over 2,000 students land jobs</a></div>
-            <div>&#x25BA;Business Standard - <a href="https://www.business-standard.com/article/education/vit-placement-drive-2019-245-companies-recruit-2026-students-119091300166_1.html" style={{color:'#84d0d0'}}>VIT placement drive 2019: 245 companies recruit 2026 students</a></div>
-            <div>&#x25BA;CAREERS360 - <a href="https://engineering.careers360.com/articles/vit-placement-report-2018" style={{color:'#84d0d0'}}>VIT Placement report 2018</a></div>
-            <div>&#x25BA;Quora - <a href="https://qr.ae/TWHhom" style={{color:'#84d0d0'}}>How are placements in vit?</a></div>
-            <div>&#x25BA;Business Line - <a href="https://www.thehindubusinessline.com/news/education/over-2000-vit-students-secure-super-dream-dream-jobs/article29402249.ece" style={{color:'#84d0d0'}}>Over 2,000 VIT students secure ‘Super Dream’ & ‘Dream’ jobs</a></div>
+            <div className="placement-container__name" >News</div>
+            <div>&#x25BA;THE HINDU - <a href="https://www.thehindu.com/news/national/tamil-nadu/vit-placement-drive-over-2000-students-land-jobs/article29395890.ece" style={{color:'#84d0d0'}} target="_blank">VIT placement drive: over 2,000 students land jobs</a></div>
+            <div>&#x25BA;Business Standard - <a href="https://www.business-standard.com/article/education/vit-placement-drive-2019-245-companies-recruit-2026-students-119091300166_1.html" style={{color:'#84d0d0'}} target="_blank">VIT placement drive 2019: 245 companies recruit 2026 students</a></div>
+            <div>&#x25BA;CAREERS360 - <a href="https://engineering.careers360.com/articles/vit-placement-report-2018" style={{color:'#84d0d0'}} target="_blank">VIT Placement report 2018</a></div>
+            <div>&#x25BA;Quora - <a href="https://qr.ae/TWHhom" style={{color:'#84d0d0'}} target="_blank">How are placements in vit?</a></div>
+            <div>&#x25BA;Business Line - <a href="https://www.thehindubusinessline.com/news/education/over-2000-vit-students-secure-super-dream-dream-jobs/article29402249.ece" style={{color:'#84d0d0'}} target="_blank">Over 2,000 VIT students secure ‘Super Dream’ & ‘Dream’ jobs</a></div>
         </div>
         {/* <div>
             1.       Students who plan to do their higher studies cannot sit for Super Dream or Dream companies recruitment(placements or internships). Any violation would lead 
