@@ -20,7 +20,7 @@ const Placements = (props) => (
     <div className="placement-container__rowDisplay">
       <div className="placement-content-container">
         <PlacementsThreeLiner id={props.placements[0].id} placement={props.placements[0]}/>
-        <PlacementsThreeLiner id={props.placements[1].id} placement={props.placements[1]}/>
+        <PlacementsThreeLiner id={props.placements[8].id} placement={props.placements[8]}/>
         <PlacementsThreeLiner id={props.placements[2].id} placement={props.placements[2]}/>
       </div>
       <div className="placement-container__tips">
@@ -37,14 +37,14 @@ const Placements = (props) => (
         <PlacementsThreeLiner id={props.placements[3].id} placement={props.placements[3]}/>
         <PlacementsThreeLiner id={props.placements[7].id} placement={props.placements[7]}/>
         <PlacementsThreeLiner id={props.placements[5].id} placement={props.placements[5]}/>
-        <div className="show-for-desktop">
+        <div className="show-for-desktop placements-dotted">
           <div style={{display:'flex',justifyContent:'center'}}>
             _________________
             <Link to="/placements/article" className="button_review-tags">View All Reviews</Link>
             _________________
           </div>
         </div>
-        <div className="show-for-mobile">
+        <div className="placements-dotted-mobile">
           <div style={{display:'flex',justifyContent:'center'}}>
             <Link to="/placements/article" className="button_review-tags">View All Reviews</Link>
           </div>

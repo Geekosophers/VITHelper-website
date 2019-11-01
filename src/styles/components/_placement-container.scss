@@ -54,13 +54,25 @@
         flex-direction: row;
         width: 100%;
     }
-    @media (max-width: $mobile-breakpoint) {
+    @media (max-width: 25rem) {
         display: flex;
         flex-direction: column;
         // width: 100%;
+        margin: 30px 0 0 0;
     }
 }
 
+.placements-dotted {
+    @media (max-width: 890px) {
+        display: none;
+    }
+}
+
+.placements-dotted-mobile {
+    @media (min-width: 889px) {
+        display: none;
+    }
+}
 .placement-container__tips-header {
     margin: 0%;
     background: #84d0d0;
