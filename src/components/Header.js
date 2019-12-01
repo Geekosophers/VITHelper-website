@@ -20,22 +20,37 @@ export const Header = ({ startLogout }) => (
         </Link>
         <div>
           <span className="show-for-desktop">
-            <div className="dropdown button button--link">Papers  <i className="fa fa-caret-down" style={{fontSize:'2rem',color:'white'}}></i>
+            <span className="dropdown">
+              {
+                window.location.pathname=="/cat1papers" || 
+                window.location.pathname=="/cat2papers" || 
+                window.location.pathname=="/fatpapers"
+                ? 
+                <span className="header-button header-button--link-u">
+                  Papers
+                  <i className="fa fa-caret-down" style={{fontSize:'2rem',color:'black'}}></i>
+                </span>
+                :
+                <span className="header-button header-button--link">
+                  Papers
+                  <i className="fa fa-caret-down" style={{fontSize:'2rem',color:'white'}}></i>
+                </span>
+              }
               <div className="dropdown-content">
                 <Link to="/cat1papers" className="button button--link">CAT-1</Link>
                 <Link to="/cat2papers" className="button button--link">CAT-2</Link>
                 <Link to="/fatpapers" className="button button--link">FAT</Link>
               </div>
-            </div> |
-            <Link to="/materials" className="button button--link">{window.location.pathname=="/materials"? <u>Materials</u>:<span>Materials</span>}</Link> |
-            <Link to="/placements" className="button button--link">
+            </span>
+            <Link to="/materials">{window.location.pathname=="/materials"? <span className="header-button header-button--link-u">Materials</span>:<span className="header-button header-button--link">Materials</span>}</Link>
+            <Link to="/placements">
               {
                 window.location.pathname!=="/materials" &&
                 window.location.pathname!=="/cat1papers" &&
                 window.location.pathname!=="/cat2papers" &&
                 window.location.pathname!=="/fatpapers" &&
-                <u>Placements</u> ||
-                <span>Placements</span>
+                <span className="header-button header-button--link-u">Placements</span> ||
+                <span className="header-button header-button--link">Placements</span>
               }
             </Link> 
           </span>

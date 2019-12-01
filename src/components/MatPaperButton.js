@@ -37,7 +37,7 @@ export class MatPaperButton extends React.Component{
                     <div className="button button--link">
                         {   this.state.count!=1 ?
                             (
-                                window.location.pathname=="/"?<span>Home Page</span> : null ||
+                                window.location.pathname=="/"?<span>Placements</span> : null ||
                                 window.location.pathname=="/materials"?<span>Materials</span> : null ||
                                 window.location.pathname=="/cat1papers"?<span>CAT-1 Papers</span> : null ||
                                 window.location.pathname=="/cat2papers"?<span>CAT-2 Papers</span> : null ||

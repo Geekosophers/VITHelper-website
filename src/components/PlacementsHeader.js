@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 const Placements = () => (
   <div className="show-for-desktop">
     <div className="content-placement placement-header">
-      <Link to="/placements">{window.location.pathname=="/placements" ? <div className="placement-header-border">Home</div> : <div className="placement-header-content">Home</div>}</Link>
+      <Link to="/placements">{window.location.pathname=="/placements" || window.location.pathname=="/" ? <div className="placement-header-border">Home</div> : <div className="placement-header-content">Home</div>}</Link>
       <Link to="/placements/article">
         {
+          window.location.pathname!="/" &&
           window.location.pathname!="/placements" &&
           window.location.pathname!="/placements/news" &&
           window.location.pathname!="/placements/topics" &&

@@ -155,6 +155,15 @@ const store = configureStore();
 // store.dispatch(startAddCat1paper({ name: ['Web Mining','CSE3024','F2'],comments:['WEB MINING CSE3024 F2']}))
 // store.dispatch(startAddCat1paper({ name: ['Web Security','BCI3001','C1'],comments:['WEB SECURITY BCI3001']}))
 // store.dispatch(startAddCat1paper({ name: ['Virtualization','CSE4011','E2'],comments:['VIRTUALIZATION CSE4011 E2']}))
+///------------------11/17/2019------------------------//
+// store.dispatch(startAddCat1paper({ name: ['Blockchain and Cryptocurrency Technologies','CSE1006','B2'],comments:['Blockchain and Cryptocurrency Technologies CSE1006 B2']}))
+// store.dispatch(startAddCat1paper({ name: ['Content Based Image and Video Retrieval','CSE3018','E1,E2'],comments:['Content Based Image and Video Retrieval CSE3018 E1,E2']}))
+// store.dispatch(startAddCat1paper({ name: ['Cyber Security','CSE4003','A1'],comments:['Cyber Security CSE4003 A1']}))
+// store.dispatch(startAddCat1paper({ name: ['Environmental Impact Assessment','CLE1013','C1'],comments:['Environmental Impact Assessment CLE1013 C1']}))
+// store.dispatch(startAddCat1paper({ name: ['Human Computer Interaction','CSE4015','B1'],comments:['Human Computer Interaction CSE4015 B1']}))
+// store.dispatch(startAddCat1paper({ name: ['Java Programming','CSE1007','A2'],comments:['Java Programming CSE1007 A2']}))
+// store.dispatch(startAddCat1paper({ name: ['Natural Disaster Mitigation and Management','CLE1010','D2'],comments:['Natural Disaster Mitigation and Management CLE1010 D2']}))
+// store.dispatch(startAddCat1paper({ name: ['Natural Language Processing','CSE4022','C2'],comments:['Natural Language Processing CSE4022 C2']}))
 
 //////////////////CAT-2 Papers//////////////////////////////
 // store.dispatch(startAddCat2paper({ name: ['Applications Of Differential And Difference Equations','MAT2002','B1'],comments:['2 AODD MAT2002 B1']}))
@@ -269,7 +278,18 @@ const store = configureStore();
 // store.dispatch(startAddCat2paper({ name: ['Virtualization','CSE4011','E2'],comments:['2 VIRTUALIZATION CSE4011 E2']}))
 // store.dispatch(startAddCat2paper({ name: ['Web Mining','CSE3024','B1'],comments:['2 WEB MINING CSE3024 B1']}))
 // store.dispatch(startAddCat2paper({ name: ['Web Mining','CSE3024','B2'],comments:['2 WEB MINING CSE3024 B2']}))
-
+///------------------11/17/2019------------------------//
+// store.dispatch(startAddCat2paper({ name: ['Business Accounting for Engineers','HUM1006','F2'],comments:['2 Business Accounting for Engineers HUM1006 F2']}))
+// store.dispatch(startAddCat2paper({ name: ['Content Based Image and Video Retrieval','CSE3018','E2'],comments:['2 Content Based Image and Video Retrieval CSE3018 E2']}))
+// store.dispatch(startAddCat2paper({ name: ['Environmental Impact Assessment','CLE1013','C1'],comments:['2 Environmental Impact Assessment CLE1013 C1']}))
+// store.dispatch(startAddCat2paper({ name: ['Human Computer Interaction','CSE4015','Re-CAT'],comments:['2 Human Computer Interaction CSE4015 Re-CAT']}))
+// store.dispatch(startAddCat2paper({ name: ['International Business','HUM1009','F2'],comments:['2 International Business HUM1009 F2']}))
+// store.dispatch(startAddCat2paper({ name: ['Introduction to Sociology','HUM1012','E1'],comments:['2 Introduction to Sociology HUM1012 E1']}))
+// store.dispatch(startAddCat2paper({ name: ['Java Programming','CSE1007','A2'],comments:['2 Java Programming CSE1007 A2']}))
+// store.dispatch(startAddCat2paper({ name: ['Natural Disaster Mitigation and Management','CLE1010','D2'],comments:['2 Natural Disaster Mitigation and Management CLE1010 D2']}))
+// store.dispatch(startAddCat2paper({ name: ['Natural Language Processing','CSE4022','C2'],comments:['2 Natural Language Processing CSE4022 C2']}))
+// store.dispatch(startAddCat2paper({ name: ['Object Oriented Software Development','CSE4028','D2'],comments:['2 Object Oriented Software Development CSE4028 D2']}))
+// store.dispatch(startAddCat2paper({ name: ['Theory of Computation and Compiler Design','CSE2002','A2-2'],comments:['2 Theory of Computation and Compiler Design CSE2002 A2-2']}))
 
 //////////////////FAT Papers//////////////////////////////
 //------------------Version-1--------------------------------
@@ -370,6 +390,18 @@ const store = configureStore();
 // store.dispatch(startAddFatpaper({ name: ['Theory Of Computation And Compiler Design','CSE2002','G2'],comments:['F Theory Of Computation And Compiler Design CSE2002 G2']}))
 // store.dispatch(startAddFatpaper({ name: ['Web Mining','CSE3024','F1'],comments:['F Web Mining CSE3024 F1']}))
 // store.dispatch(startAddFatpaper({ name: ['Web Mining','CSE3024','F2'],comments:['F Web Mining CSE3024 F2']}))
+///------------------11/17/2019------------------------//
+// store.dispatch(startAddFatpaper({ name: ['Applied Linear Algebra','MAT3004','A1-2019'],comments:['F Applied Linear Algebra MAT3004 A1-2019']}))
+// store.dispatch(startAddFatpaper({ name: ['Cyber Security','CSE4003','A1'],comments:['F Cyber Security CSE4003 A1']}))
+// store.dispatch(startAddFatpaper({ name: ['Francais Quotidien (French)','FRE1001','C2'],comments:['F Francais Quotidien (French) FRE1001 C2']}))
+// store.dispatch(startAddFatpaper({ name: ['Artificial Intelligence','CSE3013','B2'],comments:['F GArtificial Intelligence CSE3013 B2']}))
+// store.dispatch(startAddFatpaper({ name: ['Graph Theory and its Applications','MAT3002','A2'],comments:['F Graph Theory and its Applications MAT3002 A2']}))
+// store.dispatch(startAddFatpaper({ name: ['Human Computer Interaction','CSE4015','B1'],comments:['F Human Computer Interaction CSE4015 B1']}))
+// store.dispatch(startAddFatpaper({ name: ['Java Programming','CSE1007','A2'],comments:['F Java Programming CSE1007 A2']}))
+// store.dispatch(startAddFatpaper({ name: ['Java Programming','CSE1007','G2'],comments:['F Java Programming CSE1007 G2']}))
+// store.dispatch(startAddFatpaper({ name: ['Parallel and Distributed Computing','CSE4001','B2'],comments:['F Parallel and Distributed Computing CSE4001 B2']}))
+// store.dispatch(startAddFatpaper({ name: ['Theory of Computation and Compiler Design','CSE2002','F2'],comments:['F Theory of Computation and Compiler Design CSE2002 F2']}))
+// store.dispatch(startAddFatpaper({ name: ['Virtualization','CSE4011','E2'],comments:['F Virtualization CSE4011 E2']}))
 
 //////////////////Materials//////////////////////////////
 // store.dispatch(startAddMaterial({ name: 'Applications of Differential and Difference Equations - MAT2002',comments:['M Applications of Differential and Difference Equations - MAT2002','https://drive.google.com/drive/folders/1nciW4gXKL75sSEB7sf65jJXectylY9KU?usp=sharing']}))

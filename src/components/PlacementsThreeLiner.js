@@ -7,7 +7,7 @@ const PlacementsThreeLiner = (props) => (
         <div className="placement-container__text">
           <div className="placement-container__name">
             {props.placement.companyName}
-            {window.location.pathname=="/placements"?<span style={{fontSize:'1.2rem'}}>(Review)</span>:null}
+            {window.location.pathname=="/placements" || window.location.pathname=="/"?<span style={{fontSize:'1.2rem'}}>(Review)</span>:null}
           </div>
           <div><b>Description: </b>{props.placement.description.substring(0,165)}...</div>
         </div>

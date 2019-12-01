@@ -1,9 +1,7 @@
 import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import Blogs from '../components/Blogs';
 import CAT1Papers from '../components/CAT1Papers';
-import MainPage from '../components/MainPage';
 import Rules from '../components/Rules';
 import NotFoundPage from '../components/NotFoundPage';
 import CAT2Papers from '../components/CAT2Papers';
@@ -29,8 +27,8 @@ const AppRouter = () => (
     <div>
       <HeaderForMobile />
       <Switch>
-        <Route path="/" component={LoginPage} exact={true} />
-        <Route path="/blogs" component={Blogs} />
+        <Route path="/" component={Placements} exact={true} />
+        {/* <Route path="/blogs" component={Blogs} /> */}
         <Route path="/cat1papers" component={CAT1Papers} />
         <Route path="/cat2papers" component={CAT2Papers} />
         <Route path="/fatpapers" component={FATPapers} />

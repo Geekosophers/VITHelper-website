@@ -1,5 +1,9 @@
 .header {
   background: $dark-blue;
+  border-bottom: 3px solid #84d0d0;
+  @media (max-width: $desktop-breakpoint) {
+    border: none;
+  }
 }
 
 .header__content {
@@ -7,7 +11,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: $s-size 0;
+  // padding: $s-size 0;
 }
 
 .header__title {
@@ -49,7 +53,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  padding-top: 30px;
+  // padding-top: 30px;
   background-color: #364051;
   min-width: 160px;
   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -68,4 +72,42 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.headerLinks-color {
+  background: #84d0d0;
+}
+
+.header-button {
+  background: $blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  margin-top: 15px;
+  border: 2px;
+  border-radius: 5px 5px 0 0;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: 10px 24px 15px 24px;
+  text-decoration: none;
+}
+
+.header-button--link {
+  background: none;
+}
+
+.header-button--link-u {
+  background: white;
+  color: black;
+}
+
+.header-button--link-u-papers {
+  background: white;
+  color: black;
+}
+
+.header-button--link-u-papers:hover {
+  background: $dark-blue;
+  color: white;
 }
