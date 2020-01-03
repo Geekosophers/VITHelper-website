@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   // padding: $s-size 0;
+
 }
 
 .header__title {
@@ -53,7 +54,9 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  // padding-top: 30px;
+  // padding-top: 3px;
+  border-top: 3px solid #84d0d0;
+  // margin-top: 3px;
   background-color: #364051;
   min-width: 160px;
   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -68,7 +71,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: rgb(44, 98, 168);}
+.dropdown-content a:hover {
+  background-color: rgb(44, 98, 168);
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -98,7 +103,7 @@ li.dropdown {
 }
 
 .header-button--link-u {
-  background: white;
+  background: #84d0d0;
   color: black;
 }
 

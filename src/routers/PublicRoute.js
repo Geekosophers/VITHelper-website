@@ -9,9 +9,9 @@ export const PublicRoute = ({
   ...rest
 }) => (
     <Route {...rest} component={(props) => (
-      // isAuthenticated ? (
-        // <Redirect to="/cat2papers" />
-      // ) : (
+      isAuthenticated ? (
+        <Redirect to="/placements" />
+      ) : (
           // <Component {...props} />
           window.location.pathname=="/"?(
             <Component {...props} />
@@ -21,7 +21,7 @@ export const PublicRoute = ({
               <Component {...props} />
             </div>
           )
-        // )
+        )
     )} />
   );
 

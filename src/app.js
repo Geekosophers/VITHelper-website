@@ -854,31 +854,30 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 // renderApp();
 
-setTimeout(() => {
-  renderApp();
-}, 2300)
+// setTimeout(() => {
+//   renderApp();
+// }, 2300)
 
 // store.dispatch(startSetTeachers()).then(() => {
 //   ReactDOM.render(jsx, document.getElementById('app'));
 // });
 
-// firebase.auth().onAuthStateChanged((user) => {
-//   if (user) {
-//     store.dispatch(login(user.uid));
-//     // renderApp();
-
-    // setTimeout(() => {
-    //   renderApp();
-    // }, 2300)
-//     if (history.location.pathname === '/') {
-//       history.push('/cat2papers');
-//     }
-//   } else {
-//     store.dispatch(logout());
-//     // renderApp();
-//     setTimeout(() => {
-//       renderApp();
-//     }, 2300)
-//     history.push('/cat2papers');
-//   }
-// });
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    store.dispatch(login(user.uid));
+    // renderApp();
+    setTimeout(() => {
+      renderApp();
+    }, 2300)
+    if (history.location.pathname === '/') {
+      history.push('/placements');
+    }
+  } else {
+    store.dispatch(logout());
+    // renderApp();
+    setTimeout(() => {
+      renderApp();
+    }, 2300)
+    history.push('/');
+  }
+});

@@ -7,6 +7,7 @@ import NotFoundPage from '../components/NotFoundPage';
 import CAT2Papers from '../components/CAT2Papers';
 import Materials from '../components/Materials';
 import FATPapers from '../components/FATPapers';
+import Blogs from '../components/Blogs';
 import LoginPage from '../components/LoginPage';
 import Reviews from '../components/Reviews';
 import Advice from '../components/Advice';
@@ -27,21 +28,23 @@ const AppRouter = () => (
     <div>
       <HeaderForMobile />
       <Switch>
-        <Route path="/" component={Placements} exact={true} />
+        <PublicRoute path="/" component={LoginPage} exact={true} />
         {/* <Route path="/blogs" component={Blogs} /> */}
-        <Route path="/cat1papers" component={CAT1Papers} />
-        <Route path="/cat2papers" component={CAT2Papers} />
-        <Route path="/fatpapers" component={FATPapers} />
-        <Route path="/materials" component={Materials} />
-        <Route path="/placements" component={Placements} exact={true}/>
-        <Route path="/placements/pat" component={PAT} />
-        <Route path="/placements/resources" component={Resources} />
-        <Route path="/placements/advice" component={Advice} />
-        <Route path="/placements/topics" component={Topics} />
-        <Route path="/placements/news" component={Placements} />
-        <Route path="/placements/rules" component={Rules} />
-        <Route path="/placements/article" component={Reviews} exact={true}/>
-        <Route path="/placements/article/:id" component={ShowPlacementArticle} />
+        <PrivateRoute path="/cat1papers" component={CAT1Papers} />
+        <PrivateRoute path="/cat2papers" component={CAT2Papers} />
+        <PrivateRoute path="/fatpapers" component={FATPapers} />
+        <PrivateRoute path="/materials" component={Materials} />
+        <PrivateRoute path="/placements" component={Placements} exact={true}/>
+        <PrivateRoute path="/placements/pat" component={PAT} />
+        <PrivateRoute path="/placements/resources" component={Resources} />
+        <PrivateRoute path="/placements/advice" component={Advice} />
+        <PrivateRoute path="/placements/topics" component={Topics} />
+        <PrivateRoute path="/placements/news" component={Placements} />
+        <PrivateRoute path="/placements/rules" component={Rules} />
+        <PrivateRoute path="/blogs" component={Blogs} />
+        {/* <Route path="/" component={LoginPage} /> */}
+        <PrivateRoute path="/placements/article" component={Reviews} exact={true}/>
+        <PrivateRoute path="/placements/article/:id" component={ShowPlacementArticle} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

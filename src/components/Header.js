@@ -52,7 +52,8 @@ export const Header = ({ startLogout }) => (
                 <span className="header-button header-button--link-u">Placements</span> ||
                 <span className="header-button header-button--link">Placements</span>
               }
-            </Link> 
+            </Link>
+            {/* <button onClick={startLogout}>Logout</button>  */}
           </span>
         </div>
       </div>
