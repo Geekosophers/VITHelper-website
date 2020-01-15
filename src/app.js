@@ -16,8 +16,7 @@ import { startAddFatpaper, startSetFatpapers } from './actions/fatpapers';
 import { startAddMaterial, startSetMaterials } from './actions/materials';
 import { startAddPlacement, startSetPlacements } from './actions/placements';
 import { setTextFilter} from './actions/filter';
-// import getVisibleTeachers from './selectors/teachers';
- 
+
 const store = configureStore();
 
 // store.subscribe(() => {
@@ -870,7 +869,7 @@ firebase.auth().onAuthStateChanged((user) => {
       renderApp();
     }, 2300)
     if (history.location.pathname === '/') {
-      history.push('/placements');
+      history.push('/cat1papers');
     }
   } else {
     store.dispatch(logout());

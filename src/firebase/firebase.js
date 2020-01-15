@@ -40,9 +40,17 @@ const storage = firebase.storage();
 //     console.log('Error fetching data', e);
 //   });
 
-//database.ref()
+// database.ref()
 //  .on('value', (snapshot) => {
-//    console.log(snapshot.val());
+//    const val = snapshot.val();
+//    const paper = [];
+//    val.map((paper) => {
+//     console.log(paper.val());
+//    });
+// //    {props.fatpapers.map((fatpaper) => {
+// //     return <FatpapersListItem key={fatpaper.id} fatpaper={fatpaper} />; 
+// // })}
+//    console.log(val.fats.hell);
 //  });
 
 //setTimeout(() => {

@@ -22,7 +22,7 @@ export const LoginPage = ({ startLogin }) => (
       <p>VITHelper is aimed to provide you with all the information you need to keep going...</p>
       <p></p>
       {/* <Link to="/placements"><button className="button">Login</button></Link> */}
-      <button className="button" onClick={ startLogin}>Login</button>
+      <button className="button" onClick={ startLogin}>Login with Google</button>
       <p></p>
       {/* <div><i>Hello Human! We hope that your CATs went well. Wish you luck for the semester.
 <div>It's time for a break. We will be back with more features soon...</div></i></div> */}
