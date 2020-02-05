@@ -11,10 +11,10 @@ export const startAddCat1paper = (cat1paperData = {}) => {
   return (dispatch) => {
     const {
       name = [],
-      comments = [],
-      like = 0,
+      file_name = '',
+      lock_status = 1,
     } = cat1paperData;
-    const cat1paper = {name,comments,like};
+    const cat1paper = {name,file_name,lock_status};
 
     database.ref('cat1papers').push(cat1paper).then((ref) => {
       dispatch(addCat1paper({
