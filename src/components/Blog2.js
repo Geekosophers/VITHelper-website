@@ -19,12 +19,12 @@ const Blogs = (props) => {
         <p><b><i>I. Location-</i></b> Anna Auditorium and CS Hall</p>
         <p><b><i>II. Counselling Process-</i></b></p>
         <p><b>Step-1</b> Registration-</p>
-        <p>Student of the particular Group, Slot and Time enters Anna Audi with his ID card. ID Card is scanned using the bar-code scanner. The Registration Confirmation is sent immediately as an SMS. (The status can even be checked in his login)</p>
+        <p>Student of a particular Group, Slot and Time enters Anna Audi with his ID card. ID Card is scanned using the bar-code scanner. A Registration Confirmation is sent immediately as an SMS. (The status can even be checked in his login)</p>
         <p><b>Step-2</b> Token No. Generation-</p>
-        <p>After the Registration time gets over the token is generated for that particular slot. Token No. as SMS will be sent immediately. The same can be viewed in Academic Login too.</p>
+        <p>After the Registration time gets over a token is generated for that particular slot. Token No. as SMS will be sent immediately. The same can be viewed in Academic Login too.</p>
         <p><b>Step-3</b> Counselling (Room Selection)-</p>
-        <p>Student will carry his friends ID card whom he likes to have as his room mate along with his ID card and the selection process is carried out with help of bar-code scanner in CS Hall.</p>
-        <p><b>Confirmation-</b>Once the room is selected, SMS of Room Confirmation is given to topper of the group and they can view the provisional Room allocation in the VTOP login.</p>
+        <p>Student will carry his friends' ID card whom he likes to have as his room mate along with his ID card and the selection process is carried out with help of bar-code scanner in CS Hall.</p>
+        <p><b>Confirmation-</b>Once the room is selected, SMS of Room Confirmation is sent to topper of the group and they can view the provisional Room allocation in the VTOP login.</p>
         <p><b><i>III. Hall Arrangement-</i></b></p>
         <div className={"portfolio-box-layout__box"}>
           <img className="portfolio-image" src="https://firebasestorage.googleapis.com/v0/b/vithelper-32e0b.appspot.com/o/images%2Fhall-arrangement.png?alt=media&token=c28c97a2-cb52-41c1-b204-fae8ef6208bf" />
@@ -38,7 +38,7 @@ const Blogs = (props) => {
         <h3><b>B. VIT Ladies Hostel-</b></h3>
         <p><b><i>I. Location-</i></b> Channa Reddy Auditorium</p>
         <p><b><i>II. Counselling Process-</i></b></p>
-        <p>&bull;For allotment of rooms, students will be called as per their NCGPA rank within the group. In the shared room, room allotment will be done only if the group has full room strength (Ex: For a 4 bedded room, 4 students should be identified by the group prior to room counseling).</p>
+        <p>&bull;For allotment of rooms, students will be called as per their NCGPA rank within the group. For the shared room, room allotment will be done only if the group has full room strength (Ex: For a 4 bedded room, 4 students should be identified by the group prior to room counseling).</p>
         <p>&bull;Room vacancy details will be displayed on screen at Dr. M. Channa Reddy Auditorium to enable students to decide on the room to be chosen during the counseling process.</p>
         <h4 style={{borderLeft:'solid 3px #505050',paddingLeft:'5px'}}>
           <i>The sequence of room filling can be observed from the given link-</i>
@@ -64,7 +64,7 @@ const Blogs = (props) => {
         <p><b>7. What are easily available rooms for First Years?</b></p>
         <p>Answer - Single bed rooms are easily available for first years. And as the seniority increases, the demand for single beds increases.</p>
         <p><b>8. Are there any benefits attached with any particular branch?</b></p>
-        <p>Answer - There is benefit for branches with less students. Since common rank is calculated for the room counselling, so there will be more competition in CSE than Civil for example. This implies that your friend with less CGPA can have a better ranking is he/she is from a branch with less students.</p>
+        <p>Answer - There is benefit for branches with less students. For example, since common rank is calculated for the room counselling, there will be more competition in CSE than Civil. This implies that your friend with less CGPA can have a better ranking is he/she is from a branch with lesser students.</p>
         <p><b>9. On what basis the ranks are calculated for students sitting in room counselling for first time(freshman)?</b></p>
         <p>Answer - For freshman NCGPA rank is calculated based on first semester's performance.</p>
         <p><b>10. When and where I will get my NCGPA rank and slot timing?</b></p>
