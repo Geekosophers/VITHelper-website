@@ -4,7 +4,9 @@ import authReducer from '../reducers/auth';
 import cat1papersReducer from '../reducers/cat1papers';
 import cat2papersReducer from '../reducers/cat2papers';
 import fatpapersReducer from '../reducers/fatpapers';
+import usersReducer from '../reducers/users';
 import materialsReducer from '../reducers/materials';
+import faqsReducer from '../reducers/faqs';
 import placementsReducer from '../reducers/placements';
 import filterReducer from '../reducers/filter';
 
@@ -17,7 +19,9 @@ export default () => {
       cat1papers: cat1papersReducer,
       cat2papers: cat2papersReducer,
       fatpapers: fatpapersReducer,
-      materials: materialsReducer, 
+      users: usersReducer,
+      materials: materialsReducer,
+      faqs: faqsReducer, 
       placements: placementsReducer,
       filter: filterReducer
     }),

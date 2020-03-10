@@ -58,9 +58,26 @@ li.dropdown {
   border-top: 3px solid #84d0d0;
   // margin-top: 3px;
   background-color: #364051;
-  min-width: 160px;
+  min-width: 200px;
   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  -webkit-animation-name: navigation2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: navigation2;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+}
+
+@-webkit-keyframes navigation2 {
+  from {width: 0;height:0;opacity: 0;}
+  to {width: 200px;height:auto;opacity: 1;}
+}
+
+@keyframes navigation2 {
+  from {width: 0;height:0;opacity: 0;}
+  to {width: 200px;height:auto;opacity: 1;}
 }
 
 .dropdown-content a {
@@ -78,6 +95,122 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/////////BLOGS//////////////
+.dropdown-blog {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-blog {
+  display: none;
+  position: absolute;
+  // padding-top: 3px;
+  border-top: 3px solid #84d0d0;
+  // margin-top: 3px;
+  background-color: #364051;
+  min-width: 300px;
+  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  // right: 300px;
+  -webkit-animation-name: navigation3; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: navigation3;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+}
+
+@-webkit-keyframes navigation3 {
+  from {width: 0;height:0;opacity: 0;}
+  to {width: 300px;height:auto;opacity: 1;}
+}
+
+@keyframes navigation3 {
+  from {width: 0;height:0;opacity: 0;}
+  to {width: 300px;height:auto;opacity: 1;}
+}
+
+.dropdown-content-blog a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-blog a:hover {
+  background-color: rgb(44, 98, 168);
+}
+
+.dropdown-blog:hover .dropdown-content-blog {
+  display: block;
+}
+//////////////////////////////
+
+///////////
+.dropbtn-pic {
+  // background-color: #4CAF50;
+  // color: white;
+  // padding: 16px;
+  // // font-size: 16px;
+  // border: none;
+  display: inline-block;
+  color: rgb(12, 5, 19);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-pic {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-pic {
+  // display: none;
+  // position: absolute;
+  // background-color: #f1f1f1;
+  // min-width: 160px;
+  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  // z-index: 1;
+  display: none;
+  position: absolute;
+  // padding-top: 3px;
+  border-top: 3px solid #84d0d0;
+  // margin-top: 3px;
+  background-color: #364051;
+  min-width: 250px;
+  left: -200px;
+  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  // z-index: 1;
+  -webkit-animation-name: navigation2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: navigation2;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+}
+
+.dropdown-content-pic div {
+  // color: black;
+  // padding: 12px 16px;
+  // text-decoration: none;
+  // display: block;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-pic div:hover {background-color: rgb(44, 98, 168);}
+
+.dropdown-pic:hover .dropdown-content-pic {display: block;}
+
+.dropdown-pic:hover .dropbtn-pic {background-color: #3e8e41;}
+/////////////////
 
 .headerLinks-color {
   background: #84d0d0;
@@ -115,4 +248,10 @@ li.dropdown {
 .header-button--link-u-papers:hover {
   background: $dark-blue;
   color: white;
+}
+
+.userProfPic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

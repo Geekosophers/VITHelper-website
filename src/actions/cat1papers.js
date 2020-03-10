@@ -13,10 +13,11 @@ export const startAddCat1paper = (cat1paperData = {}) => {
       name = [],
       file_name = '',
       lock_status = 1,
+      unique_id = 11
     } = cat1paperData;
-    const cat1paper = {name,file_name,lock_status};
+    const cat1paper = {name,file_name,lock_status,unique_id};
 
-    database.ref('cat1papers').push(cat1paper).then((ref) => {
+    database.ref('cat1').push(cat1paper).then((ref) => {
       dispatch(addCat1paper({
         id: ref.key,
         ...cat1paper
@@ -33,7 +34,7 @@ export const setCat1papers = (cat1papers) => ({
 
 export const startSetCat1papers = () => {
   return (dispatch) => {
-    return database.ref('cat1papers').once('value').then((snapshot) => {
+    return database.ref('cat1').once('value').then((snapshot) => {
       const cat1papers = [];
 
       snapshot.forEach((childSnapshot) => {

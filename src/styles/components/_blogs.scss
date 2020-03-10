@@ -1,0 +1,36 @@
+.portfolio-box-layout__box {
+    // background: #60c07d;
+    display: flex;
+    flex-direction: column;
+    //padding: $s-size;
+    // padding: $m-size $m-size;
+    text-decoration: none;
+    text-align: center;
+    background-size: cover;
+    // border: 2px solid #60c07d;
+    // margin: 18px;
+    // transition: border .3s ease;
+    @media (min-width: $desktop-breakpoint) {
+      align-items: center;
+      justify-content: center;
+      width: 100wh;
+      height: auto;
+      // border: 2px solid #60c07d;
+    //   margin: 10%;
+      // margin-top: 0%;
+    //   box-shadow: rgb(167, 167, 167) 2px 2px 4px;
+    }
+  }
+
+.portfolio-box-layout__box:hover .box-layout__box-text{
+display: block;
+}
+
+// .portfolio-box-layout__box:hover{
+//   border: 2px solid #60c07d;
+// }
+
+.portfolio-image {
+    max-width: 100%;
+    max-height: 100%;
+}

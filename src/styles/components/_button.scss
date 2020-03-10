@@ -45,7 +45,7 @@
 
 .button--link-for-matheader {
   background: none;
-  font-size: $s-size;
+  font-size: $m-size;
   color: #84d0d0;
 }
 
@@ -117,3 +117,22 @@
   margin: 0.2rem;
   outline: none;
 }
+
+.button-addCoins {
+  background: #A9A9A9;
+  // border: none;
+  // color: white;
+  // display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  // line-height: 1;
+  padding: 4px 10px;
+  // text-decoration: none;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+
+}
+
+.pointer {cursor: pointer;}

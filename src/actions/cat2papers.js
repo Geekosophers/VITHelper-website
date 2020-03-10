@@ -11,12 +11,13 @@ export const startAddCat2paper = (cat2paperData = {}) => {
   return (dispatch) => {
     const {
       name = [],
-      comments = [],
-      like = 0,
+      file_name = '',
+      lock_status = 1,
+      unique_id = 11
     } = cat2paperData;
-    const cat2paper = {name,comments,like};
+    const cat2paper = {name,file_name,lock_status,unique_id};
 
-    database.ref('cat2papers').push(cat2paper).then((ref) => {
+    database.ref('cat2').push(cat2paper).then((ref) => {
       dispatch(addCat2paper({
         id: ref.key,
         ...cat2paper
@@ -33,7 +34,7 @@ export const setCat2papers = (cat2papers) => ({
 
 export const startSetCat2papers = () => {
   return (dispatch) => {
-    return database.ref('cat2papers').once('value').then((snapshot) => {
+    return database.ref('cat2').once('value').then((snapshot) => {
       const cat2papers = [];
 
       snapshot.forEach((childSnapshot) => {
@@ -42,7 +43,7 @@ export const startSetCat2papers = () => {
           ...childSnapshot.val()
         });
       });
-
+      
       dispatch(setCat2papers(cat2papers));
     });
   };

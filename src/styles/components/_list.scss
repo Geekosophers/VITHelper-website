@@ -23,11 +23,11 @@
   padding: $s-size;
   text-decoration: none;
   margin: $m-size 0;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: none;
   transition: background .3s ease;
   &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     background: $off-white;
-    box-shadow: none;
   }
   @media (min-width: $desktop-breakpoint) {
     align-items: center;

@@ -1,15 +1,17 @@
 import React from 'react';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 import MatPaperButton from './MatPaperButton';
-import PlacementsHeader from './PlacementsHeader';
 import { connect } from 'react-redux';
 
-
-const Advice = (props) => {
+const Blogs = (props) => {
   // console.log(props.placement);
   return (
     <div>
-      Hello
+      <Header />
+      <MatPaperButton />
+      <Link to="/hostel-vacating-procedure">Hostel Vacating Procedure</Link>
+      <Link to="/room-counselling">Hostel Room Counselling</Link>
     </div>
   );
 };
@@ -20,4 +22,4 @@ const mapStateToProps = (state,props) => {
   };
 };
 
-export default connect(mapStateToProps)(Advice);
+export default connect(mapStateToProps)(Blogs);

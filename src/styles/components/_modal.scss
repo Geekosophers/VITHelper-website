@@ -3,7 +3,7 @@
 }
 
 .ReactModalPortal .ReactModal__Overlay {
-    align-items: center;
+    align-items: left;
     display: flex;
     justify-content: center;
     transition: opacity 200ms ease-in-out;
@@ -19,6 +19,19 @@
 
 .modal {
     background: #3b3b3b;
+    // @media (min-width: $desktop-breakpoint) {
+    //     max-width: 50%;
+    // }
+    // @media (max-width: $desktop-breakpoint - .01rem) {
+    //     max-width: 35rem;
+    //   }
+    outline: none;
+    padding: $s-size;
+    text-align: center; 
+}
+
+.modal-new {
+    // background: #3b3b3b;
     @media (min-width: $desktop-breakpoint) {
         max-width: 50%;
     }
@@ -28,11 +41,13 @@
     outline: none;
     padding: $s-size;
     text-align: center; 
+    display: flex;
+    justify-content: center;
 }
 
 .modal__title {
     margin: 0 0 $m-size 0;
-    color: rgb(248, 107, 107);
+    color: #84d0d0;
 }
 
 .modal__body {
@@ -40,4 +55,14 @@
     color: white;
     font-weight: 100;
     margin: 0 0 $s-size 0; 
+}
+
+.modal-page-desktop {
+    background:#3b3b3b;
+    @media (min-width: $desktop-breakpoint - .01rem) {
+        height:100vh;
+        width:100vw;
+      }
+    padding-top: $s-size;
+    padding-bottom: $l-size;
 }

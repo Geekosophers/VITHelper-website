@@ -11,12 +11,13 @@ export const startAddFatpaper = (fatpaperData = {}) => {
   return (dispatch) => {
     const {
       name = [],
-      comments = [],
-      like = 0,
+      file_name = '',
+      lock_status = 1,
+      unique_id = 11
     } = fatpaperData;
-    const fatpaper = {name,comments,like};
+    const fatpaper = {name,file_name,lock_status,unique_id};
 
-    database.ref('fatpapers').push(fatpaper).then((ref) => {
+    database.ref('fat').push(fatpaper).then((ref) => {
       dispatch(addFatpaper({
         id: ref.key,
         ...fatpaper
@@ -33,7 +34,7 @@ export const setFatpapers = (fatpapers) => ({
 
 export const startSetFatpapers = () => {
   return (dispatch) => {
-    return database.ref('fatpapers').once('value').then((snapshot) => {
+    return database.ref('fat').once('value').then((snapshot) => {
       const fatpapers = [];
 
       snapshot.forEach((childSnapshot) => {

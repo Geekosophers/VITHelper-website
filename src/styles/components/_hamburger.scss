@@ -170,14 +170,25 @@
     // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
 }
 
+.ham__nav-temp {
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    // -webkit-animation-name: navigation; /* Safari 4.0 - 8.0 */
+    // -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    // animation-name: navigation;
+    // animation-duration: 0.5s;
+    // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+}
+
 @-webkit-keyframes navigation {
     from {width:0;height:0;opacity: 0;}
-    to {width: 100vw;height:444px;opacity: 1;}
+    to {width: 100vw;height:751px;opacity: 1;}
 }
 
 @keyframes navigation {
     from {width: 0;height:0;opacity: 0;}
-    to {width: 100vw;height:444px;opacity: 1;}
+    to {width: 100vw;height:751px;opacity: 1;}
 }
 
 .ham__nav1 {
@@ -194,11 +205,58 @@
 }
 
 @-webkit-keyframes navigation1 {
-    from {width: 100vw;height:444px;opacity: 1;}
+    from {width: 100vw;height:751px;opacity: 1;}
     to {width: 0;height:0;opacity: 0;}
 }
 
 @keyframes navigation1 {
-    from {width: 100vw;height:444px;opacity: 1;}
+    from {width: 100vw;height:751px;opacity: 1;}
     to {width: 0;height:0;opacity: 0;}
+}
+
+
+///////dashboard////////////
+
+.ham__nav-pic {
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: navigation-pic; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: navigation-pic;
+    animation-duration: 0.5s;
+    // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+}
+
+@-webkit-keyframes navigation-pic {
+    from {width:100vw;height:0;opacity: 0;}
+    to {width: 100vw;height:220px;opacity: 1;}
+}
+
+@keyframes navigation-pic {
+    from {width: 100vw;height:0;opacity: 0;}
+    to {width: 100vw;height:220px;opacity: 1;}
+}
+
+.ham__nav1-pic {
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: navigation1-pic; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: navigation1-pic;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+}
+
+@-webkit-keyframes navigation1-pic {
+    from {width: 100vw;height:220px;opacity: 1;}
+    to {width: 100vw;height:0;opacity: 0;}
+}
+
+@keyframes navigation1-pic {
+    from {width: 100vw;height:220px;opacity: 1;}
+    to {width: 100vw;height:0;opacity: 0;}
 }
