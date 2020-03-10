@@ -40,11 +40,11 @@ const Blogs = (props) => {
         <p><b><i>II. Counselling Process-</i></b></p>
         <p>&bull;For allotment of rooms, students will be called as per their NCGPA rank within the group. In the shared room, room allotment will be done only if the group has full room strength (Ex: For a 4 bedded room, 4 students should be identified by the group prior to room counseling).</p>
         <p>&bull;Room vacancy details will be displayed on screen at Dr. M. Channa Reddy Auditorium to enable students to decide on the room to be chosen during the counseling process.</p>
-        <div style={{borderLeft:'solid 3px #505050',paddingLeft:'5px'}}>
+        <h4 style={{borderLeft:'solid 3px #505050',paddingLeft:'5px'}}>
           <i>The sequence of room filling can be observed from the given link-</i>
           <div style={{color:"#84d0d0",paddingLeft:'3px',paddingBottom:'5px'}}><a href="https://firebasestorage.googleapis.com/v0/b/vithelper-32e0b.appspot.com/o/images%2FLadies%20Hostel%20Group%201.pdf?alt=media&token=ce94c9ff-3daf-4098-8e47-2b88437504e4" target="_blank">&#x25BA; Ladies Hostel - Group 1</a></div>
           <div>*The data is collected from 2019 room counselling.</div>
-        </div>
+        </h4>
         <p style={{textAlign:'center'}}>&bull;&nbsp;&bull;&nbsp;&bull;</p>
         <h2>Frequently Asked Questions -</h2>
         <p><b>1. When is the counselling for the year 2020?</b></p>
