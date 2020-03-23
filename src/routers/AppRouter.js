@@ -37,7 +37,7 @@ const AppRouter = () => (
         {/* <Route path="/blogs" component={Blogs} /> */}
         <PrivateRoute path="/about-us" component={AboutUsForMobile} />
         <PrivateRoute path="/cat1papers" component={CAT1Papers} />
-        <PrivateRoute path="/add" component={Add} history={history}/>
+        {/* <PrivateRoute path="/add" component={Add} history={history}/> */}
         <PrivateRoute path="/cat2papers" component={CAT2Papers} />
         <PrivateRoute path="/fatpapers" component={FATPapers} />
         <PrivateRoute path="/materials" component={Materials} />

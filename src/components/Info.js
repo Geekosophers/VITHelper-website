@@ -70,9 +70,9 @@ export class Info extends React.Component {
             
             {/* <button class="dropbtn-pic">Dropdown</button> */}
             {
-              <img src={this.props.user_profPic} style={{borderRadius:'50%',border:'solid #84d0d0 2px'}} height='45px' width='45px' />
+              <img src={this.props.user_profPic} style={{borderRadius:'50%',border:'solid #84d0d0 3px'}} height='45px' width='45px' />
               ||
-              <img src='./images/user.png' style={{borderRadius:'50%',border:'solid #84d0d0 2px'}} height='45px' width='45px' />
+              <img src='./images/user.png' style={{borderRadius:'50%',border:'solid #84d0d0 3px'}} height='45px' width='45px' />
             }
             <div className="dropdown-content-pic">
                 <div>
@@ -81,7 +81,7 @@ export class Info extends React.Component {
                     {<img src='../../images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' /> || <img src='./images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' />}
                     <span style={{position: 'relative',top: '2px',fontSize:'$m-size'}}>  Coins: {this.state.coins}</span>
                   </span>
-                  <Link to="/add" onClick={ (event) => event.preventDefault() } style={{cursor:'default'}}><span style={{cursor:'default'}}> <button className="button button-addCoins" style={{cursor:'default',outline:'none',border:'none'}}>+Add coins</button></span></Link>
+                  <Link to="/add" ><span> <button className="button button-addCoins">+Add coins</button></span></Link>
                 </span>
                 </div>
                 <div>

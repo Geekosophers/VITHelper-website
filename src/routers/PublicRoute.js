@@ -10,7 +10,7 @@ export const PublicRoute = ({
 }) => (
     <Route {...rest} component={(props) => (
       isAuthenticated ? (
-        <Redirect to="/room-counselling" />
+        <Redirect to="/placements" />
       ) : (
           // <Component {...props} />
           window.location.pathname=="/"?(

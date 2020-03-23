@@ -1406,7 +1406,7 @@ firebase.auth().onAuthStateChanged((user) => {
         });
     // console.log(history);
     if (history.location.pathname === '/') {
-      history.push('/room-counselling');
+      history.push('/placements');
     }
   } else {
     store.dispatch(logout());

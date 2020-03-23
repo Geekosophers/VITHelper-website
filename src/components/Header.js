@@ -124,6 +124,7 @@ export class Header extends React.Component {
                     }
                   </Link>
                   {/* {console.log(this.state.width)} */}
+                  <span>&nbsp;&nbsp;</span>
                   <Info />
                 </span>
               </div>
