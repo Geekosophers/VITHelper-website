@@ -285,7 +285,7 @@ export class MatPaperButton extends React.Component{
                                             &nbsp;&nbsp;{<img src='../../images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' /> || <img src='./images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' />}
                                             <span style={{position: 'relative',top: '2px'}}>  Coins: {this.state.coins}</span>
                                         </span>
-                                        <Link to="/add" ><span> <button className="button button-addCoins" >+Add coins</button></span></Link>
+                                        <Link to="/add" style={{pointerEvents: 'none', cursor:'default'}}><span> <button className="button button-addCoins" >+Add coins</button></span></Link>
                                     </div>
                                 </div>
                             </div>

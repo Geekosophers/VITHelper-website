@@ -34,7 +34,7 @@ const Resources = () => (
                     <div>Resource-2</div>
                     <div>&#x25BA;<a target="_blank" href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">GeeksForGeeks -<span style={{color:'#84d0d0',fontSize:'1.6rem'}}> Algorithms</span></a></div>
                     <div>&#x25BA;<a target="_blank" href="https://www.geeksforgeeks.org/data-structures/">GeeksForGeeks -<span style={{color:'#84d0d0',fontSize:'1.6rem'}}> Data Structures</span></a></div>
-                    <div>&#x25BA;<a target="_blank" href="https://practice.geeksforgeeks.org/">GeeksForGeeks -<span style={{color:'#84d0d0',fontSize:'1.6rem'}}> Practice</span></a></div>
+                    <div>&#x25BA;<a target="_blank" href="https://practice.geeksforgeeks.org/home">GeeksForGeeks -<span style={{color:'#84d0d0',fontSize:'1.6rem'}}> Practice</span></a></div>
                 </div>
             </figure>
             <figure>
