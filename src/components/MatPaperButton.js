@@ -224,6 +224,7 @@ export class MatPaperButton extends React.Component{
                                 window.location.pathname=="/materials"?<span>Materials</span> : null ||
                                 window.location.pathname=="/room-counselling"?<span>Blogs</span> : null ||
                                 window.location.pathname=="/hostel-vacating-procedure"?<span>Blogs</span> : null ||
+                                window.location.pathname=="/npm-package"?<span>Blogs</span> : null ||
                                 window.location.pathname=="/faqs"?<span>FAQs</span> : null ||
                                 window.location.pathname=="/about-us"?<span>About Us</span> : null ||
                                 window.location.pathname=="/cat1papers"?<span>CAT-1 Papers</span> : null ||
@@ -302,6 +303,7 @@ export class MatPaperButton extends React.Component{
                             <div className="button button--link"><u>Blogs</u></div>
                             <Link to="/hostel-vacating-procedure" className="button button--link-for-matheader">&#x25BA; Hostel Vacating Procedure</Link>
                             <Link to="/room-counselling" className="button button--link-for-matheader">&#x25BA; Hostel Room Councelling</Link>
+                            <Link to="/npm-package" className="button button--link-for-matheader">&#x25BA; Get started with making NPM packages</Link>
                             <div className="button button--link"><u>Placements:</u></div>
                             <Link to="/placements" className="button button--link-for-matheader">&#x25BA; Home</Link>
                             <Link to="/placements/article" className="button button--link-for-matheader">&#x25BA; Reviews</Link>

@@ -9,6 +9,7 @@ const Advice = (props) => {
   // console.log(props.placement);
   return (
     <div>
+      {window.scrollTo(0, 0)}
       <Header />
       <MatPaperButton />
       <PlacementsHeader />

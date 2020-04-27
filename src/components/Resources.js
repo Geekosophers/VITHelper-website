@@ -9,6 +9,7 @@ import PlacementsHeader from './PlacementsHeader';
 
 const Resources = () => (
   <div>
+    {window.scrollTo(0, 0)}
     <Header />
     <MatPaperButton />
     <PlacementsHeader />
