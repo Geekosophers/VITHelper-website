@@ -6,7 +6,7 @@ const AboutUsForMobile = () => (
     <div>
         {window.scrollTo(0, 0)}
         <Header />
-        <MatPaperButton />
+        <MatPaperButton/>
         <div className="modal-page-desktop">
             <div className='content-container'>
                 <h3 className="modal__title">About Us</h3>

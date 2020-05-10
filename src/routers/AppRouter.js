@@ -13,6 +13,7 @@ import Blogs from '../components/Blogs';
 import Blog1 from '../components/Blog1';
 import Blog2 from '../components/Blog2';
 import Blog3 from '../components/Blog3';
+import Blog4 from '../components/Blog4';
 import LoginPage from '../components/LoginPage';
 import Reviews from '../components/Reviews';
 import Advice from '../components/Advice';
@@ -54,6 +55,7 @@ const AppRouter = () => (
         <PrivateRoute path="/hostel-vacating-procedure" component={Blog1} />
         <PrivateRoute path="/room-counselling" component={Blog2} />
         <PrivateRoute path="/npm-package" component={Blog3} />
+        <PrivateRoute path="/placement-guide" component={Blog4} />
         {/* <Route path="/" component={LoginPage} /> */}
         <PrivateRoute path="/placements/article" component={Reviews} exact={true}/>
         <PrivateRoute path="/placements/article/:id" component={ShowPlacementArticle} />
