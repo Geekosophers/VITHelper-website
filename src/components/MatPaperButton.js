@@ -84,6 +84,7 @@ export class MatPaperButton extends React.Component{
                                 window.location.pathname=="/hostel-vacating-procedure"?<span>Blogs</span> : null ||
                                 window.location.pathname=="/npm-package"?<span>Blogs</span> : null ||
                                 window.location.pathname=="/placement-guide"?<span>Blogs</span> : null ||
+                                window.location.pathname=="/placement-experience"?<span>Blogs</span> : null ||
                                 window.location.pathname=="/faqs"?<span>FAQs</span> : null ||
                                 window.location.pathname=="/about-us"?<span>About Us</span> : null ||
                                 window.location.pathname=="/cat1papers"?<span>CAT-1 Papers</span> : null ||
@@ -164,6 +165,7 @@ export class MatPaperButton extends React.Component{
                         <Link to="/room-counselling" className="button button--link-for-matheader">&#x25BA; Hostel Room Councelling</Link>
                         <Link to="/npm-package" className="button button--link-for-matheader" style={{display:'flex',flexDirection:'row'}}><span>&#x25BA;</span> <span>Get started with making NPM packages</span></Link>
                         <Link to="/placement-guide" className="button button--link-for-matheader" style={{display:'flex',flexDirection:'row'}}><span>&#x25BA;</span> <span>Guide for Placement preparation</span></Link>
+                        <Link to="/placement-experience" className="button button--link-for-matheader" style={{display:'flex',flexDirection:'row'}}><span>&#x25BA;</span> <span>Placement experience - Travelling from VIT Chennai to Vellore</span></Link>
                         <div className="button button--link"><u>Placements:</u></div>
                         <Link to="/placements" className="button button--link-for-matheader">&#x25BA; Home</Link>
                         <Link to="/placements/article" className="button button--link-for-matheader">&#x25BA; Reviews</Link>

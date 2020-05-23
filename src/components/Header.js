@@ -82,7 +82,8 @@ export class Header extends React.Component {
                       window.location.pathname=="/room-counselling" || 
                       window.location.pathname=="/hostel-vacating-procedure" ||
                       window.location.pathname=="/npm-package" ||
-                      window.location.pathname=="/placement-guide" 
+                      window.location.pathname=="/placement-guide" ||
+                      window.location.pathname=="/placement-experience"
                       ? 
                       <span className="header-button header-button--link-u">
                         Blogs 
@@ -99,6 +100,7 @@ export class Header extends React.Component {
                       <Link to="/hostel-vacating-procedure" className="button button--link">Hostel Vacating Procedure</Link>
                       <Link to="/npm-package" className="button button--link">How to get started with making NPM packages</Link>
                       <Link to="/placement-guide" className="button button--link">Guide for Placement preparation</Link>
+                      <Link to="/placement-experience" className="button button--link">Placement experience - Travelling from VIT Chennai to Vellore</Link>
                     </div>
                   </span>
                   {/* <Link to="/blogs">
@@ -125,6 +127,7 @@ export class Header extends React.Component {
                       window.location.pathname!=="/hostel-vacating-procedure" &&
                       window.location.pathname!=="/npm-package" &&
                       window.location.pathname!=="/placement-guide" &&
+                      window.location.pathname!=="/placement-experience" &&
                       <span className="header-button header-button--link-u">Placements</span> ||
                       <span className="header-button header-button--link">Placements</span>
                     }
