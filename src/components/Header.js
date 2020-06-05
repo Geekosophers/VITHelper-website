@@ -128,13 +128,15 @@ export class Header extends React.Component {
                       window.location.pathname!=="/npm-package" &&
                       window.location.pathname!=="/placement-guide" &&
                       window.location.pathname!=="/placement-experience" &&
+                      window.location.pathname!=="/" &&
                       <span className="header-button header-button--link-u">Placements</span> ||
                       <span className="header-button header-button--link">Placements</span>
                     }
                   </Link>
                   {/* {console.log(this.state.width)} */}
-                  <span>&nbsp;&nbsp;</span>
-                  <Info />
+                  {/* <span>&nbsp;&nbsp;</span> */}
+                  {/* <Info /> */}
+                  {/* <button onClick={ this.props.startLogout}>Logout</button> */}
                 </span>
               </div>
             </div>
@@ -242,8 +244,8 @@ const mapDispatchToProps = (dispatch) => ({
 
 const mapStateToProps = (state) => {
   return {
-    user_profPic: firebase.auth().currentUser.photoURL,
-    user_id: firebase.auth().currentUser.uid,
+    // user_profPic: firebase.auth().currentUser.photoURL,
+    // user_id: firebase.auth().currentUser.uid,
   };
 };
 

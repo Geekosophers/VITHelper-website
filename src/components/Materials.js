@@ -8,6 +8,7 @@ import ShareButton from './ShareButton';
 
 const Materials = () => (
   <div>
+    {window.scrollTo(0, 0)}
     <Header />
     <MatPaperButton />
     <MaterialsListFilter />

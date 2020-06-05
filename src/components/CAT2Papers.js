@@ -8,6 +8,7 @@ import ShareButton from './ShareButton';
 
 const CAT2Papers = () => (
   <div>
+    {window.scrollTo(0, 0)}
     <Header />
     <MatPaperButton />
     {/* <Header /> */}

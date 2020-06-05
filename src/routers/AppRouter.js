@@ -15,7 +15,7 @@ import Blog2 from '../components/Blog2';
 import Blog3 from '../components/Blog3';
 import Blog4 from '../components/Blog4';
 import Blog5 from '../components/Blog5';
-import LoginPage from '../components/LoginPage';
+import LoginPageNew from '../components/LoginPageNew';
 import Reviews from '../components/Reviews';
 import Advice from '../components/Advice';
 import PAT from '../components/PAT';
@@ -36,31 +36,31 @@ const AppRouter = () => (
     <div>
       <HeaderForMobile />
       <Switch>
-        <PublicRoute path="/" component={LoginPage} exact={true} />
+        <Route path="/" component={AboutUsForMobile} exact={true} />
         {/* <Route path="/blogs" component={Blogs} /> */}
-        <PrivateRoute path="/about-us" component={AboutUsForMobile} />
-        <PrivateRoute path="/cat1papers" component={CAT1Papers} />
+        {/* <Route path="/about-us" component={AboutUsForMobile} /> */}
+        <Route path="/cat1papers" component={CAT1Papers} />
         {/* <PrivateRoute path="/add" component={Add} history={history}/> */}
-        <PrivateRoute path="/cat2papers" component={CAT2Papers} />
-        <PrivateRoute path="/fatpapers" component={FATPapers} />
-        <PrivateRoute path="/materials" component={Materials} />
-        <PrivateRoute path="/faqs" component={Faqs} />
-        <PrivateRoute path="/placements" component={Placements} exact={true}/>
-        <PrivateRoute path="/placements/pat" component={PAT} />
-        <PrivateRoute path="/placements/resources" component={Resources} />
-        <PrivateRoute path="/placements/advice" component={Advice} />
-        <PrivateRoute path="/placements/topics" component={Topics} />
-        <PrivateRoute path="/placements/news" component={Placements} />
-        <PrivateRoute path="/placements/rules" component={Rules} />
-        <PrivateRoute path="/blogs" component={Blogs} />
-        <PrivateRoute path="/hostel-vacating-procedure" component={Blog1} />
-        <PrivateRoute path="/room-counselling" component={Blog2} />
-        <PrivateRoute path="/npm-package" component={Blog3} />
-        <PrivateRoute path="/placement-guide" component={Blog4} />
-        <PrivateRoute path="/placement-experience" component={Blog5} />
+        <Route path="/cat2papers" component={CAT2Papers} />
+        <Route path="/fatpapers" component={FATPapers} />
+        <Route path="/materials" component={Materials} />
+        <Route path="/faqs" component={Faqs} />
+        <Route path="/placements" component={Placements} exact={true}/>
+        <Route path="/placements/pat" component={PAT} />
+        <Route path="/placements/resources" component={Resources} />
+        <Route path="/placements/advice" component={Advice} />
+        <Route path="/placements/topics" component={Topics} />
+        <Route path="/placements/news" component={Placements} />
+        <Route path="/placements/rules" component={Rules} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/hostel-vacating-procedure" component={Blog1} />
+        <Route path="/room-counselling" component={Blog2} />
+        <Route path="/npm-package" component={Blog3} />
+        <Route path="/placement-guide" component={Blog4} />
+        <Route path="/placement-experience" component={Blog5} />
         {/* <Route path="/" component={LoginPage} /> */}
-        <PrivateRoute path="/placements/article" component={Reviews} exact={true}/>
-        <PrivateRoute path="/placements/article/:id" component={ShowPlacementArticle} />
+        <Route path="/placements/article" component={Reviews} exact={true}/>
+        <Route path="/placements/article/:id" component={ShowPlacementArticle} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -201,7 +201,7 @@
     animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+    animation-timing-function: cubic-bezier(.5,.69,.63,.88);
 }
 
 @-webkit-keyframes navigation1 {
@@ -225,7 +225,7 @@
     -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
     animation-name: navigation-pic;
     animation-duration: 0.5s;
-    // animation-timing-function: cubic-bezier(.5,.69,.63,.88);
+    animation-timing-function: cubic-bezier(.5,.69,.63,.88);
 }
 
 @-webkit-keyframes navigation-pic {

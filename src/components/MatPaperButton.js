@@ -46,7 +46,7 @@ export class MatPaperButton extends React.Component{
     }
     
     componentDidMount() {
-        this.getUserCoins()
+        // this.getUserCoins()
     };
 
 
@@ -78,7 +78,7 @@ export class MatPaperButton extends React.Component{
                     <div className="button button--link">
                         {   this.state.count!=1 ?
                             (
-                                window.location.pathname=="/"?<span>Placements</span> : null ||
+                                window.location.pathname=="/"?<span>Greetings VITian</span> : null ||
                                 window.location.pathname=="/materials"?<span>Materials</span> : null ||
                                 window.location.pathname=="/room-counselling"?<span>Blogs</span> : null ||
                                 window.location.pathname=="/hostel-vacating-procedure"?<span>Blogs</span> : null ||
@@ -130,7 +130,7 @@ export class MatPaperButton extends React.Component{
                 {this.state.count==1 &&
                 <div> 
                     {/* style={{position: 'fixed',overflowY:'scroll'}} */}
-                    <div className="button button--link-for-matheader ham__nav-temp">
+                    {/* <div className="button button--link-for-matheader ham__nav-temp">
                         <div style={{border:'solid 2px white',borderRadius:'7px',margin:'$m-size',padding:'14px',display:'flex'}}>
                             <div>
                                 {
@@ -150,12 +150,12 @@ export class MatPaperButton extends React.Component{
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="ham__nav" onClick={this.handleState}>
                         {
                             this.state.image && <img src="./images/add.png" style={{border:'solid 2px white',borderRadius:'7px',margin:'10px',padding:'14px'}} height='auto' width='90%' />
                         }
-                        <div className="button button--link"><u>Papers:</u></div>
+                        <div className="button button--link"><u>Examination:</u></div>
                         <Link to="/cat1papers" className="button button--link-for-matheader">&#x25BA; CAT-1 Papers</Link>
                         <Link to="/cat2papers" className="button button--link-for-matheader">&#x25BA; CAT-2 Papers</Link>
                         <Link to="/fatpapers" className="button button--link-for-matheader">&#x25BA; FAT Papers</Link>
@@ -173,16 +173,7 @@ export class MatPaperButton extends React.Component{
                         <Link to="/placements/advice" className="button button--link-for-matheader">&#x25BA; Advice</Link>
                         <Link to="/placements/resources" className="button button--link-for-matheader">&#x25BA; Useful Resources</Link>
                         <Link to="/placements/pat" className="button button--link-for-matheader">&#x25BA; PAT-Rules and Regulations</Link>
-                        <div className="button button--link"><u>Info:</u></div>
-                        {/* <div className="button button--link-for-matheader">
-                            <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-                                <span>
-                                    <img src='./images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' />
-                                    <span>  Coins: {this.state.coins}</span>
-                                </span>
-                                <span> <button className="button button-addCoins">+Add coins</button></span>
-                            </div>
-                        </div> */}
+                        {/* <div className="button button--link"><u>Info:</u></div>
                         <div className="button button--link-for-matheader">
                             <div>
                                 {<img src='../../images/faq.png' style={{borderRadius:'50%'}} height='20px' width='20px' /> || <img src='./images/faq.png' style={{borderRadius:'50%'}} height='20px' width='20px' />}
@@ -200,13 +191,13 @@ export class MatPaperButton extends React.Component{
                                 {<img src='../../images/logout.png' height='20px' width='20px' /> || <img src='./images/logout.png' height='20px' width='20px' />}
                                 <span onClick={this.props.startLogout}> Logout</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 }
                 {this.state.count==0 &&
                     <div className="ham__nav1">
-                        <div className="button button--link"><u>Papers:</u></div>
+                        <div className="button button--link"><u>Examination:</u></div>
                         <div className="button button--link-for-matheader">&#x25BA; CAT-1 Papers</div>
                         <div className="button button--link-for-matheader">&#x25BA; CAT-2 Papers</div>
                         <div className="button button--link-for-matheader">&#x25BA; FAT Papers</div>
@@ -235,9 +226,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 const mapStateToProps = (state) => {
     return {
-      user_name: firebase.auth().currentUser.displayName,
-      user_profPic: firebase.auth().currentUser.photoURL,
-      user_id: firebase.auth().currentUser.uid,
+    //   user_name: firebase.auth().currentUser.displayName,
+    //   user_profPic: firebase.auth().currentUser.photoURL,
+    //   user_id: firebase.auth().currentUser.uid,
     };
 };
 

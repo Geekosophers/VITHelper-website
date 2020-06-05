@@ -14,6 +14,7 @@ import { PlacementsListItem } from './PlacementsListItem';
 
 const Placements = (props) => (
   <div>
+    {window.scrollTo(0, 0)}
     <Header />
     <MatPaperButton />
     <PlacementsHeader />
