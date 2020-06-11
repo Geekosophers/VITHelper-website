@@ -24,7 +24,7 @@ export class FatpapersListItem extends React.Component{
         var gsReference = storage.refFromURL(`gs://vithelper-32e0b.appspot.com/images/${this.props.fatpaper.file_name}.pdf`);
         gsReference.getDownloadURL().then(function(url) {
             image.url=url;
-            // console.log("url"+image.url);
+            // console.log("FAT"+image.url);
           });
     }
 

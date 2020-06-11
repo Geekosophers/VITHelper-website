@@ -42,7 +42,7 @@ const ShowPlacementArticle = (props) => {
             <div>{props.placement.individualDescription[8]}</div>
             <div>{props.placement.individualDescription[9]}</div>
             <div><b>How did you prepare for the company? Please provide any resource that can be useful for the readers: </b>{props.placement.preparation}</div>
-  <div>{props.placement.date && <b>Date of selection: </b>}{props.placement.date}</div>
+            <div>{props.placement.date && <b>Date of selection: </b>}{props.placement.date}</div>
             <div>{props.placement.advice && <span><b>Advice to the readers: </b>{props.placement.advice}</span>}</div>
             <div style={{color:'#84d0d0'}}>-{props.placement.name}, {props.placement.cgpa}, {props.placement.branch}</div>
           </div>

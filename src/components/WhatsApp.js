@@ -13,7 +13,7 @@ const WhatsApp = () => (
         <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/JKnQImP49289HdZ8UdUFKl" target="_blank">VITHelper - Papers #2 (Almost full)</a></p>
         <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/K4OiQ8Z8fw1Lt9PcT9Zbvn" target="_blank">VITHelper - Papers #3 (Almost full)</a></p>
         <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/EDbdkpFvMLQEZmmlYywBFL" target="_blank">VITHelper - Papers #4</a></p>
-        <p>In case of any query contact us at <b>vithelper.info@gmail.com</b></p>
+        <p>In case of any query contact us at <b>contact@vithelper.in</b></p>
     </div>
   </div>
 );

@@ -61,6 +61,11 @@ const Placements = (props) => (
         </div>
       </div>
     </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScTp6NuqYDVImTWI4i_C9u5Hp7Hi7wTajNj_zAqh6FOcn1Lpg/viewform?usp=sf_link" target="_blank">
+      <div className="content-container" style={{background:'#364051',color:'#84d0d0',border:'2px solid #84d0d0',padding:'10px 4px',display:'flex',justifyContent:'center',flexDirection:'row',marginBottom:'10px'}}>
+        <span>Share your placement experience with your fellow VITians by filling &nbsp;<u>this</u>&nbsp; form.</span>
+      </div>
+    </a>
     {/* <PlacementsListFilter /> */}
     {/* <PlacementsList /> */}
     {/* <WhatsApp /> */}

@@ -41,7 +41,7 @@ export class Cat2papersListItem extends React.Component{
         var gsReference = storage.refFromURL(`gs://vithelper-32e0b.appspot.com/images/${this.props.cat2paper.file_name}.pdf`);
         gsReference.getDownloadURL().then(function(url) {
             image.url=url;
-            // console.log("url"+image.url);
+            // console.log("CAT2"+image.url);
         }).catch((e) => {})
     }
 
