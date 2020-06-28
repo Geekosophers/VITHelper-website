@@ -1342,12 +1342,12 @@ const jsx = (
 let hasRendered = false;
 const renderApp = () => {
   if (!hasRendered) {
-    store.dispatch(startSetCat2papers());
-    store.dispatch(startSetFatpapers());
-    store.dispatch(startSetMaterials());
-    store.dispatch(startSetFaqs());
-    store.dispatch(startSetPlacements());
-    store.dispatch(startSetCat1papers()).then(() => {
+    // store.dispatch(startSetCat2papers());
+    // store.dispatch(startSetFatpapers());
+    // store.dispatch(startSetMaterials());
+    // store.dispatch(startSetFaqs());
+    // store.dispatch(startSetCat1papers());
+    store.dispatch(startSetPlacements()).then(() => {
       try{
         ReactDOM.render(jsx, document.getElementById('app'));
       }      
