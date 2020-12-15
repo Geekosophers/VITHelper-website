@@ -129,6 +129,7 @@ export class Header extends React.Component {
                       window.location.pathname!=="/placement-guide" &&
                       window.location.pathname!=="/placement-experience" &&
                       window.location.pathname!=="/" &&
+                      window.location.pathname!=="/privacy-policy" &&
                       <span className="header-button header-button--link-u">Placements</span> ||
                       <span className="header-button header-button--link">Placements</span>
                     }

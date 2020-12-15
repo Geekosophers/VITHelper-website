@@ -15,6 +15,7 @@ import Blog2 from '../components/Blog2';
 import Blog3 from '../components/Blog3';
 import Blog4 from '../components/Blog4';
 import Blog5 from '../components/Blog5';
+import PrivacyPolicy from '../components/PrivacyPolicy';
 import LoginPageNew from '../components/LoginPageNew';
 import Reviews from '../components/Reviews';
 import Advice from '../components/Advice';
@@ -58,6 +59,7 @@ const AppRouter = () => (
         <Route path="/npm-package" component={Blog3} />
         <Route path="/placement-guide" component={Blog4} />
         <Route path="/placement-experience" component={Blog5} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
         {/* <Route path="/" component={LoginPage} /> */}
         <Route path="/placements/article" component={Reviews} exact={true}/>
         <Route path="/placements/article/:id" component={ShowPlacementArticle} />
