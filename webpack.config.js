@@ -25,10 +25,7 @@ module.exports = (env) => {
                 'process.env.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
                 'process.env.FIREBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET),
                 'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID),
-                'process.env.FIREBASE_APP_ID': JSON.stringify(process.env.FIREBASE_APP_ID),
-                'process.env.FIREBASE_MEASUREMENT_ID': JSON.stringify(process.env.FIREBASE_MEASUREMENT_ID),
-                'process.env.BACKEND_SERVICE_LINK': JSON.stringify(process.env.BACKEND_SERVICE_LINK),
-                'process.env.REACT_APP_GA_TRACKING_CODE': JSON.stringify(process.env.REACT_APP_GA_TRACKING_CODE)
+                'process.env.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL)
             })
         ],
         module: {
