@@ -1,7 +1,6 @@
 import React from 'react';
 import database from '../firebase/firebase';
 import { firebase } from '../firebase/firebase';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 import { history } from '../routers/AppRouter';
@@ -21,17 +20,6 @@ export class Add extends React.Component {
           timer: 10
       };
   }
-
-//   getUserCoins(){
-//     database.ref(`users/${this.props.user_id}/`).on('value', (snapshot) => {
-//       const val = snapshot.val().coins;
-//       this.setState((prevState) => {
-//         return{
-//             coins: val,
-//         };            
-//       });
-//     });    
-//   }
 
   openAboutUs() {
       this.setState((prevState) => {
@@ -81,7 +69,6 @@ export class Add extends React.Component {
   
   componentDidMount() {
       this.getUserCoins();
-      // console.log('mounted');
       this.setState((prevState) => {
         return{
             openStatus: true
@@ -92,18 +79,14 @@ export class Add extends React.Component {
           openStatus: false
         });
         database.ref(`users/${this.props.user_id}/`).update({ coins:this.state.coins + 30 });
-        // console.log(history);
         history.goBack();
         }, 13000);
       this.downloadTimer();
-      
   };
   
   render() {
       return(       
-        <span className="dropdown-pic">
-            {/* {console.log(this.state.openStatus)} */}
-            
+        <span className="dropdown-pic">            
             {
               this.state.timer!=0 ? 
               <Modal className="modal-new" closeTimeoutMS={400} isOpen={this.state.openStatus} handleClose={this.closeDialog} contentLabel="Add">

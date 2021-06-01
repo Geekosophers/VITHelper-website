@@ -29,11 +29,9 @@ export class FatpapersList extends React.Component {
                     ...childSnapshot.val()
                 });
             });
-            // this.unlockedPapersList.push(unlocked[0].fatpaper_id)
             for (var i = 0, len = unlocked.length; i < len; i++) {
                 unlockedPaperList.push(unlocked[i].fatpaper_id);
             }
-            // console.log(unlockedPaperList);
             this.setState((prevState) => {
                 return{
                     unlockList: unlockedPaperList
@@ -49,8 +47,6 @@ export class FatpapersList extends React.Component {
     render() {
         return(
             <div className="content-container">
-            {/* {console.log(this.props.user_id)} */}
-            {/* {console.log(this.state.unlockedPaperList)} */}
             {this.props.fatpapers.map((fatpaper) => {
                 return this.state.unlockList.includes(fatpaper.unique_id) 
                         ? 

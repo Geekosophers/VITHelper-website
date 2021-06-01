@@ -10,7 +10,6 @@ export class Cat2papersListItem extends React.Component{
         this.handleComments = this.handleComments.bind(this);
         this.handleUrl = this.handleUrl.bind(this);
         this.unlockPaper = this.unlockPaper.bind(this);
-        // this.unlockedPapersList = this.unlockedPapersList.bind(this);
         this.state = {
             count: false,
             coins: '',
@@ -18,23 +17,6 @@ export class Cat2papersListItem extends React.Component{
             url:'https://firebasestorage.googleapis.com/v0/b/vithelper-32e0b.appspot.com/o/images%2F404.pdf?alt=media&token=93bc295c-83fb-41a7-b528-0e4c939d0592'
         };
     }  
-
-    // unlockedPapersList(){
-    //     database.ref(`users/aOj8Sg9E0lRsJKNT4PIf7NmvfAL2/cat1papers`)
-    //     .once('value')
-    //     .then((snapshot) => {
-    //         const unlocked = [];
-
-    //         snapshot.forEach((childSnapshot) => {
-    //             unlocked.push({
-    //                 id: childSnapshot.key,
-    //                 ...childSnapshot.val()
-    //             });
-    //         });
-
-    //         console.log(unlocked);
-    //     });
-    // }
 
     handleUrl(){
         const image = this.state;
@@ -76,13 +58,6 @@ export class Cat2papersListItem extends React.Component{
         }).catch((e) => {
             // console.log('Error fetching data',e);
         });
-
-        // console.log(this.props.cat1paper.id);
-        // console.log(this.props.user_id);
-        // console.log(this.props);
-        
-        // store.dispatch(startAddPaper({ cat1papers: }));
-        // store.dispatch(startAddCat1paper({ name: ['name','code','slot'],file_name:'404',lock_status:1}))
     }
     
     render(){
@@ -97,12 +72,6 @@ export class Cat2papersListItem extends React.Component{
                             <div>{this.props.cat2paper.name[1]}</div>
                         </div>
                     </div>
-                    {/* {(this.state.sufficient_coins==true || this.props.unlocked==true)
-                        ?
-                        <div className="doc-view__links"><a href={this.state.url} target="_blank"><button className="button">View Paper</button></a></div>
-                        :
-                        <a onClick={this.unlockPaper}><button className="button">Unlock Paper</button></a>
-                    } */}
                     <div className="doc-view__links"><a href={this.state.url} target="_blank"><button className="button">View Paper</button></a></div>
                 </div>
             </div>

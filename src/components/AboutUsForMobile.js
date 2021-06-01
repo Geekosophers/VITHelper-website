@@ -28,17 +28,6 @@ const AboutUsForMobile = () => (
                                 </span>
                             </div>
                         </div>
-                        {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around'}}>
-                            <img src="./images/features/papers.png" height="100%" width="40%"></img>
-                            <p style={{display:'flex',flexDirection:'column',justifyContent:'center'}}><b>FAQs- </b>Got a question? You might find your answer here.</p>
-                        </div> */}
-                        {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
-                            <p style={{display:'flex',flexDirection:'column',justifyContent:'center',margin:'0px 4px'}}>
-                                <span><h4>Digital Assignments- </h4>Your little Genie to get you through the digital assignments</span>
-                                <span><h4>Lab Assignments- </h4>Lab assignments can crack your head! This might help you crack them before that happens</span>
-                            </p>
-                            <img src="./images/features/da.png" height="100%" width="40%"></img>
-                        </div> */}
                         <h4>2. Blogs- </h4>
                         <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
                             <img src="./images/features/blogs.png" height="100%" width="40%"></img>
@@ -83,17 +72,6 @@ const AboutUsForMobile = () => (
                                 </span>
                             </div>
                         </div>
-                        {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around'}}>
-                            <img src="./images/features/papers.png" height="100%" width="40%"></img>
-                            <p style={{display:'flex',flexDirection:'column',justifyContent:'center'}}><b>FAQs- </b>Got a question? You might find your answer here.</p>
-                        </div> */}
-                        {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
-                            <p style={{display:'flex',flexDirection:'column',justifyContent:'center',margin:'0px 4px'}}>
-                                <span><h4>Digital Assignments- </h4>Your little Genie to get you through the digital assignments</span>
-                                <span><h4>Lab Assignments- </h4>Lab assignments can crack your head! This might help you crack them before that happens</span>
-                            </p>
-                            <img src="./images/features/da.png" height="100%" width="40%"></img>
-                        </div> */}
                         <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
                             <div style={{display:'flex',flexDirection:'column',justifyContent:'center',marginLeft:'4px'}}>
                                 <h4>Blogs- </h4>

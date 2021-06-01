@@ -4,7 +4,6 @@ import { firebase } from '../firebase/firebase';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
-import Modal from 'react-modal';
 
 export class Info extends React.Component {
 
@@ -57,18 +56,11 @@ export class Info extends React.Component {
 
   componentDidMount() {
       this.getUserCoins();
-      // console.log('mounted');
   };
   
   render() {
       return(       
         <span className="dropdown-pic">
-            {/* {console.log(this.state.openStatus)} */}
-            {/* <Modal className="modal-new" closeTimeoutMS={400} isOpen={this.state.openStatus} handleClose={this.closeDialog} contentLabel="Add">
-              <img src="./images/add.png" height="100%" width='auto' style={{display:'flex',justifyContent:'center'}}/>
-            </Modal> */}
-            
-            {/* <button class="dropbtn-pic">Dropdown</button> */}
             {
               <img src={this.props.user_profPic} style={{borderRadius:'50%',border:'solid #84d0d0 3px'}} height='45px' width='45px' />
               ||

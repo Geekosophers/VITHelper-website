@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { firebase } from '../firebase/firebase';
 import database from '../firebase/firebase';
-import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import { startLogout } from '../actions/auth';
 
@@ -44,10 +42,6 @@ export class MatPaperButton extends React.Component{
           });
         });    
     }
-    
-    componentDidMount() {
-        // this.getUserCoins()
-    };
 
 
     handleClick(e) {
@@ -69,12 +63,9 @@ export class MatPaperButton extends React.Component{
     render(){
         return(
             <div>
-                {/* {window.scrollTo(0, 0)} */}
                 {
                 <div>
                     <span className="show-for-mobile button-matpap__disp">
-                    {/* <Link to="/cat1papers"><button className="button--link__bl" >{window.location.pathname=="/cat1papers"? <u>CAT-1 Papers</u>:<span>CAT-1 Papers</span>}</button></Link> | 
-                    <Link to="/cat2papers"><button className="button--link__bl" >{window.location.pathname=="/cat2papers"? <u>CAT-2 Papers</u>:<span>CAT-2 Papers</span>}</button></Link> */}
                     <div className="button button--link">
                         {   this.state.count!=1 ?
                             (
@@ -126,31 +117,8 @@ export class MatPaperButton extends React.Component{
                         </div>
                     }  
                 </span>
-                {/* <p>{this.state.count}</p> */}
                 {this.state.count==1 &&
                 <div> 
-                    {/* style={{position: 'fixed',overflowY:'scroll'}} */}
-                    {/* <div className="button button--link-for-matheader ham__nav-temp">
-                        <div style={{border:'solid 2px white',borderRadius:'7px',margin:'$m-size',padding:'14px',display:'flex'}}>
-                            <div>
-                                {
-                                    <img src={this.props.user_profPic} style={{borderRadius:'50%',border:'solid #84d0d0 2px'}} height='45px' width='45px' />
-                                    ||
-                                    <img src='./images/user.png' style={{borderRadius:'50%',border:'solid #84d0d0 2px'}} height='45px' width='45px' />
-                                }
-                            </div>
-                            <div style={{display:'flex',flexDirection:'column',justifyContent:'space-between',flex:'1'}}>
-                                <div>&nbsp;&nbsp; {this.props.user_name}</div>
-                                <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-                                    <span>
-                                        &nbsp;&nbsp;{<img src='../../images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' /> || <img src='./images/circle-cropped.png' style={{borderRadius:'50%', border:'solid 1px #D4AF37'}} height='20px' width='20px' />}
-                                        <span style={{position: 'relative',top: '2px'}}>  Coins: {this.state.coins}</span>
-                                    </span>
-                                    <Link to="/add" style={{pointerEvents: 'none', cursor:'default'}}><span> <button className="button button-addCoins" >+Add coins</button></span></Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className="ham__nav" onClick={this.handleState}>
                         {
                             this.state.image && <img src="./images/add.png" style={{border:'solid 2px white',borderRadius:'7px',margin:'10px',padding:'14px'}} height='auto' width='90%' />
@@ -173,25 +141,6 @@ export class MatPaperButton extends React.Component{
                         <Link to="/placements/advice" className="button button--link-for-matheader">&#x25BA; Advice</Link>
                         <Link to="/placements/resources" className="button button--link-for-matheader">&#x25BA; Useful Resources</Link>
                         <Link to="/placements/pat" className="button button--link-for-matheader">&#x25BA; PAT-Rules and Regulations</Link>
-                        {/* <div className="button button--link"><u>Info:</u></div>
-                        <div className="button button--link-for-matheader">
-                            <div>
-                                {<img src='../../images/faq.png' style={{borderRadius:'50%'}} height='20px' width='20px' /> || <img src='./images/faq.png' style={{borderRadius:'50%'}} height='20px' width='20px' />}
-                                <span>  <Link to="faqs">FAQs</Link></span>
-                            </div>
-                        </div>
-                        <div className="button button--link-for-matheader">
-                            <div>
-                                {<img src='../../images/info.png' style={{borderRadius:'50%'}} height='20px' width='20px' /> || <img src='./images/info.png' style={{borderRadius:'50%'}} height='20px' width='20px' />}
-                                <span> <Link to="/about-us">About Us</Link></span>
-                            </div>
-                        </div>
-                        <div className="button button--link-for-matheader">
-                            <div>
-                                {<img src='../../images/logout.png' height='20px' width='20px' /> || <img src='./images/logout.png' height='20px' width='20px' />}
-                                <span onClick={this.props.startLogout}> Logout</span>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
                 }
@@ -226,9 +175,6 @@ const mapDispatchToProps = (dispatch) => ({
 
 const mapStateToProps = (state) => {
     return {
-    //   user_name: firebase.auth().currentUser.displayName,
-    //   user_profPic: firebase.auth().currentUser.photoURL,
-    //   user_id: firebase.auth().currentUser.uid,
     };
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import database from '../firebase/firebase';
 import { firebase } from '../firebase/firebase';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 

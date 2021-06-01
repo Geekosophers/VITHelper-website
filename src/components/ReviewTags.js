@@ -30,8 +30,6 @@ const ReviewTags = (props) => (
   </div>
 );
 
-// export default Placements;
-
 const mapStateToProps = (state) => {
   return {
       placements: selectPlacements(state.placements,state.filter)

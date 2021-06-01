@@ -1,5 +1,4 @@
 .placement-content-container {
-    // margin: 0 auto;
     padding: 0 $m-size;
     max-width: 80rem;
   }
@@ -15,11 +14,6 @@
 
 .placement-container-pat { 
     margin: 0px;
-    // margin-top: 50px;
-    // display: flex;
-    // flex-direction: row;
-    // font-family: 'Merriweather', serif;
-    // justify-content: space-between;
 }
 
 .placement-container__name {
@@ -57,7 +51,6 @@
     @media (max-width: 27rem) {
         display: flex;
         flex-direction: column;
-        // width: 100%;
         margin: 30px 0 0 0;
     }
 }
@@ -77,7 +70,6 @@
     margin: 0%;
     background: #84d0d0;
     background-size: auto;
-    // font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
     padding: $l-size $m-size;
 }
@@ -85,17 +77,14 @@
 .placement-container__tips-content {
     padding: $m-size;
     background: #f5f1f6;
-    // font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
 }
 
 .placement-container__rowDisplay {
     display: flex;
     flex-direction: row;
-    // max-width: 90%;
     justify-content: center;
     @media (max-width: $desktop-breakpoint) {
-        // display: none;
         flex-direction: column;
     }
 }
@@ -113,7 +102,6 @@
 }
 
 .placement-header-content {
-    // border-bottom: black solid 2px;
     display: inline-block;
     color: #000;
     text-decoration: none;
@@ -130,7 +118,6 @@
 
 .placement-header-content:hover::after {
     width: 100%;
-    // transition: width .3s;
 }
 
 .placements-cards {
@@ -146,13 +133,3 @@
     width: 50%;
     background: #84d0d0;
 }
-
-// .placement-container__1 {
-// } 
-
-// .placement-container__2 {
-
-// }
-
-// .placement-container__3 {
-// }

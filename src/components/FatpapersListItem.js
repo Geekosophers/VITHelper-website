@@ -10,7 +10,6 @@ export class FatpapersListItem extends React.Component{
         this.handleComments = this.handleComments.bind(this);
         this.handleUrl = this.handleUrl.bind(this);
         this.unlockPaper = this.unlockPaper.bind(this);
-        // this.unlockedPapersList = this.unlockedPapersList.bind(this);
         this.state = {
             count: false,
             coins: '',
@@ -24,7 +23,6 @@ export class FatpapersListItem extends React.Component{
         var gsReference = storage.refFromURL(`gs://vithelper-32e0b.appspot.com/images/${this.props.fatpaper.file_name}.pdf`);
         gsReference.getDownloadURL().then(function(url) {
             image.url=url;
-            // console.log("FAT"+image.url);
           });
     }
 
@@ -44,7 +42,6 @@ export class FatpapersListItem extends React.Component{
         .then((snapshot) => {
             const val = snapshot.val();
             if(val.coins>=5){
-                // console.log('yes');
                 this.setState((prevState) => {
                     return{
                         sufficient_coins: true,
@@ -73,12 +70,6 @@ export class FatpapersListItem extends React.Component{
                             <div>{this.props.fatpaper.name[1]}</div>
                         </div>
                     </div>
-                    {/* {(this.state.sufficient_coins==true || this.props.unlocked==true)
-                        ?
-                        <div className="doc-view__links"><a href={this.state.url} target="_blank"><button className="button">View Paper</button></a></div>
-                        :
-                        <a onClick={this.unlockPaper}><button className="button">Unlock Paper</button></a>
-                    } */}
                     <div className="doc-view__links"><a href={this.state.url} target="_blank"><button className="button">View Paper</button></a></div>
                 </div>
             </div>

@@ -29,11 +29,9 @@ export class Cat1papersList extends React.Component {
                     ...childSnapshot.val()
                 });
             });
-            // this.unlockedPapersList.push(unlocked[0].cat1paper_id)
             for (var i = 0, len = unlocked.length; i < len; i++) {
                 unlockedPaperList.push(unlocked[i].cat1paper_id);
             }
-            // console.log(unlockedPaperList);
             this.setState((prevState) => {
                 return{
                     unlockList: unlockedPaperList
@@ -49,8 +47,6 @@ export class Cat1papersList extends React.Component {
     render() {
         return(
             <div className="content-container">
-            {/* {console.log(this.props.user_id)} */}
-            {/* {console.log(this.state.unlockedPaperList)} */}
                 {this.props.cat1papers.map((cat1paper) => {
                     return this.state.unlockList.includes(cat1paper.unique_id) 
                         ? 
@@ -81,26 +77,6 @@ export class Cat1papersList extends React.Component {
         );
     }
 }
-
-// const Cat1papersList = (props) => {
-//     return(
-//         <div className="content-container">
-//             {/* <div className="list-header">
-//                 <div>Cat-1 Papers</div>
-//             </div> */}
-//             {props.cat1papers.map((cat1paper) => {
-//                 return <Cat1papersListItem 
-//                             key={cat1paper.id} 
-//                             cat1paper={cat1paper} 
-//                             user_id={props.user_id} 
-//                             onSubmit={(user) => {
-//                                 props.dispatch(startAddCat1User(user));
-//                             }}    
-//                         />; 
-//             })}
-//         </div>
-//     );
-// };
 
 const mapStateToProps = (state) => {
     return {

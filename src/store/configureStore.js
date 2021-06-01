@@ -30,11 +30,3 @@ export default () => {
 
   return store;
 };
-
-//STORE CREATION
-/*const store = createStore(
-  combineReducers({
-    teachers: teachersReducer,
-    filter: filterReducer
-  })
-);*/

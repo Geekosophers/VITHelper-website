@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 
 
 const Blogs = (props) => {
-  // console.log(props.placement);
   return (
     <div>
       {window.scrollTo(0, 0)}

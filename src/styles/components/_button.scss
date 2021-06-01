@@ -81,7 +81,7 @@
 }
 
 .button-more-projects {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 40px;
@@ -90,7 +90,6 @@
   font-size: 16px;
   margin: 5px 2px 20px 2px;
   cursor: pointer;
-  // border-radius: 100;
   font-family: 'Courier New', Courier, monospace;
   position: relative;
   display: flex;
@@ -100,8 +99,6 @@
 
 .button-matpap__disp {
   display: flex;
-  // padding: 5px 10px 5px 10px;
-  // align-content: center;
   flex-direction: row;
   justify-content: space-between;
   background: $dark-blue;
@@ -120,19 +117,13 @@
 
 .button-addCoins {
   background: #A9A9A9;
-  // border: none;
-  // color: white;
-  // display: inline-block;
   font-size: 1.4rem;
   font-weight: 300;
-  // line-height: 1;
   padding: 4px 10px;
-  // text-decoration: none;
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
-
 }
 
 .pointer {cursor: pointer;}

@@ -1,16 +1,11 @@
 import React from 'react';
-import PlacementsList from './PlacementsList';
-import PlacementsListFilter from './PlacementsListFilter';
-import WhatsApp from './WhatsApp';
 import Header from './Header';
 import MatPaperButton from './MatPaperButton';
 import PlacementsThreeLiner from './PlacementsThreeLiner';
 import { connect } from 'react-redux';
 import selectPlacements from '../selectors/placements';
-import ShareButton from './ShareButton';
 import PlacementsHeader from './PlacementsHeader';
 import { Link } from 'react-router-dom';
-import { PlacementsListItem } from './PlacementsListItem';
 
 const Placements = (props) => (
   <div>
@@ -66,14 +61,8 @@ const Placements = (props) => (
         <span>Share your placement experience with your fellow VITians by filling &nbsp;<u>this</u>&nbsp; form.</span>
       </div>
     </a>
-    {/* <PlacementsListFilter /> */}
-    {/* <PlacementsList /> */}
-    {/* <WhatsApp /> */}
-    {/* <ShareButton /> */}
   </div>
 );
-
-// export default Placements;
 
 const mapStateToProps = (state) => {
   return {

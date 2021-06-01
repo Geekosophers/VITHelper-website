@@ -1,6 +1,5 @@
 .project-desktop {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/dodge-it.png');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -12,7 +11,6 @@
 
 .project-desktop-skills {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/skills.png');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -24,7 +22,6 @@
 
 .project-desktop-pho {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/projects/perspective-homography-opencv.jpg');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -36,7 +33,6 @@
 
 .project-desktop-eye-helper {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/projects/eye-helper.jpg');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -48,7 +44,6 @@
 
 .project-desktop-cnn-calc {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/projects/cnn-calc.jpg');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -60,7 +55,6 @@
 
 .project-desktop-afbw {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/projects/auto-facebook-birthday-wish.png');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -72,7 +66,6 @@
 
 .project-desktop-breakout-dcqn {
     @media (min-width: $desktop-breakpoint) {
-        // background: url('/images/projects/breakout-dcqn.jpg');
         align-items: center;
         background-size: cover;
         display: flex;
@@ -263,7 +256,6 @@
 }
 
 .auto-facebook-birthday-wish {
-    // background: url('/images/projects/auto-facebook-birthday-wish.png');
     @media (min-width: $desktop-breakpoint) {
         background-size: cover;
         width: 40rem;
@@ -281,7 +273,6 @@
 }
 
 .two-cars {
-    // background: url('/images/projects/two-cars.png');
     @media (min-width: $desktop-breakpoint) {
         background-size: cover;
         width: 40rem;
@@ -300,7 +291,6 @@
 }
 
 .cnn-calc {
-    // background: url('/images/projects/cnn-calc.jpg');
     @media (min-width: $desktop-breakpoint) {
         background-size: cover;
         width: 40rem;
@@ -318,7 +308,6 @@
 }
 
 .eye-helper {
-    // background: url('/images/projects/eye-helper.jpg');
     @media (min-width: $desktop-breakpoint) {
         background-size: cover;
         width: 40rem;
@@ -336,7 +325,6 @@
 }
 
 .breakout-dcqn {
-    // background: url('/images/projects/breakout-dcqn.jpg');
     @media (min-width: $desktop-breakpoint) {
         background-size: cover;
         width: 40rem;
@@ -354,7 +342,6 @@
 }
 
 .perspective-homography-opencv {
-    // background: url('/images/projects/perspective-homography-opencv.jpg');
     @media (min-width: $desktop-breakpoint) {
         background-size: cover;
         width: 40rem;

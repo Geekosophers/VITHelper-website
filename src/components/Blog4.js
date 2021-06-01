@@ -4,7 +4,6 @@ import MatPaperButton from './MatPaperButton';
 import { connect } from 'react-redux';
 
 const Blog4 = (props) => {
-  // console.log(props.placement);
   return (
     <div>
       {window.scrollTo(0, 0)}

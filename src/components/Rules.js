@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './Header';
 import MatPaperButton from './MatPaperButton';
 import PlacementsHeader from './PlacementsHeader';
-import { connect } from 'react-redux';
 
 const Rules = () => (
   <div>

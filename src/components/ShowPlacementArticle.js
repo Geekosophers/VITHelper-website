@@ -5,9 +5,7 @@ import PlacementsHeader from './PlacementsHeader';
 import ReviewTags from './ReviewTags';
 import { connect } from 'react-redux';
 
-
 const ShowPlacementArticle = (props) => {
-  // console.log(props.placement);
   return (
     <div>
       {window.scrollTo(0, 0)}

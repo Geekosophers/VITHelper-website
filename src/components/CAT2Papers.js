@@ -11,7 +11,6 @@ const CAT2Papers = () => (
     {window.scrollTo(0, 0)}
     <Header />
     <MatPaperButton />
-    {/* <Header /> */}
     <Cat2papersListFilter />
     <Cat2papersList />
     <WhatsApp />

@@ -1,8 +1,5 @@
 import React from 'react';
-import {MatPaperButton} from './MatPaperButton';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import InfoForMobile from './InfoForMobile';
 import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
@@ -20,9 +17,6 @@ export const Header = ({ startLogout }) => (
                   window.location.pathname=="/placements"? <img src="./images/header-font.png" height="50px" width="150px"/>: <img src="../../images/header-font.png" height="50px" width="150px"/>
                 }
               </div>
-            </div>
-            <div>
-              {/* <InfoForMobile /> */}
             </div>
         </div>
       </div>

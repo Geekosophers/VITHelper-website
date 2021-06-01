@@ -5,7 +5,6 @@ import MatPaperButton from './MatPaperButton';
 import { connect } from 'react-redux';
 
 const Blogs = (props) => {
-  // console.log(props.placement);
   return (
     <div>
       <Header />

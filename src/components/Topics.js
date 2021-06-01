@@ -88,11 +88,6 @@ const Topics = () => (
         </div>  
       </figure>
     </div>
-        
-        
-        
-        
-        
     </div>
     <ShareButton />
   </div>

@@ -1,16 +1,11 @@
 import React from 'react';
-import PlacementsList from './PlacementsList';
-import PlacementsListFilter from './PlacementsListFilter';
-import WhatsApp from './WhatsApp';
 import Header from './Header';
 import MatPaperButton from './MatPaperButton';
 import PlacementsThreeLiner from './PlacementsThreeLiner';
 import { connect } from 'react-redux';
 import selectPlacements from '../selectors/placements';
-import ShareButton from './ShareButton';
 import PlacementsHeader from './PlacementsHeader';
 import ReviewTags from './ReviewTags';
-import { PlacementsListItem } from './PlacementsListItem';
 
 const Placements = (props) => (
   <div>
@@ -41,14 +36,8 @@ const Placements = (props) => (
         <PlacementsThreeLiner id={props.placements[17].id} placement={props.placements[17]}/>
       </div>
     </div>
-    {/* <PlacementsListFilter /> */}
-    {/* <PlacementsList /> */}
-    {/* <WhatsApp /> */}
-    {/* <ShareButton /> */}
   </div>
 );
-
-// export default Placements;
 
 const mapStateToProps = (state) => {
   return {

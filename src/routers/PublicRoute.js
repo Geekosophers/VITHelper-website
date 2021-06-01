@@ -12,7 +12,6 @@ export const PublicRoute = ({
       isAuthenticated ? (
         <Redirect to="/placements" />
       ) : (
-          // <Component {...props} />
           window.location.pathname=="/"?(
             <Component {...props} />
           ) : (

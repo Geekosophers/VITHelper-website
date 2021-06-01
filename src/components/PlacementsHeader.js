@@ -19,12 +19,10 @@ const Placements = () => (
           <div className="placement-header-content">Reviews</div>
         }
       </Link>
-      {/* <Link to="/placements/news">{window.location.pathname=="/placements/news" ? <div className="placement-header-border">News</div> : <div className="placement-header-content">News</div>}</Link> */}
       <Link to="/placements/topics">{window.location.pathname=="/placements/topics" ? <div className="placement-header-border">Important Topics</div> : <div className="placement-header-content">Important Topics</div>}</Link>
       <Link to="/placements/advice">{window.location.pathname=="/placements/advice" ? <div className="placement-header-border">Advice</div> : <div className="placement-header-content">Advice</div>}</Link>
       <Link to="/placements/resources">{window.location.pathname=="/placements/resources" ? <div className="placement-header-border">Useful Resources</div> : <div className="placement-header-content">Useful Resources</div>}</Link>
       <Link to="/placements/pat">{window.location.pathname=="/placements/pat" ? <div className="placement-header-border">PAT-Rules and Regulations</div> : <div className="placement-header-content">PAT-Rules and Regulations</div>}</Link>
-      {/* <Link to="/placements/rules">{window.location.pathname=="/placements/rules" ? <div className="placement-header-border">Rules and Regulations</div> : <div className="placement-header-content">Rules and Regulations</div>}</Link> */}
     </div>
     
   </div>
