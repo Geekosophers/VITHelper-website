@@ -1,85 +1,32 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {FatpapersListItem} from './FatpapersListItem';
-import database from '../firebase/firebase';
-import selectFatpapers from '../selectors/fatpapers';
-import { startAddFatUser } from '../actions/users';
-
+import selectCat1papers from '../selectors/cat1papers';
 
 export class FatpapersList extends React.Component {
 
     constructor(props){
-        super(props); 
-        this.unlockedPapersList = this.unlockedPapersList.bind(this);
-        this.state = {
-            unlockList: []
-        };
+        super(props);
     }
-
-    unlockedPapersList(){
-        database.ref(`users/${this.props.user_id}/fatpapers`)
-        .once('value')
-        .then((snapshot) => {
-            const unlocked = [];
-            const unlockedPaperList = [];
-
-            snapshot.forEach((childSnapshot) => {
-                unlocked.push({
-                    id: childSnapshot.key,
-                    ...childSnapshot.val()
-                });
-            });
-            for (var i = 0, len = unlocked.length; i < len; i++) {
-                unlockedPaperList.push(unlocked[i].fatpaper_id);
-            }
-            this.setState((prevState) => {
-                return{
-                    unlockList: unlockedPaperList
-                };            
-            });
-        });
-    }
-
-    componentDidMount() {
-        this.unlockedPapersList()
-    };
     
     render() {
         return(
             <div className="content-container">
-            {this.props.fatpapers.map((fatpaper) => {
-                return this.state.unlockList.includes(fatpaper.unique_id) 
-                        ? 
-                        <FatpapersListItem 
+                {this.props.fatpapers.map((fatpaper) => {
+                    return <FatpapersListItem 
                             key={fatpaper.id}
-                            unlocked = {true} 
                             fatpaper={fatpaper} 
-                            user_id={this.props.user_id} 
-                            unlockedPapers = {this.state.unlockedPapersList}
-                            onSubmit={(user) => {
-                                this.props.dispatch(startAddFatUser(user));
-                            }}    
-                        />
-                        :
-                        <FatpapersListItem 
-                            key={fatpaper.id}
-                            unlocked = {false} 
-                            fatpaper={fatpaper} 
-                            user_id={this.props.user_id} 
-                            unlockedPapers = {this.state.unlockedPapersList}
-                            onSubmit={(user) => {
-                                this.props.dispatch(startAddFatUser(user));
-                            }}    
-                        />; 
-            })}
-        </div>
+                        /> 
+                    })
+                }
+            </div>
         );
     }
 }
 
 const mapStateToProps = (state) => {
     return {
-        fatpapers: selectFatpapers(state.fatpapers,state.filter),
+        fatpapers: selectCat1papers(state.fatpapers,state.filter),
         user_id: state.auth.uid
     };
 };

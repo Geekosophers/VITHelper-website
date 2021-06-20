@@ -1,70 +1,28 @@
 import React from 'react';
 import { storage } from '../firebase/firebase';
-import { connect } from 'react-redux';
-import database from '../firebase/firebase';
-import { firebase } from '../firebase/firebase';
 
 export class Cat2papersListItem extends React.Component{
     constructor(props){
         super(props);
-        this.handleComments = this.handleComments.bind(this);
         this.handleUrl = this.handleUrl.bind(this);
-        this.unlockPaper = this.unlockPaper.bind(this);
         this.state = {
-            count: false,
-            coins: '',
-            sufficient_coins: false,
-            url:'https://firebasestorage.googleapis.com/v0/b/vithelper-32e0b.appspot.com/o/images%2F404.pdf?alt=media&token=93bc295c-83fb-41a7-b528-0e4c939d0592'
+            url:''
         };
-    }  
+    }
 
     handleUrl(){
         const image = this.state;
         var gsReference = storage.refFromURL(`gs://vithelper-32e0b.appspot.com/images/${this.props.cat2paper.file_name}.pdf`);
         gsReference.getDownloadURL().then(function(url) {
             image.url=url;
-            console.log("CAT2"+image.url);
-        }).catch((e) => {})
-    }
-
-    handleComments(e) {
-        this.setState((prevState) => {
-            return{
-                count:!this.state.count
-            };            
-        });
-    }
-
-    unlockPaper = (e) => {
-        e.preventDefault();
-
-        database.ref(`users/${this.props.user_id}/`)
-        .once('value')
-        .then((snapshot) => {
-            const val = snapshot.val();
-            if(val.coins>=5){
-                // console.log('yes');
-                this.setState((prevState) => {
-                    return{
-                        sufficient_coins: true,
-                        coins: val.coins
-                    };          
-                });
-                database.ref(`users/${this.props.user_id}/`).update({ coins:this.state.coins -  5 });
-                this.props.onSubmit({
-                    cat2paper_id: this.props.cat2paper.unique_id,
-                });
-            }
-        }).catch((e) => {
-            // console.log('Error fetching data',e);
-        });
+            window.open( url, "_blank" );
+          });
     }
     
     render(){
         return(
             <div>
-                <div>{this.handleUrl()}</div>
-                <div className="list-item"  onClick={this.handleComments}>
+                <div className="list-item">
                     <div className="button2 button--link list_papers">
                         <div className="list_papers-name">{this.props.cat2paper.name[0]}</div>
                         <div className="list_papers-code">
@@ -72,7 +30,11 @@ export class Cat2papersListItem extends React.Component{
                             <div>{this.props.cat2paper.name[1]}</div>
                         </div>
                     </div>
-                    <div className="doc-view__links"><a href={this.state.url} target="_blank"><button className="button">View Paper</button></a></div>
+                    <div className="doc-view__links">
+                        <button className="button" onClick={this.handleUrl}>
+                            View Paper
+                        </button>
+                    </div>
                 </div>
             </div>
         );
