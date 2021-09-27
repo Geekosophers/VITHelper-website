@@ -2,3 +2,6 @@ node_modules/
 public/dist/
 .env.test
 .env.development
+.DS_Store
+public/.DS_Store
+public/images/.DS_Store

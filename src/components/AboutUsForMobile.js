@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import MatPaperButton from './MatPaperButton';
+// import ApplicationScreen from './ApplicationScreen';
 import { Link } from 'react-router-dom';
 
 const AboutUsForMobile = () => (
@@ -8,6 +9,7 @@ const AboutUsForMobile = () => (
         {window.scrollTo(0, 0)}
         <Header />
         <MatPaperButton/>
+        {/* <ApplicationScreen /> */}
         <div className="modal-page-desktop">
             <div className='content-container'>
                 <h3 className="modal__title">About Us</h3>
