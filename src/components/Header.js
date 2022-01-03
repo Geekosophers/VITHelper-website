@@ -24,6 +24,7 @@ export class Header extends React.Component {
                   window.location.pathname=="/cat2papers"? <img src="./images/header-font.png" height="50px" width="150px"/> : null ||
                   window.location.pathname=="/fatpapers"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
                   window.location.pathname=="/materials"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
+                  window.location.pathname=="/calculatorHome"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
                   window.location.pathname=="/placements"? <img src="./images/header-font.png" height="50px" width="150px"/>: <img src="../../images/header-font.png" height="50px" width="150px"/>
                 }
               </Link>
@@ -34,7 +35,8 @@ export class Header extends React.Component {
                       window.location.pathname=="/cat1papers" || 
                       window.location.pathname=="/cat2papers" || 
                       window.location.pathname=="/fatpapers" ||
-                      window.location.pathname=="/materials"
+                      window.location.pathname=="/materials" ||
+                      window.location.pathname=="/calculatorHome" 
                       ? 
                       <span className="header-button header-button--link-u">
                         Examination 
@@ -52,6 +54,7 @@ export class Header extends React.Component {
                       <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
                       <hr style={{margin:'0',padding:'0',align:'center',border:'1px solid #84d0d0'}}/>
                       <Link to="/materials" className="button button--link" style={{color:'#84d0d0'}}>Study Materials</Link>
+                      <Link to="/calculatorHome" className="button button--link" style={{color:'#84d0d0'}}>Calculator</Link>
                     </div>
                   </span>
                   <span className="dropdown-blog">
@@ -86,6 +89,7 @@ export class Header extends React.Component {
                       window.location.pathname!=="/cat1papers" &&
                       window.location.pathname!=="/cat2papers" &&
                       window.location.pathname!=="/fatpapers" &&
+                      window.location.pathname!=="/calculatorHome" &&
                       window.location.pathname!=="/about-us" &&
                       window.location.pathname!=="/faqs" &&
                       window.location.pathname!=="/blogs" &&
