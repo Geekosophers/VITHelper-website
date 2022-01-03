@@ -6,3 +6,5 @@ const gpaReducer=(state=0,action)=>{
             return state;
     }
 }
+
+export default gpaReducer;

@@ -9,7 +9,9 @@ import { AiFillMinusCircle } from "react-icons/ai";
 
 import { setGpa } from "../actions/gpa";
 import { useDispatch } from "react-redux";
-export default function CalculatorHome() {
+
+const GpaCalculator = () => {
+
   const [subjects, setSubjects] = useState([
     {
       grade: "",
@@ -43,6 +45,7 @@ export default function CalculatorHome() {
       setSubjects(temp);
     }
   };
+
   const removeSubject = (subjectToBeRemoved) => {
     if (subjects.length == 1) {
       alert("Minimum 1 subject is required!");
@@ -58,6 +61,7 @@ export default function CalculatorHome() {
       setSubjects(final);
     }
   };
+
   const convertGradeToValue = (grade) => {
     switch (grade) {
       case "S":
@@ -78,6 +82,9 @@ export default function CalculatorHome() {
         return 0;
     }
   };
+
+  const dispatch = useDispatch();
+
   const calculateGPA = () => {
     // debugger;
     var sumGradeCredit = 0;
@@ -95,9 +102,10 @@ export default function CalculatorHome() {
       let gpa = (sumGradeCredit / sumCredits).toFixed(2);
       document.getElementById("gpaResult").innerHTML = "GPA : " + gpa;
       // const dispatch = useDispatch()
-      useDispatch({type:'SET_GPA',gpa:gpa});
+      dispatch(setGpa(gpa));
     }
   };
+
   return (
     <div>
       <Header></Header>
@@ -144,3 +152,5 @@ export default function CalculatorHome() {
     </div>
   );
 }
+
+export default GpaCalculator;
