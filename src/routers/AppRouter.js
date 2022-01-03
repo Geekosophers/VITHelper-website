@@ -23,6 +23,8 @@ import Placements from '../components/Placements';
 import ShowPlacementArticle from '../components/ShowPlacementArticle';
 import Resources from '../components/Resources';
 import Topics from '../components/Topics';
+import CalculatorHome from '../components/CalculatorHome';
+import GpaCalculator from '../components/GpaCalculator';
 import AboutUsForMobile from '../components/AboutUsForMobile';
 
 export const history = createHistory();
@@ -52,6 +54,8 @@ const AppRouter = () => (
         <Route path="/placement-guide" component={Blog4} />
         <Route path="/placement-experience" component={Blog5} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/calculatorHome" component={CalculatorHome} />
+        <Route path="/gpaCalculator" component={GpaCalculator}/>
         <Route path="/placements/article" component={Reviews} exact={true}/>
         <Route path="/placements/article/:id" component={ShowPlacementArticle} />
         <Route component={NotFoundPage} />

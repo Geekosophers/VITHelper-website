@@ -1,0 +1,105 @@
+.containerGrades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .gradeDropDown{
+      padding-inline: 20px;
+  }
+  .creditDropDown{
+      padding-inline: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+  }
+  .topRow {
+    display: flex;
+    flex-direction: row;
+  }
+  .gpaCard {
+    height: 250px;
+    width: 450px;
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cgpaCard {
+    height: 250px;
+    width: 450px;
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #85ffbd;
+    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  }
+  .marksCard {
+    height: 250px;
+    width: 950px;
+    margin-block: 25px;
+    border-radius: 10px;
+    background-color: #fa8bff;
+    background-image: linear-gradient(
+      45deg,
+      #fa8bff 0%,
+      #2bd2ff 52%,
+      #2bff88 90%
+    );
+  }
+  .chart{
+      height: 50;
+      width: 50;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addNewSubject{
+    /* size: 80; */
+    color:darkslategray;
+    /* margin-left: 57px; */
+    margin-top: 15px;
+}
+.individualSubject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-block: 1rem;
+}
+.removeSubject{
+    color:rgb(206, 0, 0);
+}
+.calculateButton{
+    background-color: rgb(132,208,208);
+    color: darkslategray;
+    margin:20px;
+    padding: 20px;
+    padding-block: 1rem;
+    font-weight: bolder;
+    border-radius: 0.5rem ;
+}
+.gpaResult{
+    margin-left: 50px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+.title{
+    font-size: xx-large;
+    font-weight: bolder;   
+}

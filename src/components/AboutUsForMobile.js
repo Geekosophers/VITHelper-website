@@ -58,6 +58,16 @@ const AboutUsForMobile = () => (
                             </div>
                             
                         </div>
+                        <h4>4. Study Materials- </h4>
+                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
+                            <img src="./images/features/study-materials.png" height="100%" width="40%"></img>
+                            <div style={{display:'flex',flexDirection:'column',justifyContent:'center',marginLeft:'4px'}}>
+                                
+                                2 AM already and confused where to study from? Find the crisp hand-sorted study materials here.
+                                <span><Link to="/materials" style={{color:'#84d0d0',borderBottom:'solid #84d0d0 1px'}}>Explore</Link></span>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
                 <div className="show-for-desktop">
@@ -96,6 +106,14 @@ const AboutUsForMobile = () => (
                                 <span><Link to="/materials" style={{color:'#84d0d0',borderBottom:'solid #84d0d0 1px'}}>Explore</Link></span>
                             </div>
                             <img src="./images/features/study-materials.png" height="100%" width="40%"></img>
+                        </div>
+                        <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
+                            <img src="./images/features/placement.png" height="100%" width="40%"></img>
+                            <div style={{display:'flex',flexDirection:'column',justifyContent:'center',marginLeft:'10px'}}>
+                                <h4>Calculators</h4>
+                                Calculate your GPA/MARKS/CGPA using our  
+                                <span><Link to="/calculatorHome" style={{color:'#84d0d0',borderBottom:'solid #84d0d0 1px'}}>Calculators</Link></span>
+                            </div>
                         </div>
                     </div>                    
                 </div>
