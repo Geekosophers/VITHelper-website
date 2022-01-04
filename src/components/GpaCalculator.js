@@ -1,5 +1,4 @@
 import React from "react";
-// import "./gpaCalculator.css";
 import { Header } from "./Header";
 import { useState } from "react";
 import GpaCalculatorInput from "./GpaCalculatorInput";
@@ -101,7 +100,6 @@ const GpaCalculator = () => {
     else {
       let gpa = (sumGradeCredit / sumCredits).toFixed(2);
       document.getElementById("gpaResult").innerHTML = "GPA : " + gpa;
-      // const dispatch = useDispatch()
       dispatch(setGpa(gpa));
     }
   };
@@ -118,13 +116,12 @@ const GpaCalculator = () => {
         <div className="container">
           {subjects.map((subject) => {
             return (
-              <div className="individualSubject">
+              <div className="individualSubject" key={subject.subjectCount}>
                 <h4>Course {subject.subjectCount + 1}: </h4>
                 <GpaCalculatorInput
                   orignalSubjects={subjects}
                   subject={subject}
                   setSubjects={setSubjects}
-                  key={subject.subjectCount}
                 ></GpaCalculatorInput>
                 <AiFillMinusCircle
                   value={{ color: "#eb4034" }}
@@ -133,7 +130,6 @@ const GpaCalculator = () => {
                   onClick={() => {
                     removeSubject(subject);
                   }}
-                  key={subject.subjectCount}
                 ></AiFillMinusCircle>
               </div>
             );
