@@ -26,6 +26,8 @@ import Topics from '../components/Topics';
 import CalculatorHome from '../components/CalculatorHome';
 import GpaCalculator from '../components/GpaCalculator';
 import AboutUsForMobile from '../components/AboutUsForMobile';
+import CgpaCalculator from '../components/cgpaCalculator';
+import MarksCalculator from '../components/marksCalculator';
 
 export const history = createHistory();
 
@@ -56,6 +58,8 @@ const AppRouter = () => (
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/calculatorHome" component={CalculatorHome} />
         <Route path="/gpaCalculator" component={GpaCalculator}/>
+        <Route path="/cgpaCalculator" component={CgpaCalculator}/>
+        <Route path="/marksCalculator" component={MarksCalculator}/>
         <Route path="/placements/article" component={Reviews} exact={true}/>
         <Route path="/placements/article/:id" component={ShowPlacementArticle} />
         <Route component={NotFoundPage} />

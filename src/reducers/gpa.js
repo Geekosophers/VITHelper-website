@@ -1,4 +1,4 @@
-const gpaReducer=(state=0,action)=>{
+const gpaReducer=(state=null,action)=>{
     switch(action.type){
         case "SET_GPA":
             return action.gpa;

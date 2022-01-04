@@ -108,7 +108,7 @@ const AboutUsForMobile = () => (
                             <img src="./images/features/study-materials.png" height="100%" width="40%"></img>
                         </div>
                         <div style={{display:'flex',flexDirection:'row',justifyContent:'space-around',margin:'10px'}}>
-                            <img src="./images/features/placement.png" height="100%" width="40%"></img>
+                            <img src="./images/features/calc.png" height="100%" width="40%"></img>
                             <div style={{display:'flex',flexDirection:'column',justifyContent:'center',marginLeft:'10px'}}>
                                 <h4>Calculators</h4>
                                 Calculate your GPA/MARKS/CGPA using our  

@@ -133,6 +133,7 @@ const GpaCalculator = () => {
                   onClick={() => {
                     removeSubject(subject);
                   }}
+                  key={subject.subjectCount}
                 ></AiFillMinusCircle>
               </div>
             );

@@ -24,40 +24,70 @@
   }
   .gpaCard {
     height: 250px;
-    width: 450px;
+    width: 400px;
     margin-right: 25px;
-    border-radius: 10px;
-    background-color: #4158d0;
-    background-image: linear-gradient(
-      43deg,
-      #4158d0 0%,
-      #c850c0 46%,
-      #ffcc70 100%
-    );
+    border-radius: 5px;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #b728c9;
+    font-weight: bold;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background:#b728c9;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .gpaCard:hover {
+    transition:0.3s;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
   .cgpaCard {
     height: 250px;
-    width: 450px;
+    width: 400px;
     margin-right: 25px;
-    border-radius: 10px;
-    background-color: #85ffbd;
-    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    border-radius: 5px;
+    border-width: 0.5rem;
+    border-style: solid;
+    font-weight: bold;
+    border-color: #0294c9;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background:#0294c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .cgpaCardWithValues{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+  }
+  .cgpaCard:hover {
+    transition:0.3s;
+    box-shadow: rgba(50, 211, 240, 0.4) 5px 5px, rgba(50, 211, 240, 0.3) 10px 10px, rgba(50, 211, 240, 0.2) 15px 15px, rgba(50, 211, 240, 0.1) 20px 20px, rgba(50, 211, 240, 0.05) 25px 25px;
+    // box-shadorgba(5, 4, 5, 0.4).4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
   }
   .marksCard {
     height: 250px;
-    width: 950px;
+    width: 825px;
     margin-block: 25px;
     border-radius: 10px;
-    background-color: #fa8bff;
-    background-image: linear-gradient(
-      45deg,
-      #fa8bff 0%,
-      #2bd2ff 52%,
-      #2bff88 90%
-    );
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+    padding: 5rem;
+
+    background: rgb(209, 178, 0);
+// background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+
+  .marksCard:hover {
+    transition:0.3s;
+    box-shadow: rgba(245, 116, 11, 0.959) 0px 5px, rgba(245, 116, 11, 0.3) 0px 10px, rgba(245, 116, 11, 0.2) 0px 15px, rgba(245, 116, 11, 0.1) 0px 20px, rgba(245, 116, 11, 0.05) 0px 25px;
+    // box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
   }
   .chart{
       height: 50;
@@ -92,8 +122,18 @@
     font-weight: bolder;
     border-radius: 0.5rem ;
 }
+.cgpaCalculateButton{
+  background-color: rgb(132,208,208);
+  color: darkslategray;
+  margin:20px;
+  padding: 20px;
+  padding-block: 1rem;
+  font-weight: bolder;
+  border-radius: 0.5rem ;
+  width: 25rem;
+}
 .gpaResult{
-    margin-left: 50px;
+    // margin-left: 50px;
     margin-top: 40px;
     align-items: center;
     justify-content: center;
@@ -102,4 +142,20 @@
 .title{
     font-size: xx-large;
     font-weight: bolder;   
+}
+.pieLabel{
+  color: white;
+}
+.pieHeading{
+  color: white;
+  fill: white;
+  margin-left: 6rem;
+}
+
+
+.cgpa-calculator-subscript{
+  font-size:medium; 
+}
+.cgpa-calculator-inputs{
+  margin-top: 2rem;
 }

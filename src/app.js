@@ -34,13 +34,13 @@ const jsx = (
   </Provider>
 );
 
-const interval = () => {
-  setInterval(function() {
-    console.log(store.getState());
-  }, 5000)
-};
+// const interval = () => {
+//   setInterval(function() {
+//     console.log(store.getState());
+//   }, 5000)
+// };
 
-interval();
+// interval();
 
 let hasRendered = false;
 const renderApp = () => {

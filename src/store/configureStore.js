@@ -10,6 +10,7 @@ import faqsReducer from '../reducers/faqs';
 import placementsReducer from '../reducers/placements';
 import filterReducer from '../reducers/filter';
 import gpaReducer from '../reducers/gpa';
+import cgpaReducer from '../reducers/cgpa';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -25,7 +26,8 @@ export default () => {
       faqs: faqsReducer, 
       placements: placementsReducer,
       filter: filterReducer,
-      gpaReducer: gpaReducer
+      gpa: gpaReducer,
+      cgpa:cgpaReducer
     }),
     composeEnhancers(applyMiddleware(thunk))
   );

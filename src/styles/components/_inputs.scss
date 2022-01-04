@@ -6,6 +6,15 @@
   padding: $s-size;
 }
 
+.cgpa-calculator-input{
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+  width: 700px;
+}
+
 .select {
   @extend .text-input;
 }
