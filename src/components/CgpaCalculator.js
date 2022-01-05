@@ -5,6 +5,7 @@ import GpaCalculatorInput from "./GpaCalculatorInput";
 // import "./gpaCalculator.css";
 import { Header } from "./Header";
 import { setCgpa } from "../actions/cgpa";
+import { MatPaperButton } from "./MatPaperButton";
 
 const CgpaCalculator = () => {
   let gpa = useSelector((state) => state.gpa);
