@@ -17,6 +17,7 @@ const CgpaCalculator = () => {
 
   const dispatch = useDispatch();
   const calculateCgpa=()=>{
+    // debugger;
     let credsCompleted=parseFloat(document.getElementById('credsCompleted').value);
     let currentCgpa=parseFloat(document.getElementById('currentCgpa').value);
     let credsTaken=parseFloat(document.getElementById('credsTaken').value);
@@ -25,7 +26,7 @@ const CgpaCalculator = () => {
     if(credsCompleted<0||credsCompleted>180||currentCgpa<0||currentCgpa>10||credsTaken<0||credsTaken>27||gpaThisSem<0||gpaThisSem>10){
       alert("Please enter Values within given Limits!");
     }
-    else if(credsCompleted==''||credsCompleted==null||currentCgpa==''||currentCgpa==null||credsTaken==''||credsTaken==null||gpaThisSem==''||gpaThisSem==null){
+    else if(isNaN(credsCompleted)||isNaN(currentCgpa)||isNaN(credsTaken)||isNaN(gpaThisSem)){
       alert("Please enter all 4 Values!")
     }else{
       let cgpa=(credsCompleted*currentCgpa+credsTaken*gpaThisSem)/(credsCompleted+credsTaken);
@@ -42,6 +43,7 @@ const CgpaCalculator = () => {
   return (
     <div>
       <Header></Header>
+      <MatPaperButton/>
       <div className="content-container">
         <h3 className="title">CGPA CALCULATOR</h3>
         <div className="cgpa-input-group">

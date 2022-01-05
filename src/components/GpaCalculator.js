@@ -8,6 +8,7 @@ import { AiFillMinusCircle } from "react-icons/ai";
 
 import { setGpa } from "../actions/gpa";
 import { useDispatch } from "react-redux";
+import { MatPaperButton } from "./MatPaperButton";
 
 const GpaCalculator = () => {
 
@@ -107,6 +108,7 @@ const GpaCalculator = () => {
   return (
     <div>
       <Header></Header>
+      <MatPaperButton/>
       <div className="modal-page-desktop">
         <div className="content-container">
           <h3 className="title">GPA CALCULATOR</h3>
@@ -117,7 +119,7 @@ const GpaCalculator = () => {
           {subjects.map((subject) => {
             return (
               <div className="individualSubject" key={subject.subjectCount}>
-                <h4>Course {subject.subjectCount + 1}: </h4>
+                <h4 className="Course-label">Course {subject.subjectCount + 1}: </h4>
                 <GpaCalculatorInput
                   orignalSubjects={subjects}
                   subject={subject}

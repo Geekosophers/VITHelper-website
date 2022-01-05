@@ -1,161 +1,235 @@
 .containerGrades {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
   }
-  .gradeDropDown{
-      padding-inline: 20px;
+  
+  /* background-color: red; */
+}
+.gradeDropDown {
+  padding-inline: 20px;
+  
+  @media (max-width: $desktop-breakpoint) {
+    margin-bottom: 1rem;
   }
-  .creditDropDown{
-      padding-inline: 20px;
+  
+}
+.Course-label{
+  @media (max-width: $desktop-breakpoint) {
+    font-size: medium;
   }
-  .container {
+}
+.creditDropDown {
+  padding-inline: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+}
+.topRow {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+    margin-left: 4rem;
+  }
+}
+.bottomRow {
+  @media (max-width: $desktop-breakpoint) {
+    margin-left: 4rem;
+  }
+}
+.marksCardTextMobile{
+  display: none;
+  @media (max-width: $desktop-breakpoint) {
+    display:flex;
+  }
+}
+.marksCardText{
+  @media (max-width: $desktop-breakpoint) {
+    display:none;
+  }
+}
+.gpaCard {
+  height: 250px;
+  width: 400px;
+  margin-right: 2.5rem;
+  border-radius: 5px;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: #b728c9;
+  font-weight: bold;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background: #b728c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $desktop-breakpoint) {
+    width: 90%;
+    margin-bottom: 2.5rem;
+  }
+}
+.gpaCard:hover {
+  transition: 0.3s;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.cgpaCard {
+  height: 250px;
+  width: 400px;
+  margin-right: 25px;
+  border-radius: 5px;
+  border-width: 0.5rem;
+  border-style: solid;
+  font-weight: bold;
+  border-color: #0294c9;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background: #0294c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $desktop-breakpoint) {
+    width: 90%;
+  }
+}
+.cgpaCardWithValues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cgpaCard:hover {
+  transition: 0.3s;
+  box-shadow: rgba(50, 211, 240, 0.4) 5px 5px, rgba(50, 211, 240, 0.3) 10px 10px,
+    rgba(50, 211, 240, 0.2) 15px 15px, rgba(50, 211, 240, 0.1) 20px 20px,
+    rgba(50, 211, 240, 0.05) 25px 25px;
+  // box-shadorgba(5, 4, 5, 0.4).4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.marksCard {
+  height: 250px;
+  width: 825px;
+  margin-block: 25px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  align-items: center;
+  padding: 5rem;
+  @media (max-width: $desktop-breakpoint) {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    /* background-color: yellow; */
-  }
-  .topRow {
-    display: flex;
-    flex-direction: row;
-  }
-  .gpaCard {
-    height: 250px;
-    width: 400px;
-    margin-right: 25px;
-    border-radius: 5px;
-    border-width: 0.5rem;
-    border-style: solid;
-    border-color: #b728c9;
-    font-weight: bold;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    background:#b728c9;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
-  .gpaCard:hover {
-    transition:0.3s;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  }
-  .cgpaCard {
-    height: 250px;
-    width: 400px;
-    margin-right: 25px;
-    border-radius: 5px;
-    border-width: 0.5rem;
-    border-style: solid;
-    font-weight: bold;
-    border-color: #0294c9;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    background:#0294c9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .cgpaCardWithValues{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    
-  }
-  .cgpaCard:hover {
-    transition:0.3s;
-    box-shadow: rgba(50, 211, 240, 0.4) 5px 5px, rgba(50, 211, 240, 0.3) 10px 10px, rgba(50, 211, 240, 0.2) 15px 15px, rgba(50, 211, 240, 0.1) 20px 20px, rgba(50, 211, 240, 0.05) 25px 25px;
-    // box-shadorgba(5, 4, 5, 0.4).4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  }
-  .marksCard {
-    height: 250px;
-    width: 825px;
-    margin-block: 25px;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    align-items: center;
-    padding: 5rem;
 
-    background: rgb(209, 178, 0);
-// background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  }
+  background: rgb(209, 178, 0);
+  // background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
 
-  .marksCard:hover {
-    transition:0.3s;
-    box-shadow: rgba(245, 116, 11, 0.959) 0px 5px, rgba(245, 116, 11, 0.3) 0px 10px, rgba(245, 116, 11, 0.2) 0px 15px, rgba(245, 116, 11, 0.1) 0px 20px, rgba(245, 116, 11, 0.05) 0px 25px;
-    // box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  }
-  .chart{
-      height: 50;
-      width: 50;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.marksCard:hover {
+  transition: 0.3s;
+  box-shadow: rgba(245, 116, 11, 0.959) 0px 5px,
+    rgba(245, 116, 11, 0.3) 0px 10px, rgba(245, 116, 11, 0.2) 0px 15px,
+    rgba(245, 116, 11, 0.1) 0px 20px, rgba(245, 116, 11, 0.05) 0px 25px;
+  // box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
-.addNewSubject{
-    /* size: 80; */
-    color:darkslategray;
-    /* margin-left: 57px; */
-    margin-top: 15px;
+.chart {
+  height: 50;
+  width: 50;
 }
-.individualSubject{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-block: 1rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.removeSubject{
-    color:rgb(206, 0, 0);
-}
-.calculateButton{
-    background-color: rgb(132,208,208);
-    color: darkslategray;
-    margin:20px;
-    padding: 20px;
-    padding-block: 1rem;
-    font-weight: bolder;
-    border-radius: 0.5rem ;
-}
-.cgpaCalculateButton{
-  background-color: rgb(132,208,208);
+.addNewSubject {
+  /* size: 80; */
   color: darkslategray;
-  margin:20px;
+  /* margin-left: 57px; */
+  margin-top: 15px;
+}
+.individualSubject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 1rem;
+  @media (max-width: $desktop-breakpoint) {
+    border-bottom: darkslategray;
+    border-width: 1px;
+    
+  }
+  
+}
+.removeSubject {
+  color: rgb(206, 0, 0);
+}
+.calculateButton {
+  background-color: rgb(132, 208, 208);
+  color: darkslategray;
+  margin: 20px;
   padding: 20px;
   padding-block: 1rem;
   font-weight: bolder;
-  border-radius: 0.5rem ;
+  border-radius: 0.5rem;
+}
+.cgpaCalculateButton {
+  background-color: rgb(132, 208, 208);
+  color: darkslategray;
+  margin: 20px;
+  padding: 20px;
+  padding-block: 1rem;
+  font-weight: bolder;
+  border-radius: 0.5rem;
   width: 25rem;
 }
-.gpaResult{
-    // margin-left: 50px;
-    margin-top: 40px;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
+.gpaResult {
+  // margin-left: 50px;
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  @media (max-width: $desktop-breakpoint) {
+    margin-top: 2rem;
+  }
 }
-.title{
-    font-size: xx-large;
-    font-weight: bolder;   
+.title {
+  font-size: xx-large;
+  font-weight: bolder;
 }
-.pieLabel{
+.pieLabel {
   color: white;
 }
-.pieHeading{
+.pieHeading {
   color: white;
   fill: white;
   margin-left: 6rem;
+  @media (max-width: $desktop-breakpoint) {
+    display: none;
+  }
 }
 
-
-.cgpa-calculator-subscript{
-  font-size:medium; 
+.cgpa-calculator-subscript {
+  font-size: medium;
 }
-.cgpa-calculator-inputs{
+.cgpa-calculator-inputs {
   margin-top: 2rem;
+}
+
+.cgpa-calculator-input{
+  @media (max-width: $desktop-breakpoint) {
+    width:40rem;
+  }
+  @media (max-width: ($mobile-breakpoint)) {
+    width:30rem;
+  }
 }
