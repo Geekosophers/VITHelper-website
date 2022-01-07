@@ -223,9 +223,11 @@
 }
 .cgpa-calculator-inputs {
   margin-top: 2rem;
+
 }
 
 .cgpa-calculator-input{
+  border-radius: 0.5rem;
   @media (max-width: $desktop-breakpoint) {
     width:40rem;
   }
