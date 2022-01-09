@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import MatPaperButton from './MatPaperButton';
-import PlacementsHeader from './PlacementsHeader';
-import ReviewTags from './ReviewTags';
+import Header from './Header/Header';
+import MatPaperButton from './Materials/MatPaperButton';
+import PlacementsHeader from './Placements/PlacementsHeader';
+import ReviewTags from './Review/ReviewTags';
 import { connect } from 'react-redux';
 
 const ShowPlacementArticle = (props) => {

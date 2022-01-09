@@ -1,8 +1,8 @@
 import React from 'react';
-import MatPaperButton from './MatPaperButton';
-import Header from './Header';
+import MatPaperButton from './Materials/MatPaperButton';
+import Header from './Header/Header';
 import ShareButton from './ShareButton';
-import PlacementsHeader from './PlacementsHeader';
+import PlacementsHeader from './Placements/PlacementsHeader';
 
 const Resources = () => (
   <div>
