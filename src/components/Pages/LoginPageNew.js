@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { startLogin } from '../actions/auth';
+import { startLogin } from '../../actions/auth';
 import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 

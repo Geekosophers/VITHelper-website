@@ -1,10 +1,10 @@
 import React from 'react';
 import MaterialsList from './MaterialsList';
 import MaterialsListFilter from './MaterialsListFilter';
-import WhatsApp from '../../WhatsApp';
+import WhatsApp from '../WhatsApp';
 import MatPaperButton from './MatPaperButton';
 import Header from '../Header/Header';
-import ShareButton from '../../ShareButton';
+import ShareButton from '../ShareButton';
 
 const Materials = () => (
   <div>
