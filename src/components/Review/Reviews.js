@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
-import PlacementsThreeLiner from './PlacementsThreeLiner';
+import PlacementsThreeLiner from '../Placements/PlacementsThreeLiner';
 import { connect } from 'react-redux';
 import selectPlacements from '../../selectors/placements';
 import PlacementsHeader from '../Placements/PlacementsHeader';
