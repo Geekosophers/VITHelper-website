@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
-import MatPaperButton from './MatPaperButton';
+import Header from './Header/Header';
+import MatPaperButton from './Materials/MatPaperButton';
 
 const PrivacyPolicy = (props) => {
   return (

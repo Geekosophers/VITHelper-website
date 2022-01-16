@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import PlacementsHeader from './PlacementsHeader';
-import MatPaperButton from './MatPaperButton';
+import Header from './Header/Header';
+import PlacementsHeader from './Placements/PlacementsHeader';
+import MatPaperButton from './Materials/MatPaperButton';
 import ShareButton from './ShareButton';
 
 const PAT = () => (
