@@ -6,3 +6,4 @@ public/dist/
 public/.DS_Store
 public/images/.DS_Store
 appjsCommentedLines.txt
+package-lock.json

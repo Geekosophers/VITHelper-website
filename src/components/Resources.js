@@ -3,6 +3,7 @@ import MatPaperButton from './Materials/MatPaperButton';
 import Header from './Header/Header';
 import ShareButton from './ShareButton';
 import PlacementsHeader from './Placements/PlacementsHeader';
+import Footer from './Footer';
 
 const Resources = () => (
   <div>
@@ -63,6 +64,7 @@ const Resources = () => (
         </div>
     </div>
     <ShareButton />
+    <Footer/>
   </div>
 );
 

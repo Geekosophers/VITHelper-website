@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
 
 const NotFoundPage = () => (
   <div>
@@ -18,6 +19,7 @@ const NotFoundPage = () => (
       <div className="not-found-page__content">Looks like you are in the wrong place.</div>
       <div className="not-found-page__content">Don't worry</div>
       <Link to="/"><button className="button">Click here to go back!</button></Link>
+      <Footer/>
   </div>
   </div> 
 );

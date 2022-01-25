@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 // import ApplicationScreen from './ApplicationScreen';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
 
 const AboutUsForMobile = () => (
     <div>
@@ -104,7 +105,7 @@ const AboutUsForMobile = () => (
                 <img src='./images/ttt.png' height="100%" width="100%" style={{marginTop:'40px'}}></img>
             </div>
         </div>
-        <div style={{background:'#364051',color:'#84d0d0',textAlign:'center',borderTop:'#84d0d0 solid 1px'}}>Made with <span style={{color:'#A83F39'}}>&#10084;</span> for VITians</div>
+        <Footer/>
     </div>
 );
 

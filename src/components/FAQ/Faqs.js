@@ -7,6 +7,7 @@ import MatPaperButton from '../Materials/MatPaperButton';
 
 import ShareButton from '../ShareButton';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
 
 const Faqs = () => (
   <div>
@@ -25,8 +26,10 @@ const Faqs = () => (
           <p className="not-found-page__content"><b>Work In Progress...</b></p>
           <img src="/images/work-in-progress.png" alt="Work In Progress..." loop="infinite"/>
           <Link to="/"><button className="button">Click here to go back!</button></Link>
+          
       </div>
     </div>
+    <Footer/>
   </div>
 );
 

@@ -5,6 +5,7 @@ import WhatsApp from '../../WhatsApp';
 import Header from '../../Header/Header';
 import MatPaperButton from '../../Materials/MatPaperButton';
 import ShareButton from '../../ShareButton';
+import Footer from '../../Footer';
 
 const CAT2Papers = () => (
   <div>
@@ -15,6 +16,7 @@ const CAT2Papers = () => (
     <Cat2papersList />
     <WhatsApp />
     <ShareButton />
+    <Footer/>
   </div>
 );
 

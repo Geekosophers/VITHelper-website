@@ -24,7 +24,6 @@ import ShowPlacementArticle from '../components/ShowPlacementArticle';
 import Resources from '../components/Resources';
 import Topics from '../components/Topics';
 import AboutUsForMobile from '../components/About/AboutUsForMobile';
-
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -33,6 +32,7 @@ const AppRouter = () => (
       <HeaderForMobile />
       <Switch>
         <Route path="/" component={AboutUsForMobile} exact={true} />
+        <Route path="/PrivacyPolicy" component={PrivacyPolicy} />
         <Route path="/cat1papers" component={CAT1Papers} />
         <Route path="/cat2papers" component={CAT2Papers} />
         <Route path="/fatpapers" component={FATPapers} />

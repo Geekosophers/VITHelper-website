@@ -5,6 +5,7 @@ import WhatsApp from '../WhatsApp';
 import MatPaperButton from './MatPaperButton';
 import Header from '../Header/Header';
 import ShareButton from '../ShareButton';
+import Footer from '../Footer';
 
 const Materials = () => (
   <div>
@@ -15,6 +16,7 @@ const Materials = () => (
     <MaterialsList />
     <WhatsApp />
     <ShareButton />
+    <Footer/>
   </div>
 );
 

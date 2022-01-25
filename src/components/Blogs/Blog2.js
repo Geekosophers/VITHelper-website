@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
+import Footer from '../Footer';
 
 
 const Blogs = (props) => {
@@ -78,6 +79,7 @@ const Blogs = (props) => {
         <p style={{textAlign:'center'}}>&bull;&nbsp;&bull;&nbsp;&bull;</p>
         <p>Hope this blog has been helpful. All the best for the counselling! Hope you get your desired room and roommates.</p>
       </div>
+      <Footer/>
     </div>
   );
 };
