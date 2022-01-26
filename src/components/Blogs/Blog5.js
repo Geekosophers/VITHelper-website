@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
 import Footer from '../Footer';
-
+import ScrollButton from '../Scroll to top/ScrollButton';
 const Blog5 = (props) => {
   return (
     <div>
@@ -30,6 +30,7 @@ const Blog5 = (props) => {
         <p>Happy Placements!</p>
       </div>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };

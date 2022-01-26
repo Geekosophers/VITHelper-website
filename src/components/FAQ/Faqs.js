@@ -8,6 +8,7 @@ import MatPaperButton from '../Materials/MatPaperButton';
 import ShareButton from '../ShareButton';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+import ScrollButton from '../Scroll to top/ScrollButton';
 
 const Faqs = () => (
   <div>
@@ -30,6 +31,8 @@ const Faqs = () => (
       </div>
     </div>
     <Footer/>
+    <ScrollButton/>
+    <
   </div>
 );
 

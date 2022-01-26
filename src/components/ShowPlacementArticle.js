@@ -5,6 +5,7 @@ import PlacementsHeader from './Placements/PlacementsHeader';
 import ReviewTags from './Review/ReviewTags';
 import { connect } from 'react-redux';
 import Footer from './Footer';
+import ScrollButton from './Scroll to top/ScrollButton';
 
 const ShowPlacementArticle = (props) => {
   return (
@@ -48,6 +49,7 @@ const ShowPlacementArticle = (props) => {
         </div>
       </div>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };

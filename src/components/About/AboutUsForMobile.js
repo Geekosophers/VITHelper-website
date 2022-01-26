@@ -4,6 +4,7 @@ import MatPaperButton from '../Materials/MatPaperButton';
 // import ApplicationScreen from './ApplicationScreen';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+import ScrollButton from '../Scroll to top/ScrollButton';
 
 const AboutUsForMobile = () => (
     <div>
@@ -106,6 +107,7 @@ const AboutUsForMobile = () => (
             </div>
         </div>
         <Footer/>
+        <ScrollButton/>
     </div>
 );
 

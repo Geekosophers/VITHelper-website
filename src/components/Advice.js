@@ -4,6 +4,7 @@ import MatPaperButton from './Materials/MatPaperButton';
 import PlacementsHeader from './Placements/PlacementsHeader';
 import { connect } from 'react-redux';
 import Footer from './Footer';
+import ScrollButton from './Scroll to top/ScrollButton';
 
 
 const Advice = (props) => {
@@ -34,6 +35,7 @@ const Advice = (props) => {
         {props.placement[16].advice && <figure><div>{props.placement[16].advice}</div><span>-{props.placement[16].name}</span></figure>}
       </div>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };
