@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="cont">
-        <hr />
+        <hr className="line" />
         <div className="gridcont">
           <div className="left">
             <div className="lefcol">
