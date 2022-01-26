@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import MatPaperButton from './Materials/MatPaperButton';
 import PlacementsHeader from './Placements/PlacementsHeader';
 import { connect } from 'react-redux';
+import Footer from './Footer';
 
 
 const Advice = (props) => {
@@ -32,6 +33,7 @@ const Advice = (props) => {
         {props.placement[15].advice && <figure><div>{props.placement[15].advice}</div><span>-{props.placement[15].name}</span></figure>}
         {props.placement[16].advice && <figure><div>{props.placement[16].advice}</div><span>-{props.placement[16].name}</span></figure>}
       </div>
+      <Footer/>
     </div>
   );
 };

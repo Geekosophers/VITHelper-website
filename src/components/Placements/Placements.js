@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import selectPlacements from '../../selectors/placements';
 import PlacementsHeader from './PlacementsHeader';
 import { Link } from 'react-router-dom';
-
+import Footer from '../Footer';
 const Placements = (props) => (
   <div>
     {window.scrollTo(0, 0)}
@@ -61,6 +61,7 @@ const Placements = (props) => (
         <span>Share your placement experience with your fellow VITians by filling &nbsp;<u>this</u>&nbsp; form.</span>
       </div>
     </a>
+    <Footer/>
   </div>
 );
 

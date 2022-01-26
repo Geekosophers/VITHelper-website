@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
+import Footer from '../Footer';
 
 const Blog5 = (props) => {
   return (
@@ -28,6 +29,7 @@ const Blog5 = (props) => {
         <p>All the best 😃</p>
         <p>Happy Placements!</p>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
+import Footer from '../Footer';
 
 const Blog4 = (props) => {
   return (
@@ -92,6 +93,7 @@ const Blog4 = (props) => {
         <p>Good luck and happy coding!</p>
         <p style={{textAlign:'end'}}>-written by <b>Ayush Negi</b></p>
       </div>
+      <Footer/>
     </div>
   );
 };

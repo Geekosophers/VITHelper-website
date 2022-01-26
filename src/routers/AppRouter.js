@@ -24,7 +24,6 @@ import ShowPlacementArticle from '../components/ShowPlacementArticle';
 import Resources from '../components/Resources';
 import Topics from '../components/Topics';
 import AboutUsForMobile from '../components/About/AboutUsForMobile';
-
 export const history = createHistory();
 
 const AppRouter = () => (

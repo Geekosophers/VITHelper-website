@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import selectPlacements from '../../selectors/placements';
 import PlacementsHeader from '../Placements/PlacementsHeader';
 import ReviewTags from './ReviewTags';
+import Footer from '../Footer';
 
 const Placements = (props) => (
   <div>
@@ -36,6 +37,7 @@ const Placements = (props) => (
         <PlacementsThreeLiner id={props.placements[17].id} placement={props.placements[17]}/>
       </div>
     </div>
+    <Footer/>
   </div>
 );
 
