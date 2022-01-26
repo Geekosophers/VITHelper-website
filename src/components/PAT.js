@@ -4,6 +4,7 @@ import PlacementsHeader from './Placements/PlacementsHeader';
 import MatPaperButton from './Materials/MatPaperButton';
 import ShareButton from './ShareButton';
 import Footer from './Footer';
+import ScrollButton from './Scroll to top/ScrollButton';
 
 const PAT = () => (
   <div>
@@ -73,6 +74,7 @@ const PAT = () => (
     </div>
     <ShareButton />
     <Footer/>
+    <ScrollButton/>
   </div>
 );
 

@@ -7,6 +7,7 @@ import selectPlacements from '../../selectors/placements';
 import PlacementsHeader from '../Placements/PlacementsHeader';
 import ReviewTags from './ReviewTags';
 import Footer from '../Footer';
+import ScrollButton from '../Scroll to top/ScrollButton';
 
 const Placements = (props) => (
   <div>
@@ -38,6 +39,7 @@ const Placements = (props) => (
       </div>
     </div>
     <Footer/>
+    <ScrollButton/>
   </div>
 );
 

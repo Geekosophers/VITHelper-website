@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header/Header';
 import MatPaperButton from './Materials/MatPaperButton';
+import ScrollButton from './Scroll to top/ScrollButton';
 
 const PrivacyPolicy = (props) => {
   return (
@@ -103,6 +104,7 @@ const PrivacyPolicy = (props) => {
 
       </div>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };

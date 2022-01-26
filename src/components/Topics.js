@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import ShareButton from './ShareButton';
 import PlacementsHeader from './Placements/PlacementsHeader';
 import Footer from './Footer';
+import ScrollButton from './Scroll to top/ScrollButton';
 
 const Topics = () => (
   <div>
@@ -92,6 +93,7 @@ const Topics = () => (
     </div>
     <ShareButton />
     <Footer/>
+    <ScrollButton/>
   </div>
 );
 

@@ -6,6 +6,7 @@ import MatPaperButton from './MatPaperButton';
 import Header from '../Header/Header';
 import ShareButton from '../ShareButton';
 import Footer from '../Footer';
+import ScrollButton from '../Scroll to top/ScrollButton';
 
 const Materials = () => (
   <div>
@@ -17,6 +18,7 @@ const Materials = () => (
     <WhatsApp />
     <ShareButton />
     <Footer/>
+    <ScrollButton/>
   </div>
 );
 

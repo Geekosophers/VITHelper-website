@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
 import Footer from '../Footer';
+import ScrollButton from '../Scroll to top/ScrollButton';
 
 
 const Blog1 = (props) => {
@@ -63,6 +64,7 @@ const Blog1 = (props) => {
         <p>Hope this blog helped you in the process. Go and win over your new office!</p>
       </div>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };

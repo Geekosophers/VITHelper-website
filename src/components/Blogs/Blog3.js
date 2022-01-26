@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
 import Footer from '../Footer';
-
+import ScrollButton from '../Scroll to top/ScrollButton';
 
 const Blogs = (props) => {
   return (
@@ -84,6 +84,7 @@ const Blogs = (props) => {
         <p style={{textAlign:'end'}}>-written by <b>Nimish Shah</b></p>
       </div>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };
