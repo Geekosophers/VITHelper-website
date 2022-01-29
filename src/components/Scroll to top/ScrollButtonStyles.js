@@ -20,5 +20,7 @@ export const Button = styled.div`
       left:70%;
       transform:scale(.7);
    }
-
+   ${'' /* &:hover{
+      color:rgba(28, 136, 191, 1)
+   } */}
 `
