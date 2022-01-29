@@ -32,7 +32,6 @@ const Faqs = () => (
     </div>
     <Footer/>
     <ScrollButton/>
-    <
   </div>
 );
 
