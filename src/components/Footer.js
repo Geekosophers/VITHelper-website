@@ -21,13 +21,13 @@ const Footer = () => {
               <Geekosophers/>
               <div className="icons">
                 <span>
-                  <a href="https://twitter.com/geekosophers">
+                  <a href="https://twitter.com/geekosophers" target="_blank">
                     {" "}
                     <FaTwitter className="i" />
                   </a>
                 </span>
                 <span>
-                  <a href="https://github.com/Geekosophers">
+                  <a href="https://github.com/Geekosophers" target="_blank">
                     <FaGithub className="i" />
                   </a>
                 </span>
