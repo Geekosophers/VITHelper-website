@@ -1,60 +1,128 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { startLogout } from '../../actions/auth';
+import React from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { startLogout } from "../../actions/auth";
 
 export class Header extends React.Component {
-
-  constructor(props){
-      super(props); 
-      this.state = {
-          width: screen.width
-      };
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: screen.width,
+    };
   }
-  
+
   render() {
-      return(
-        <div>
-          <header className="show-for-desktop header">
+    return (
+      <div>
+        <header className="show-for-desktop header">
           <div className="content-container">
             <div className="header__content">
               <Link className="header__title" to="/">
-                {
-                  window.location.pathname=="/cat1papers"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
-                  window.location.pathname=="/cat2papers"? <img src="./images/header-font.png" height="50px" width="150px"/> : null ||
-                  window.location.pathname=="/fatpapers"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
-                  window.location.pathname=="/materials"? <img src="./images/header-font.png" height="50px" width="150px"/>: null ||
-                  window.location.pathname=="/placements"? <img src="./images/header-font.png" height="50px" width="150px"/>: <img src="../../images/header-font.png" height="50px" width="150px"/>
-                }
+                {window.location.pathname == "/cat1papers" ? (
+                  <img
+                    src="./images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
+                ) : null || window.location.pathname == "/cat2papers" ? (
+                  <img
+                    src="./images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
+                ) : null || window.location.pathname == "/fatpapers" ? (
+                  <img
+                    src="./images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
+                ) : null || window.location.pathname == "/materials" ? (
+                  <img
+                    src="./images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
+                ) : null || window.location.pathname == "/placements" ? (
+                  <img
+                    src="./images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
+                ) : (
+                  <img
+                    src="../../images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
+                )}
               </Link>
               <div>
                 <span className="show-for-desktop">
                   <span className="dropdown">
-                    {
-                      window.location.pathname=="/cat1papers" || 
-                      window.location.pathname=="/cat2papers" || 
-                      window.location.pathname=="/fatpapers" ||
-                      window.location.pathname=="/materials"
-                      ? 
+                    {window.location.pathname == "/cat1papers" ||
+                    window.location.pathname == "/cat2papers" ||
+                    window.location.pathname == "/fatpapers" ||
+                    window.location.pathname == "/materials" ? (
                       <span className="header-button header-button--link-u">
-                        Examination 
-                        &nbsp;<i className="fa fa-caret-down" style={{fontSize:'2rem',color:'black'}}></i>
+                        Examination &nbsp;
+                        <i
+                          className="fa fa-caret-down"
+                          style={{ fontSize: "2rem", color: "black" }}
+                        ></i>
                       </span>
-                      :
+                    ) : (
                       <span className="header-button header-button--link">
-                        Examination
-                        &nbsp;<i className="fa fa-caret-down" style={{fontSize:'2rem',color:'white'}}></i>
+                        Examination &nbsp;
+                        <i
+                          className="fa fa-caret-down"
+                          style={{ fontSize: "2rem", color: "white" }}
+                        ></i>
                       </span>
-                    }
+                    )}
                     <div className="dropdown-content">
-                      <Link to="/cat1papers" className="button button--link">CAT-1 Papers</Link>
-                      <Link to="/cat2papers" className="button button--link">CAT-2 Papers</Link>
-                      <Link to="/fatpapers" className="button button--link">FAT Papers</Link>
-                      <hr style={{margin:'0',padding:'0',align:'center',border:'1px solid #84d0d0'}}/>
-                      <Link to="/materials" className="button button--link" style={{color:'#84d0d0'}}>Study Materials</Link>
+                      <Link to="/cat1papers" className="button button--link">
+                        CAT-1 Papers
+                      </Link>
+                      <Link to="/cat2papers" className="button button--link">
+                        CAT-2 Papers
+                      </Link>
+                      <Link to="/fatpapers" className="button button--link">
+                        FAT Papers
+                      </Link>
+                      <hr
+                        style={{
+                          margin: "0",
+                          padding: "0",
+                          align: "center",
+                          border: "1px solid #84d0d0",
+                        }}
+                      />
+                      <Link
+                        to="/materials"
+                        className="button button--link"
+                        style={{ color: "#84d0d0" }}
+                      >
+                        Study Materials
+                      </Link>
                     </div>
                   </span>
-                  <span className="dropdown-blog">
+                  <Link to="/blogs">
+                    {window.location.pathname == "/room-counselling" ||
+                    window.location.pathname == "/blogs" ||
+                    window.location.pathname == "/hostel-vacating-procedure" ||
+                    window.location.pathname == "/npm-package" ||
+                    window.location.pathname == "/placement-guide" ||
+                    window.location.pathname == "/placement-experience" ? (
+                      <span className="header-button header-button--link-u">
+                        Blogs
+                      </span>
+                    ) : (
+                      <span className="header-button header-button--link">
+                        Blogs
+                      </span>
+                    )}
+                  </Link>
+                  {/* <span className="dropdown-blog">
                     {
                       window.location.pathname=="/room-counselling" || 
                       window.location.pathname=="/hostel-vacating-procedure" ||
@@ -79,34 +147,39 @@ export class Header extends React.Component {
                       <Link to="/placement-guide" className="button button--link">Guide for Placement preparation</Link>
                       <Link to="/placement-experience" className="button button--link">Placement experience - Travelling from VIT Chennai to Vellore</Link>
                     </div>
-                  </span>
+                  </span> */}
                   <Link to="/placements">
-                    {
-                      window.location.pathname!=="/materials" &&
-                      window.location.pathname!=="/cat1papers" &&
-                      window.location.pathname!=="/cat2papers" &&
-                      window.location.pathname!=="/fatpapers" &&
-                      window.location.pathname!=="/about-us" &&
-                      window.location.pathname!=="/faqs" &&
-                      window.location.pathname!=="/blogs" &&
-                      window.location.pathname!=="/room-counselling" &&
-                      window.location.pathname!=="/hostel-vacating-procedure" &&
-                      window.location.pathname!=="/npm-package" &&
-                      window.location.pathname!=="/placement-guide" &&
-                      window.location.pathname!=="/placement-experience" &&
-                      window.location.pathname!=="/" &&
-                      window.location.pathname!=="/privacy-policy" &&
-                      <span className="header-button header-button--link-u">Placements</span> ||
-                      <span className="header-button header-button--link">Placements</span>
-                    }
+                    {(window.location.pathname !== "/materials" &&
+                      window.location.pathname !== "/cat1papers" &&
+                      window.location.pathname !== "/cat2papers" &&
+                      window.location.pathname !== "/fatpapers" &&
+                      window.location.pathname !== "/about-us" &&
+                      window.location.pathname !== "/faqs" &&
+                      window.location.pathname !== "/blogs" &&
+                      window.location.pathname !== "/room-counselling" &&
+                      window.location.pathname !==
+                        "/hostel-vacating-procedure" &&
+                      window.location.pathname !== "/npm-package" &&
+                      window.location.pathname !== "/placement-guide" &&
+                      window.location.pathname !== "/placement-experience" &&
+                      window.location.pathname !== "/" &&
+                      window.location.pathname !== "/privacy-policy" && (
+                        <span className="header-button header-button--link-u">
+                          Placements
+                        </span>
+                      )) || (
+                      <span className="header-button header-button--link">
+                        Placements
+                      </span>
+                    )}
                   </Link>
                 </span>
               </div>
             </div>
           </div>
-          </header>
-        </div>
-      );
+        </header>
+      </div>
+    );
   }
 }
 
@@ -115,9 +188,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const mapStateToProps = (state) => {
-  return {
-    
-  };
+  return {};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
