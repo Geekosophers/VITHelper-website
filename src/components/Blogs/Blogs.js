@@ -16,7 +16,7 @@ const Blogs = () => {
           <div className="box">
             {" "}
             <div className="text_cont">
-              <div className="head">
+              <div className="heading_box">
                 <h2>Guide for Placement preparation</h2>
               </div>
               <div className="para">
@@ -49,7 +49,7 @@ const Blogs = () => {
           <div className="box">
             {" "}
             <div className="text_cont">
-              <div className="head">
+              <div className="heading_box">
                 <h2>Hostel Room Counselling</h2>
               </div>
               <div className="para">
@@ -81,7 +81,7 @@ const Blogs = () => {
         <Link to="/hostel-vacating-procedure">
           <div className="box">
             <div className="text_cont">
-              <div className="head">
+              <div className="heading_box">
                 <h2>Hostel Vacating Procedure</h2>
               </div>
               <div className="para">
@@ -113,7 +113,7 @@ const Blogs = () => {
           <div className="box">
             {" "}
             <div className="text_cont">
-              <div className="head">
+              <div className="heading_box">
                 <h2>How to get started with making NPM packages</h2>
               </div>
               <div className="para">
@@ -146,7 +146,7 @@ const Blogs = () => {
           <div className="box">
             {" "}
             <div className="text_cont">
-              <div className="head">
+              <div className="heading_box">
                 <h2>
                   Placement experience - Travelling from VIT Chennai to Vellore
                 </h2>
