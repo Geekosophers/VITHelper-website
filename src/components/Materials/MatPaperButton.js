@@ -69,7 +69,9 @@ export class MatPaperButton extends React.Component {
             <span className="show-for-mobile button-matpap__disp">
               <div className="button button--link">
                 {this.state.count != 1 ? (
-                  window.location.pathname == "/blogs" ? (
+                  window.location.pathname == "/onlinevsoffline" ? (
+                    <span>Blogs</span>
+                  ) : null || window.location.pathname == "/blogs" ? (
                     <span>Blogs</span>
                   ) : null || window.location.pathname == "/" ? (
                     <span>Greetings VITian</span>

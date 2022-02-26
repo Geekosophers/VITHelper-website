@@ -107,7 +107,8 @@ export class Header extends React.Component {
                     </div>
                   </span>
                   <Link to="/blogs">
-                    {window.location.pathname == "/room-counselling" ||
+                    {window.location.pathname == "/onlinevsoffline" ||
+                    window.location.pathname == "/room-counselling" ||
                     window.location.pathname == "/blogs" ||
                     window.location.pathname == "/hostel-vacating-procedure" ||
                     window.location.pathname == "/npm-package" ||
@@ -159,6 +160,7 @@ export class Header extends React.Component {
                       window.location.pathname !== "/room-counselling" &&
                       window.location.pathname !==
                         "/hostel-vacating-procedure" &&
+                      window.location.pathname !== "/onlinevsoffline" &&
                       window.location.pathname !== "/npm-package" &&
                       window.location.pathname !== "/placement-guide" &&
                       window.location.pathname !== "/placement-experience" &&
