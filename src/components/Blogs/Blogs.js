@@ -12,6 +12,39 @@ const Blogs = () => {
       <Header />
       <MatPaperButton />
       <div className="blogs_cont">
+        <Link to="/onlinevsoffline">
+          <div className="box">
+            {" "}
+            <div className="text_cont">
+              <div className="heading_box">
+                <h2>Online VS Offine College Life</h2>
+              </div>
+              <div className="para">
+                {" "}
+                <div className="info">
+                  After giving challenging Board Exams and other Competitive
+                  Examinations, and equally realizing that our school life has
+                  come to end, we are in a phase preparing ourselves for the
+                  next major and essential part of our life- College...
+                  <br />
+                </div>
+                <div className="subtitle">
+                  {" "}
+                  <span className="author_name"> Keerthana</span> &nbsp;· &nbsp;
+                  this week &nbsp; ·&nbsp; 5 min read
+                </div>
+              </div>
+            </div>
+            <div className="rep_image">
+              <img
+                // class="portfolio-image"
+                src="https://images.unsplash.com/photo-1622554129902-bb01970e2540?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                width={112}
+                height={112}
+              />
+            </div>
+          </div>
+        </Link>{" "}
         <Link to="/placement-guide">
           <div className="box">
             {" "}

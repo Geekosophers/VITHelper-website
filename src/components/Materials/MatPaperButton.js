@@ -194,6 +194,13 @@ export class MatPaperButton extends React.Component {
                     &#x25BA; Home
                   </Link>
                   <Link
+                    to="/onlinevsoffline"
+                    className="button button--link-for-matheader"
+                  >
+                    &#x25BA; Online vs Offline College Life
+                  </Link>
+
+                  <Link
                     to="/hostel-vacating-procedure"
                     className="button button--link-for-matheader"
                   >
