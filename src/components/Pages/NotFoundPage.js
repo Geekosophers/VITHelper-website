@@ -1,7 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Footer from '../Footer';
-import ScrollButton from '../Scroll to top/ScrollButton';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFoundPage = () => (
   <div>
@@ -14,16 +12,20 @@ const NotFoundPage = () => (
         </div>
       </div>
     </header>
-  <div className="content-container not-found-page">
-      <p className="not-found-page__content"><b>404 - PAGE NOT FOUND</b></p>
-      <img src="/images/404.gif" alt="404" loop="infinite"/>
-      <div className="not-found-page__content">Looks like you are in the wrong place.</div>
+    <div className="content-container not-found-page">
+      <p className="not-found-page__content">
+        <b>404 - PAGE NOT FOUND</b>
+      </p>
+      <img src="/images/404.gif" alt="404" loop="infinite" />
+      <div className="not-found-page__content">
+        Looks like you are in the wrong place.
+      </div>
       <div className="not-found-page__content">Don't worry</div>
-      <Link to="/"><button className="button">Click here to go back!</button></Link>
-      <Footer/>
-      <ScrollButton/>
+      <Link to="/">
+        <button className="button">Click here to go back!</button>
+      </Link>
+    </div>
   </div>
-  </div> 
 );
 
 export default NotFoundPage;
