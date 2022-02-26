@@ -31,7 +31,7 @@ const Blogs = () => {
                 <div className="subtitle">
                   {" "}
                   <span className="author_name"> Keerthana</span> &nbsp;· &nbsp;
-                  this week &nbsp; ·&nbsp; 5 min read
+                  26 Feb 2022 &nbsp; ·&nbsp; 5 min read
                 </div>
               </div>
             </div>

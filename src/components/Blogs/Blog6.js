@@ -13,6 +13,9 @@ const Blogs = (props) => {
       <MatPaperButton />
       <div className="content-container" style={{ paddingBottom: "50px" }}>
         <h1>Online vs Offline College Life</h1>{" "}
+        <div className={"portfolio-box-layout__box"}>
+          <img className="portfolio-image" src="https://firebasestorage.googleapis.com/v0/b/vithelper-32e0b.appspot.com/o/images%2Fonlinevsoffline2x.png?alt=media&token=17193371-f768-4cd3-b16f-07bc9fd8a6ee" />
+        </div>
         <p>
           {" "}
           After giving challenging Board Exams and other Competitive
