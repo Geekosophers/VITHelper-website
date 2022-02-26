@@ -188,6 +188,12 @@ export class MatPaperButton extends React.Component {
                     <u>Blogs</u>
                   </div>
                   <Link
+                    to="/blogs"
+                    className="button button--link-for-matheader"
+                  >
+                    &#x25BA; Home
+                  </Link>
+                  <Link
                     to="/hostel-vacating-procedure"
                     className="button button--link-for-matheader"
                   >
