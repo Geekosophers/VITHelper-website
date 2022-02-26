@@ -10,8 +10,15 @@ const ScrollButton = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-   ( window.innerWidth < 1100)||(document.documentElement.clientWidth<1100)||(document.body.clientWidth<1100) ? setIsTouch(true) : setIsTouch(false);
-  });
+    window.innerWidth < 1100 ||
+    document.documentElement.clientWidth < 1100 ||
+    document.body.clientWidth < 1100
+      ? setIsTouch(true)
+      : setIsTouch(false);
+    return () => {
+      setIsTouch(false); //to prevent memory leak issue
+    };
+  }, []);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
