@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../Header/Header';
 import MatPaperButton from '../Materials/MatPaperButton';
 import { connect } from 'react-redux';
 import Footer from '../Footer';
 import ScrollButton from '../Scroll to top/ScrollButton';
+
 const Blog5 = (props) => {
+
+  useEffect(() => {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  });
+
   return (
     <div>
       {window.scrollTo(0, 0)}
@@ -12,6 +18,14 @@ const Blog5 = (props) => {
       <MatPaperButton />
       <div className="content-container" style={{paddingBottom:'50px'}}>
         <h1>Placement experience - Travelling from VIT Chennai to Vellore</h1>
+        <ins className="adsbygoogle"
+            style={{display:'block', textAlign:'center'}}
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-9778460026793897"
+            data-ad-slot="1008466355"    
+        >
+        </ins>
         <p>Hello VITians!</p>
         <p>There are a lot of companies that come to VIT for on-campus placements. Most of them come to Vellore campus for the recruitment process and hence students from Chennai campus may need to travel to Vellore campus for completing their interview process.</p>
         <p>Here is a placement experience of a colleague of mine from VIT Chennai campus who bagged a Super Dream job offer. This blog will clear your travelling queries to Vellore during placements.</p>
