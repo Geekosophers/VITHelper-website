@@ -21,19 +21,20 @@ export default class TeamBuildingModal extends React.Component{
                     closeTimeoutMS={200}
                     className="modal"
                 >
-                    <h3 className="modal__title">Join VITHelper Team</h3>
+                    <h3 className="modal__title show-for-desktop" >New video is up on YouTube</h3>
+                    <h3 className="modal__title show-for-mobile" >New Video is up on YouTube</h3>
                     <div className="modal__body">
-                        <p>
-                            Hey! I hope that you are finding the platform useful. I am working on different projects like this one with a team of amazing developers and looking for more. We have a lot of ideas to work which covers the following domains-
-                            <span style={{ fontWeight: '700' }}>Image Processing, Machine Learning, App Dev, Web Dev, Writing blogs, Designers</span>
+                        <p className="show-for-desktop">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5yrZA9BxvK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </p>
-                        <p>If you want to know more fill the form and  I’ll connect with you.</p>
-                        <p><span style={{ fontWeight: '700', color: '#e57670' }}><u>Note</u>- We have received many responses. Please be patient while we connect with you. Thankyou.</span></p>
+                        <p className="show-for-mobile">
+                            <iframe width="100%" src="https://www.youtube.com/embed/5yrZA9BxvK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </p>
                     </div>
                     <div className="modal__footer">
-                        <div className="button--link"><a href="https://forms.gle/kMN9N6kzL5HaScvLA">Count me in!</a></div>
-                        <div className="button--link show-for-desktop" onClick={this.closeModal} style={{ cursor: 'pointer' }}>Take me to the website</div>
-                        <div className="button--link show-for-mobile" onClick={this.closeModal} style={{ cursor: 'pointer' }}>Not now</div>
+                        <div className="button--link"><a href="https://youtu.be/5yrZA9BxvK4">Watch Now!</a></div>
+                        <div className="button--link show-for-desktop" onClick={this.closeModal} style={{ cursor: 'pointer' }}>Maybe Later</div>
+                        <div className="button--link show-for-mobile" onClick={this.closeModal} style={{ cursor: 'pointer' }}>Maybe Later</div>
                     </div>
                 </Modal>
             </div>

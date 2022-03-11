@@ -29,6 +29,16 @@ const Blogs = (props) => {
           and having fun is a tough shell to crack for every first-year student
           until we blend with our twin-minded fellow mates.
         </p>{" "}
+        <div className="show-for-desktop">
+          <p className={"portfolio-box-layout__box"}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5yrZA9BxvK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </p>
+        </div>
+        <div className="show-for-mobile">
+          <p className={"portfolio-box-layout__box"}>
+          <iframe width="100%" src="https://www.youtube.com/embed/5yrZA9BxvK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </p>
+        </div>
         <p>
           {" "}
           College life highlights the process of making new friends, creating

@@ -14,12 +14,14 @@ import { startSetFatpapers } from './actions/fatpapers';
 import { startSetMaterials } from './actions/materials';
 import { startSetFaqs } from './actions/faqs';
 import { startSetPlacements } from './actions/placements';
+import TeamBuildingModal from './components/TeamBuildingModal';
 
 const store = configureStore();
 
 const jsx = (
   <Provider store={store}>
     <div>
+      <TeamBuildingModal />
       <AppRouter />
     </div>
   </Provider>
