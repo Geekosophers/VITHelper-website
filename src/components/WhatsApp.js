@@ -5,15 +5,14 @@ const WhatsApp = () => (
     <div className="list-item">
       {
         window.location.pathname=="/materials" ?
-        <p>Stay up to date by joining one of the WhatsApp group-</p>
+        <p>Stay up to date by joining our Discord Server-</p>
         :
-        <p>If you weren't able to find the paper, ask your fellow mates by joining one of the WhatsApp group-</p>
+        <p>If you weren't able to find the paper, ask your fellow mates by joining the Discord Server-</p>
       }
-        <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/KLUtAW2rIOADjyzQPBYPAF" target="_blank">VITHelper - Papers #1 (Full)</a></p>
-        <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/JKnQImP49289HdZ8UdUFKl" target="_blank">VITHelper - Papers #2 (Almost full)</a></p>
-        <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/K4OiQ8Z8fw1Lt9PcT9Zbvn" target="_blank">VITHelper - Papers #3 (Almost full)</a></p>
-        <p><a className="button button--link whatsapp" href="https://chat.whatsapp.com/EDbdkpFvMLQEZmmlYywBFL" target="_blank">VITHelper - Papers #4</a></p>
-        <p>In case of any query contact us at <b>contact@vithelper.in</b></p>
+      <a href="https://discord.gg/9V7xUSNDNJ">
+        <img src='./images/join-discord-button.png' width='100%' />  
+      </a>
+      <p>In case of any query contact us at <b>contact@vithelper.in</b></p>
     </div>
   </div>
 );

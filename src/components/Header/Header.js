@@ -15,7 +15,7 @@ export class Header extends React.Component {
     return (
       <div>
         <header className="show-for-desktop header">
-          <div className="content-container">
+          <div className="content-placement">
             <div className="header__content">
               <Link className="header__title" to="/">
                 {window.location.pathname == "/cat1papers" ? (
@@ -123,32 +123,6 @@ export class Header extends React.Component {
                       </span>
                     )}
                   </Link>
-                  {/* <span className="dropdown-blog">
-                    {
-                      window.location.pathname=="/room-counselling" || 
-                      window.location.pathname=="/hostel-vacating-procedure" ||
-                      window.location.pathname=="/npm-package" ||
-                      window.location.pathname=="/placement-guide" ||
-                      window.location.pathname=="/placement-experience"
-                      ? 
-                      <span className="header-button header-button--link-u">
-                        Blogs 
-                        &nbsp;<i className="fa fa-caret-down" style={{fontSize:'2rem',color:'black'}}></i>
-                      </span>
-                      :
-                      <span className="header-button header-button--link">
-                        Blogs
-                        &nbsp;<i className="fa fa-caret-down" style={{fontSize:'2rem',color:'white'}}></i>
-                      </span>
-                    }
-                    <div className="dropdown-content-blog">
-                      <Link to="/room-counselling" className="button button--link">Hostel Room Counselling</Link>
-                      <Link to="/hostel-vacating-procedure" className="button button--link">Hostel Vacating Procedure</Link>
-                      <Link to="/npm-package" className="button button--link">How to get started with making NPM packages</Link>
-                      <Link to="/placement-guide" className="button button--link">Guide for Placement preparation</Link>
-                      <Link to="/placement-experience" className="button button--link">Placement experience - Travelling from VIT Chennai to Vellore</Link>
-                    </div>
-                  </span> */}
                   <Link to="/placements">
                     {(window.location.pathname !== "/materials" &&
                       window.location.pathname !== "/cat1papers" &&
@@ -175,6 +149,12 @@ export class Header extends React.Component {
                       </span>
                     )}
                   </Link>
+                  <a href="https://discord.gg/9V7xUSNDNJ" style={{ margin:'0',padding:'0' }}>
+                    <span className="header-button header-button--link" style={{ paddingTop:'0', paddingBottom:'0' }} >
+                        Join Discord
+                        <img src="./images/discord.svg" className='discord-button' alt='.' />
+                    </span>
+                  </a>
                 </span>
               </div>
             </div>

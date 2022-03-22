@@ -21,18 +21,15 @@ export default class TeamBuildingModal extends React.Component{
                     closeTimeoutMS={200}
                     className="modal"
                 >
-                    <h3 className="modal__title show-for-desktop" >New video is up on YouTube</h3>
-                    <h3 className="modal__title show-for-mobile" >New Video is up on YouTube</h3>
+                    <h3 className="modal__title show-for-desktop" >Join Discord</h3>
+                    <h3 className="modal__title show-for-mobile" >Join Discord</h3>
                     <div className="modal__body">
-                        <p className="show-for-desktop">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5yrZA9BxvK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </p>
-                        <p className="show-for-mobile">
-                            <iframe width="100%" src="https://www.youtube.com/embed/5yrZA9BxvK4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </p>
+                        <a href="https://discord.gg/9V7xUSNDNJ">
+                            <img src='./images/join-discord-button.png' width='100%' />  
+                        </a>
                     </div>
                     <div className="modal__footer">
-                        <div className="button--link"><a href="https://youtu.be/5yrZA9BxvK4">Watch Now!</a></div>
+                        <div className="button--link"><a href="https://discord.gg/9V7xUSNDNJ">Join Now!</a></div>
                         <div className="button--link show-for-desktop" onClick={this.closeModal} style={{ cursor: 'pointer' }}>Maybe Later</div>
                         <div className="button--link show-for-mobile" onClick={this.closeModal} style={{ cursor: 'pointer' }}>Maybe Later</div>
                     </div>
