@@ -21,7 +21,7 @@ const store = configureStore();
 const jsx = (
   <Provider store={store}>
     <div>
-      <TeamBuildingModal />
+      {/* <TeamBuildingModal /> */}
       <AppRouter />
     </div>
   </Provider>
