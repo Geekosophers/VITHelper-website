@@ -139,6 +139,7 @@ export class Header extends React.Component {
                       window.location.pathname !== "/placement-guide" &&
                       window.location.pathname !== "/placement-experience" &&
                       window.location.pathname !== "/" &&
+                      window.location.pathname !== "/team" &&
                       window.location.pathname !== "/privacy-policy" && (
                         <span className="header-button header-button--link-u">
                           Placements
@@ -149,10 +150,48 @@ export class Header extends React.Component {
                       </span>
                     )}
                   </Link>
-                  <a href="https://discord.gg/9V7xUSNDNJ" style={{ margin:'0',padding:'0' }}>
-                    <span className="header-button header-button--link" style={{ paddingTop:'0', paddingBottom:'0' }} >
-                        Join Discord
-                        <img src="./images/discord.svg" className='discord-button' alt='.' />
+
+                  <Link to="/team">
+                    {(window.location.pathname !== "/materials" &&
+                      window.location.pathname !== "/cat1papers" &&
+                      window.location.pathname !== "/cat2papers" &&
+                      window.location.pathname !== "/fatpapers" &&
+                      window.location.pathname !== "/about-us" &&
+                      window.location.pathname !== "/faqs" &&
+                      window.location.pathname !== "/blogs" &&
+                      window.location.pathname !== "/room-counselling" &&
+                      window.location.pathname !==
+                        "/hostel-vacating-procedure" &&
+                      window.location.pathname !== "/onlinevsoffline" &&
+                      window.location.pathname !== "/npm-package" &&
+                      window.location.pathname !== "/placement-guide" &&
+                      window.location.pathname !== "/placement-experience" &&
+                      window.location.pathname !== "/" &&
+                      window.location.pathname !== "/placements" &&
+                      window.location.pathname !== "/privacy-policy" && (
+                        <span className="header-button header-button--link-u">
+                          Our Team
+                        </span>
+                      )) || (
+                      <span className="header-button header-button--link">
+                        Our Team
+                      </span>
+                    )}
+                  </Link>
+                  <a
+                    href="https://discord.gg/9V7xUSNDNJ"
+                    style={{ margin: "0", padding: "0" }}
+                  >
+                    <span
+                      className="header-button header-button--link"
+                      style={{ paddingTop: "0", paddingBottom: "0" }}
+                    >
+                      Join Discord
+                      <img
+                        src="./images/discord.svg"
+                        className="discord-button"
+                        alt="."
+                      />
                     </span>
                   </a>
                 </span>

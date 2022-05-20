@@ -25,6 +25,7 @@ import Resources from "../components/Resources";
 import Topics from "../components/Topics";
 import AboutUsForMobile from "../components/About/AboutUsForMobile";
 import Blog6 from "../components/Blogs/Blog6";
+import Team from "../components/Team";
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -34,6 +35,7 @@ const AppRouter = () => (
       <Switch>
         <Route path="/onlinevsoffline" component={Blog6} exact={true} />
         <Route path="/" component={AboutUsForMobile} exact={true} />
+        <Route path="/team" component={Team} />
         <Route path="/cat1papers" component={CAT1Papers} />
         <Route path="/cat2papers" component={CAT2Papers} />
         <Route path="/fatpapers" component={FATPapers} />
