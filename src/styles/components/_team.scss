@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     // height: 100vh;
-    background-color: #f5f5f5;
+    background-color: white;
     font-family: 'Baloo Paaji 2', cursive;
 }
 
@@ -31,14 +31,24 @@ ul {
 // }
 
 .card {
-    background-color: #222831;
+    // background-color: white;
+    // background-image: url(../../../public/images/wave.svg);
+
+
+
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2384d0d0' fill-opacity='1' d='M0 224L21.8 192C43.6 160 87 96 131 85.3C174.5 75 218 117 262 149.3C305.5 181 349 203 393 208C436.4 213 480 203 524 165.3C567.3 128 611 64 655 48C698.2 32 742 64 785 74.7C829.1 85 873 75 916 96C960 117 1004 171 1047 170.7C1090.9 171 1135 117 1178 96C1221.8 75 1265 85 1309 85.3C1352.7 85 1396 75 1418 69.3L1440 64L1440 0L1418.2 0C1396.4 0 1353 0 1309 0C1265.5 0 1222 0 1178 0C1134.5 0 1091 0 1047 0C1003.6 0 960 0 916 0C872.7 0 829 0 785 0C741.8 0 698 0 655 0C610.9 0 567 0 524 0C480 0 436 0 393 0C349.1 0 305 0 262 0C218.2 0 175 0 131 0C87.3 0 44 0 22 0L0 0Z'%3E%3C/path%3E%3C/svg%3E");
+
+
+    background-repeat: no-repeat;
+    background-size: 500%;
     height: 37rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.7);
-    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    // color: white;
     margin-bottom: 2rem;
 }
 
@@ -91,7 +101,7 @@ ul {
 }
 
 .draw-border:hover {
-    color: #ffe593;
+    color: black
 }
 
 .draw-border:hover::before,
