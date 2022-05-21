@@ -42,6 +42,12 @@ export class Header extends React.Component {
                     height="50px"
                     width="150px"
                   />
+                ) : null || window.location.pathname == "/calculatorHome" ? (
+                  <img
+                    src="./images/header-font.png"
+                    height="50px"
+                    width="150px"
+                  />
                 ) : null || window.location.pathname == "/placements" ? (
                   <img
                     src="./images/header-font.png"
@@ -62,6 +68,7 @@ export class Header extends React.Component {
                     {window.location.pathname == "/cat1papers" ||
                     window.location.pathname == "/cat2papers" ||
                     window.location.pathname == "/fatpapers" ||
+                    window.location.pathname == "/calculatorHome" ||
                     window.location.pathname == "/materials" ? (
                       <span className="header-button header-button--link-u">
                         Examination &nbsp;
@@ -104,6 +111,13 @@ export class Header extends React.Component {
                       >
                         Study Materials
                       </Link>
+                      <Link
+                        to="/calculatorHome"
+                        className="button button--link"
+                        style={{ color: "#84d0d0" }}
+                      >
+                        Calculator
+                      </Link>
                     </div>
                   </span>
                   <Link to="/blogs">
@@ -130,6 +144,7 @@ export class Header extends React.Component {
                       window.location.pathname !== "/fatpapers" &&
                       window.location.pathname !== "/about-us" &&
                       window.location.pathname !== "/faqs" &&
+                      window.location.pathname !== "/calculatorHome" &&
                       window.location.pathname !== "/blogs" &&
                       window.location.pathname !== "/room-counselling" &&
                       window.location.pathname !==
@@ -139,6 +154,10 @@ export class Header extends React.Component {
                       window.location.pathname !== "/placement-guide" &&
                       window.location.pathname !== "/placement-experience" &&
                       window.location.pathname !== "/" &&
+                      window.location.pathname !== "/calculatorHome" &&
+                      window.location.pathname !== "/gpaCalculator" &&
+                      window.location.pathname !== "/cgpaCalculator" &&
+                      window.location.pathname !== "/marksCalculator" &&
                       window.location.pathname !== "/team" &&
                       window.location.pathname !== "/privacy-policy" && (
                         <span className="header-button header-button--link-u">
@@ -158,12 +177,17 @@ export class Header extends React.Component {
                       window.location.pathname !== "/fatpapers" &&
                       window.location.pathname !== "/about-us" &&
                       window.location.pathname !== "/faqs" &&
+                      window.location.pathname !== "/calculatorHome" &&
                       window.location.pathname !== "/blogs" &&
                       window.location.pathname !== "/room-counselling" &&
                       window.location.pathname !==
                         "/hostel-vacating-procedure" &&
                       window.location.pathname !== "/onlinevsoffline" &&
                       window.location.pathname !== "/npm-package" &&
+                      window.location.pathname !== "/calculatorHome" &&
+                      window.location.pathname !== "/gpaCalculator" &&
+                      window.location.pathname !== "/cgpaCalculator" &&
+                      window.location.pathname !== "/marksCalculator" &&
                       window.location.pathname !== "/placement-guide" &&
                       window.location.pathname !== "/placement-experience" &&
                       window.location.pathname !== "/" &&
