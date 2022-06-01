@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+.team-main-div {
+    min-height: 100vh;
+}
+
+// img {
+//     clip-path: circle();
+// }
+
+.team-container {
+    padding-top: 2rem;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+    background-color: white;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+ul {
+    overflow: visible;
+}
+
+// ul li a:hover {
+//     background-color: none;
+// }
+
+.card {
+    // background-color: white;
+    // background-image: url(../../../public/images/wave.svg);
+
+
+
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2384d0d0' fill-opacity='1' d='M0 224L21.8 192C43.6 160 87 96 131 85.3C174.5 75 218 117 262 149.3C305.5 181 349 203 393 208C436.4 213 480 203 524 165.3C567.3 128 611 64 655 48C698.2 32 742 64 785 74.7C829.1 85 873 75 916 96C960 117 1004 171 1047 170.7C1090.9 171 1135 117 1178 96C1221.8 75 1265 85 1309 85.3C1352.7 85 1396 75 1418 69.3L1440 64L1440 0L1418.2 0C1396.4 0 1353 0 1309 0C1265.5 0 1222 0 1178 0C1134.5 0 1091 0 1047 0C1003.6 0 960 0 916 0C872.7 0 829 0 785 0C741.8 0 698 0 655 0C610.9 0 567 0 524 0C480 0 436 0 393 0C349.1 0 305 0 262 0C218.2 0 175 0 131 0C87.3 0 44 0 22 0L0 0Z'%3E%3C/path%3E%3C/svg%3E");
+
+
+    background-repeat: no-repeat;
+    background-size: 500%;
+    height: 37rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    // color: white;
+    margin-bottom: 2rem;
+}
+
+.card__name {
+    margin-top: 15px;
+    font-size: 1.5em;
+    margin-bottom: -5px;
+}
+
+.card__image {
+    clip-path: circle();
+    height: 15rem;
+    // width: 160px;
+    border-radius: 50%;
+    border: 5px solid #272133;
+    margin-top: 20px;
+    // box-shadow: 0 10px 50px #12da9d;
+}
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58cdd1;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0rem;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.draw-border:hover {
+    color: black
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+    border-color: #1920eb;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 0.75em 2em;
+    letter-spacing: 0.05rem;
+    margin: 1em;
+    width: 13rem;
+}
+
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1em;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 0.95em;
+    left: 0.96em;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #ff003c, #c648c8);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #ff003c;
+    background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+
+.grid-container {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-gap: 20px;
+    margin: auto;
+    font-size: 1.2em;
+
+
+}
+
+.grid-child-posts {
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 567px) {
+    .team-container {
+        grid-template-columns: 1fr;
+        gap: 2rem 0;
+    }
+}

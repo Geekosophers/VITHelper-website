@@ -1,20 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import AppRouter from './routers/AppRouter';
-import configureStore from './store/configureStore';
-import 'normalize.css/normalize.css';
-import './styles/styles.scss';
-import 'react-dates/lib/css/_datepicker.css';
-import { firebase } from './firebase/firebase';
-import LoadingPage from './components/Pages/LoadingPage';
-import { startSetCat1papers } from './actions/cat1papers';
-import { startSetCat2papers } from './actions/cat2papers';
-import { startSetFatpapers } from './actions/fatpapers';
-import { startSetMaterials } from './actions/materials';
-import { startSetFaqs } from './actions/faqs';
-import { startSetPlacements } from './actions/placements';
-import TeamBuildingModal from './components/TeamBuildingModal';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import AppRouter from "./routers/AppRouter";
+import configureStore from "./store/configureStore";
+import "normalize.css/normalize.css";
+import "./styles/styles.scss";
+import "react-dates/lib/css/_datepicker.css";
+import { firebase } from "./firebase/firebase";
+import LoadingPage from "./components/Pages/LoadingPage";
+import { startSetCat1papers } from "./actions/cat1papers";
+import { startSetCat2papers } from "./actions/cat2papers";
+import { startSetFatpapers } from "./actions/fatpapers";
+import { startSetMaterials } from "./actions/materials";
+import { startSetFaqs } from "./actions/faqs";
+import { startSetPlacements } from "./actions/placements";
+import TeamBuildingModal from "./components/TeamBuildingModal";
 
 const store = configureStore();
 
@@ -36,19 +36,18 @@ const renderApp = () => {
     store.dispatch(startSetFaqs());
     store.dispatch(startSetPlacements());
     store.dispatch(startSetCat1papers()).then(() => {
-      try{
-        ReactDOM.render(jsx, document.getElementById('app'));
-      }      
-      catch(e){}
+      try {
+        ReactDOM.render(jsx, document.getElementById("app"));
+      } catch (e) {}
     });
     hasRendered = true;
   }
 };
 
-ReactDOM.render(<LoadingPage />, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById("app"));
 
 firebase.auth().onAuthStateChanged((user) => {
-    setTimeout(() => {
-      renderApp();
-    }, 2300)
+  setTimeout(() => {
+    renderApp();
+  }, 2300);
 });
