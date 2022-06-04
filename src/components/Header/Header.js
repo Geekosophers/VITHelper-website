@@ -202,7 +202,7 @@ export class Header extends React.Component {
                       </span>
                     )}
                   </Link>
-                  <a
+                  {/* <a
                     href="https://discord.gg/9V7xUSNDNJ"
                     style={{ margin: "0", padding: "0" }}
                   >
@@ -216,6 +216,22 @@ export class Header extends React.Component {
                         className="discord-button"
                         alt="."
                       />
+                    </span>
+                  </a> */}
+                  <a
+                    href="https://cab-share-site.vercel.app/"
+                    style={{ margin: "0", padding: "0" }}
+                  >
+                    <span
+                      className="header-button header-button--link"
+                      style={{ paddingTop: "0", paddingBottom: "0" }}
+                    >
+                      SHARE CAB!
+                      {/* <img
+                        src="./images/discord.svg"
+                        className="discord-button"
+                        alt="."
+                      /> */}
                     </span>
                   </a>
                 </span>
