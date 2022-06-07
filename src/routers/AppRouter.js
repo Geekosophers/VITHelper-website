@@ -25,11 +25,6 @@ import Resources from "../components/Resources";
 import Topics from "../components/Topics";
 import AboutUsForMobile from "../components/About/AboutUsForMobile";
 import Blog6 from "../components/Blogs/Blog6";
-import Team from "../components/Team";
-import CalculatorHome from "../components/Calculator/CalculatorHome";
-import GpaCalculator from "../components/Calculator/GpaCalculator";
-import CgpaCalculator from "../components/Calculator/CgpaCalculator";
-import MarksCalculator from "../components/Calculator/MarksCalculator";
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -39,7 +34,6 @@ const AppRouter = () => (
       <Switch>
         <Route path="/onlinevsoffline" component={Blog6} exact={true} />
         <Route path="/" component={AboutUsForMobile} exact={true} />
-        <Route path="/team" component={Team} />
         <Route path="/cat1papers" component={CAT1Papers} />
         <Route path="/cat2papers" component={CAT2Papers} />
         <Route path="/fatpapers" component={FATPapers} />
@@ -64,10 +58,6 @@ const AppRouter = () => (
           path="/placements/article/:id"
           component={ShowPlacementArticle}
         />
-        <Route path="/calculatorHome" component={CalculatorHome} />
-        <Route path="/gpaCalculator" component={GpaCalculator} />
-        <Route path="/cgpaCalculator" component={CgpaCalculator} />
-        <Route path="/marksCalculator" component={MarksCalculator} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
