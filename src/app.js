@@ -17,12 +17,13 @@ import { startSetPlacements } from './actions/placements';
 import TeamBuildingModal from './components/TeamBuildingModal';
 
 const store = configureStore();
+const notShowModal = ["/blogs","/onlinevsoffline","/placement-guide","/room-counselling","/hostel-vacating-procedure","/npm-package","/placement-experience"]
 
 const jsx = (
   <Provider store={store}>
     <div>
       {
-        window.location.pathname!=="/blogs" ? <TeamBuildingModal /> : null 
+        !notShowModal.includes(window.location.pathname) ? <TeamBuildingModal /> : null 
       }
       <AppRouter />
     </div>
