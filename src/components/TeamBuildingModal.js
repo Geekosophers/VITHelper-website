@@ -19,6 +19,7 @@ export default class TeamBuildingModal extends React.Component{
                     isOpen={this.state.modalIsOpen}
                     contentLabel="Disclaimer"
                     closeTimeoutMS={200}
+                    ariaHideApp={false}
                     className="modal"
                 >
                     <h3 className="modal__title show-for-desktop" >VITHelper App</h3>

@@ -21,7 +21,9 @@ const store = configureStore();
 const jsx = (
   <Provider store={store}>
     <div>
-      <TeamBuildingModal />
+      {
+        window.location.pathname!=="/blogs" ? <TeamBuildingModal /> : null 
+      }
       <AppRouter />
     </div>
   </Provider>
