@@ -13,6 +13,12 @@ Ace your CATS and FATS with previous sem question papers covering a wide range o
 #### [CAT2 Papers](https://www.vithelper.in/cat2papers)    
 #### [FAT Papers](https://www.vithelper.in/fatpapers)
 
+## Cab sharing 
+Want to do car pooling and come to the college with fellow VITians? We got you ;)
+
+## GPA & CGPA Calculator
+Want to estimate your CGPA and GPA? Use our calculators to easily find out what cgpa you might be getting. 
+
 ## Blogs-
 A VITian must be used to dealing with elaborate procedures. We have blogs to help you through them.
 
@@ -23,6 +29,7 @@ Here is a placement-preparation package so that you can grab that super-dream pa
 ## Study Materials-
 2 AM already and confused where to study from? Find the crisp hand-sorted study materials here.
 [Explore](https://www.vithelper.in/materials)
+
 
 # Disclaimer
 VITHelper does not intend to be helpful to the students in any form of malpractices. It's soul objective is to make their lives easier by providing content that can help them with exam preparations as well as make them well versed with rules and functioning of VIT. It does not in any form intend to harm VIT, it's employee's or infrastructure's reputation. It does not stand in favour of offensive language or actions and the ones pursuing these will be blocked off the platform. This platform has been made by its creators with due respect to their Alma matter.
